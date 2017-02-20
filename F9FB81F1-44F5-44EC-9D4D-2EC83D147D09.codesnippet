@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_GCD_group_queue</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> dispatch_group_t group =dispatch_group_create();
+    dispatch_queue_t queue= dispatch_get_global_queue(0, 0);
+    
+    dispatch_group_async(group, queue, ^{
+        for (int i=0; i&lt;10; i++) {
+            [NSThread sleepForTimeInterval:0.5];
+            NSLog(@"opention1:%@",[NSThread currentThread]);
+        }
+        NSLog(@"opention1结束-----");
+    });
+    dispatch_group_async(group, queue, ^{
+        for (int i=0; i&lt;10; i++) {
+            [NSThread sleepForTimeInterval:1];
+            NSLog(@"opention2:%@",[NSThread currentThread]);
+        }
+        NSLog(@"opention2结束-----");
+    });
+    dispatch_group_async(group, queue, ^{
+        for (int i=0; i&lt;10; i++) {
+            [NSThread sleepForTimeInterval:1.5];
+            NSLog(@"opention3:%@",[NSThread currentThread]);
+        }
+        NSLog(@"opention3结束-----");
+    });
+    dispatch_group_async(group, queue, ^{
+        for (int i=0; i&lt;10; i++) {
+            [NSThread sleepForTimeInterval:2];
+            NSLog(@"opention4:%@",[NSThread currentThread]);
+        }
+        NSLog(@"opention4结束-----");
+    });
+    
+    dispatch_group_notify(group, queue, ^{
+        NSLog(@"所有操作都完成了-----:%@",[NSThread currentThread]);
+    });
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F9FB81F1-44F5-44EC-9D4D-2EC83D147D09</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_GCD_group_queue</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
