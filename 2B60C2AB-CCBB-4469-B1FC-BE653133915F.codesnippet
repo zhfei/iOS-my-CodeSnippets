@@ -3,22 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_log</string>
+	<string>my_TableViewDelegate_DataSource</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NSString *string;
-        NSLog(@"%@:----%@",NSStringFromSelector(_cmd),string);</string>
+	<string>UITableViewDelegate,UITableViewDataSource</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>3E9719EC-BA73-48A4-886A-071663FB69E5</string>
+	<string>2B60C2AB-CCBB-4469-B1FC-BE653133915F</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>NSLog</string>
+	<string>TableViewDelegate+DataSource</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>NSLog</string>
+	<string>TableViewDelegate+DataSource</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
