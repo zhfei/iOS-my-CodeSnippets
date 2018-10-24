@@ -3,25 +3,36 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_alertVC</string>
+	<string>my_OC_Structure</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"播放失败" message:error.description preferredStyle:1];
-    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
-    [alert addAction:defaultAction];
-    [self presentViewController:alert animated:YES completion:nil];</string>
+	<string>#pragma mark - Life Cycle
+    
+#pragma mark - Getter, Setter
+    
+#pragma mark - Event
+    
+#pragma mark - Public Method
+    
+#pragma mark - Private Method
+    
+#pragma mark - Delegate
+    
+#pragma mark - NSCopying
+    
+#pragma mark - NSObject</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>B73D4192-FB5B-425B-A8EE-92D69C393D68</string>
+	<string>0DEF8139-3F81-4B95-8861-F35656E2BC44</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_alertVC</string>
+	<string>my_OC_Structure</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
