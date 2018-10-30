@@ -3,24 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_dispatchAfter_swift</string>
+	<string>my_semaphore_swift</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.5, execute: {
-                    
-                })</string>
+	<string> //用于多个block同步
+        let sema = DispatchSemaphore(value: 0)
+        sema.signal() // +1
+        sema.wait()   // -1</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>CD0AEB98-4464-4D11-9257-A31D13E1B62F</string>
+	<string>2E419C0F-3D16-4815-9D1B-7634B9244029</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_dispatchAfter_swift</string>
+	<string>my_semaphore_swift</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

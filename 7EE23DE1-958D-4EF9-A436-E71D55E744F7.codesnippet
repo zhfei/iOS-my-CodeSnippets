@@ -9,23 +9,39 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    // MARK: - Life Cycle
+	<string>// MARK: - Life Cycle
+
+// MARK: - Event
+
+// MARK: - Getter, Setter
+
+// MARK: - Public Method
+
+// MARK: - Private Method
+func setupData() {
     
-    // MARK: - Event
+}
+
+func setupUI() {
     
-    // MARK: - Getter, Setter
+}
+
+func resetData() {
     
-    // MARK: - Public Method
+}
+
+func resetUI() {
     
-    // MARK: - Private Method
-    
-    // MARK: - Delegate
-    
-    // MARK: - NSCopying
-    
-    // MARK: - NSObject
-    
-    // MARK: - Extension</string>
+}
+
+// MARK: - Delegate
+
+// MARK: - NSCopying
+
+// MARK: - NSObject
+
+// MARK: - Extension
+</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>7EE23DE1-958D-4EF9-A436-E71D55E744F7</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -35,6 +51,6 @@
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>
