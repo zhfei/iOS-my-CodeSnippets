@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_labelCreate_swift</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let label = UILabel()
+        label.text = "账户未登录"
+        label.textColor = UIColor(hex: "6a6a77")
+        label.textAlignment = NSTextAlignment.center
+        label.font = UIFont(name: "PingFangSC-Regular", size: 16)
+        self.addSubview(label)
+        label.snp.makeConstraints { (maker) in
+            maker.size.equalTo(CGSize(width: 119, height: 18))
+            maker.centerX.equalToSuperview()
+            maker.top.equalTo(imageView.snp.bottom).offset(18)
+        }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>8B4D3B92-CA0D-4E96-8468-C3D6BB7CAADF</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>my_labelCreate_swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_labelCreate_swift</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

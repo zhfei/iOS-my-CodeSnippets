@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_btnCreate_swift</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let btn = UIButton(type: UIButtonType.custom)
+        btn.bounds = CGRect(x: 0, y: 0, width: 220, height: 45)
+        btn.setTitleColor(UIColor(hex: "f37445"), for: UIControlState.normal)
+        btn.setTitle("立即登录", for: UIControlState.normal)
+        btn.titleLabel?.font = UIFont(name: "PingFangSC-Semibold", size: 16)
+        btn.addTarget(self, action: #selector(btnAction(_:)), for: UIControlEvents.touchUpInside)
+        self.addSubview(btn)
+        btn.snp.makeConstraints { (maker) in
+            maker.size.equalTo(loginBtnSize)
+            maker.centerX.equalToSuperview()
+            maker.top.equalTo(label.snp.bottom).offset(24)
+        }
+        
+        func btnAction(_ sender: UIButton) {
+            
+        }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A2E35B91-B9C6-4F9A-9DA3-1053F5D0EB0C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>my_btnCreate_swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_btnCreate_swift</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

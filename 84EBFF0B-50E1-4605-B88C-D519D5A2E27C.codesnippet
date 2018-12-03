@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_imageViewCreate_swift</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let imageView = UIImageView()
+        imageView.image = UIImage(named: "userUnlogin")
+        imageView.contentMode = UIViewContentMode.center
+        self.addSubview(imageView)
+        imageView.snp.makeConstraints { (maker) in
+            maker.size.equalTo(CGSize(width: 77, height: 77))
+            maker.centerX.equalToSuperview()
+            maker.top.equalTo(163)
+        }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>84EBFF0B-50E1-4605-B88C-D519D5A2E27C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>my_imageViewCreate_swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_imageViewCreate_swift</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
