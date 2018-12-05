@@ -3,32 +3,37 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_imageViewCreate_swift</string>
+	<string>my_uiFactory_swift</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>let imageView = UIImageView()
-        imageView.image = UIImage(named: "userUnlogin")
-        imageView.contentMode = UIViewContentMode.center
-        self.addSubview(imageView)
-        imageView.snp.makeConstraints { (maker) in
-            maker.size.equalTo(CGSize(width: 77, height: 77))
-            maker.centerX.equalToSuperview()
-            maker.top.equalTo(163)
-        }</string>
+	<string>func labelFactory(text: String) -&gt; UILabel {
+        
+        return &lt;#UILabel()#&gt;
+    }
+    
+    func imageViewFactory(imageName: String) -&gt; UIImageView {
+        
+        return &lt;#UIImageView()#&gt;
+    }
+    
+    func buttonFactory(text: String) -&gt; UIButton {
+        
+        return &lt;#UIButton()#&gt;
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>84EBFF0B-50E1-4605-B88C-D519D5A2E27C</string>
+	<string>C843D113-B66C-434C-B01C-6777F7F9AA4B</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>my_imageViewCreate_swift</string>
+	<string>my_uiFactory_swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_imageViewCreate_swift</string>
+	<string>my_uiFactory_swift</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
