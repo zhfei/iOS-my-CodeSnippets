@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>     private func serialDataToJson(data: Data, block: @escaping ([String:String])-&gt;()){
+        if let json = try? JSONSerialization.jsonObject(with: data, options: .allowFragments) as! [String : String] {
+            print("jsonDic:",json)
+            block(json)
+        }
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>48DC583E-91E2-41B7-B008-032C71B9FE40</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>My Code Snippet</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

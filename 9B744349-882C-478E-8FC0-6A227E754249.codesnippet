@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_serialJsonToStr_swift</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    private func serialJsonToStr(jsonObj: [String:String], block: @escaping (String)-&gt;()){
+        DispatchQueue.global().async {
+            var resStr = ""
+            if !JSONSerialization.isValidJSONObject(jsonObj) {
+                print("不能转化...")
+                return
+            } else {
+                guard let data = try? JSONSerialization.data(withJSONObject: jsonObj, options: .prettyPrinted) else {
+                    print("序列化失败...")
+                    return
+                }
+                resStr = String(data: data, encoding: .utf8)!
+                block(resStr)
+            }
+        }
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>9B744349-882C-478E-8FC0-6A227E754249</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>my_serialJsonToStr_swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_serialJsonToStr_swift</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
