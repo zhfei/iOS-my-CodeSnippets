@@ -3,29 +3,30 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_serialDataToJson_swift</string>
+	<string>my_screenShot_swift</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>     private func serialDataToJson(data: Data, block: @escaping ([String:String])-&gt;()){
-        if let json = try? JSONSerialization.jsonObject(with: data, options: .allowFragments) as! [String : String] {
-            print("jsonDic:",json)
-            block(json)
-        }
+	<string>func screenshot(container: UIView) -&gt; UIImage {
+        UIGraphicsBeginImageContextWithOptions(container.frame.size, false, UIScreen.main.scale)
+        container.layer.render(in: UIGraphicsGetCurrentContext()!)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image!
     }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>7C108AE3-8789-4100-ABC3-154756682794</string>
+	<string>C3A21A93-F0A9-415E-9534-531CF0F40F30</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>my_serialDataToJson_swift</string>
+	<string>my_screenShot_swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_serialDataToJson_swift</string>
+	<string>my_screenShot_swift</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_alertVC_swift</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>DispatchQueue.main.async {
+                /// 弹出两个按钮的对话框
+                let alertController = UIAlertController(title: "提示",
+                                                        message: "确定二维码已经保存了吗？", preferredStyle: .alert)
+                let cancelAction = UIAlertAction(title: "未保存", style: .cancel, handler: nil)
+                let okAction = UIAlertAction(title: "已保存", style: .default, handler: {[weak self]
+                    action in
+                    print("点击了确定")
+                    self?.completeBlock?()
+                })
+                alertController.addAction(cancelAction)
+                alertController.addAction(okAction)
+                self.present(alertController, animated: true, completion: nil)
+            }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>74199E45-7F73-4953-B0E2-6D9765555BFA</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>my_alertVC_swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_alertVC_swift</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
