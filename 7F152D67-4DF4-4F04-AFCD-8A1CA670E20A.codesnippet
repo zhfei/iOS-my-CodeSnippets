@@ -3,30 +3,24 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_screenShot_swift</string>
+	<string>my_cacheDir_oc</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>func screenshot(container: UIView) -&gt; UIImage {
-        UIGraphicsBeginImageContextWithOptions(container.frame.size, false, UIScreen.main.scale)
-        container.layer.render(in: UIGraphicsGetCurrentContext()!)
-        let image = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        return image!
-    }</string>
+	<string>NSString *cacheDir = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>C3A21A93-F0A9-415E-9534-531CF0F40F30</string>
+	<string>7F152D67-4DF4-4F04-AFCD-8A1CA670E20A</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>my_screenShot_swift</string>
+	<string>my_cacheDir_oc</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_screenShot_swift</string>
+	<string>my_cacheDir_oc</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
