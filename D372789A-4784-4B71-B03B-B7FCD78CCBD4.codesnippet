@@ -3,24 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_cacheDir_oc</string>
+	<string>my_arc_class</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NSString *cacheDir = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject];</string>
+	<string>    -fno-objc-arc
+    -fobjc-arc</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>7F152D67-4DF4-4F04-AFCD-8A1CA670E20A</string>
+	<string>D372789A-4784-4B71-B03B-B7FCD78CCBD4</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>my_cacheDir_oc</string>
+	<string>my_arc_class</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_cacheDir_oc</string>
+	<string>my_arc_class</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
