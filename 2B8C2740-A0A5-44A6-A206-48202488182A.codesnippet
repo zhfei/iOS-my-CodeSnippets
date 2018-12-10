@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_realmMigrat_oc</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    RLMRealmConfiguration *config = [RLMRealmConfiguration defaultConfiguration];
+    config.schemaVersion = 2;
+    config.migrationBlock = ^(RLMMigration *migration, uint64_t oldSchemaVersion)
+    {    // enumerateObjects:block: 遍历了存储在 Realm 文件中的每一个“Person”对象
+        [migration enumerateObjects:Person.className block:^(RLMObject *oldObject, RLMObject *newObject) {        // 只有当 Realm 数据库的架构版本为 0 的时候，才添加 “fullName” 属性
+            if (oldSchemaVersion &lt; 1) {
+                newObject[@"fullName"] = [NSString stringWithFormat:@"%@ %@", oldObject[@"firstName"], oldObject[@"lastName"]];
+            }        // 只有当 Realm 数据库的架构版本为 0 或者 1 的时候，才添加“email”属性
+            if (oldSchemaVersion &lt; 2) {
+                newObject[@"email"] = @"";
+            }       // 替换属性名
+            if (oldSchemaVersion &lt; 3) { // 重命名操作应该在调用 `enumerateObjects:` 之外完成
+                [migration renamePropertyForClass:Person.className oldName:@"yearsSinceBirth" newName:@"age"]; }
+        }];
+    };
+    [RLMRealmConfiguration setDefaultConfiguration:config];// 现在我们已经成功更新了架构版本并且提供了迁移闭包，打开旧有的 Realm 数据库会自动执行此数据迁移，然后成功进行访问
+    [RLMRealm defaultRealm];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2B8C2740-A0A5-44A6-A206-48202488182A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Realm迁移</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_realmMigrat_oc</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

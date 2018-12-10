@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_realmCreate_oc</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)creatDataBaseWithName:(NSString *)databaseName {
+    NSArray *docPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);    NSString *path = [docPath objectAtIndex:0];
+    NSString *filePath = [path stringByAppendingPathComponent:databaseName];
+    NSLog(@"数据库目录 = %@",filePath);
+    
+    RLMRealmConfiguration *config = [RLMRealmConfiguration defaultConfiguration];
+    config.fileURL = [NSURL URLWithString:filePath];
+    config.objectClasses = @[@"Class".class, @"Class".class];
+    config.readOnly = NO;
+    int currentVersion = 1.0;
+    config.schemaVersion = currentVersion;
+    
+    config.migrationBlock = ^(RLMMigration *migration , uint64_t oldSchemaVersion) {       // 这里是设置数据迁移的block
+        if (oldSchemaVersion &lt; currentVersion) {
+            [migration enumerateObjects:@"Class".className block:^(RLMObject *oldObject, RLMObject *newObject) {
+                // 将两个 name 合并到 fullName 当中newObject[@"fullName"] = [NSString stringWithFormat:@"%@ %@", oldObject[@"firstName"], oldObject[@"lastName"]]; }];
+            }];
+        }
+    };
+             
+     [RLMRealmConfiguration setDefaultConfiguration:config];
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>50D7A4BB-36E4-4C3E-8DBD-7EDEBDBC54AB</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Realm创建OC</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_realmCreate_oc</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

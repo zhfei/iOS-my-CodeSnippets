@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_realmEncry_oc</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>RLMRealmConfiguration *config = [RLMRealmConfiguration defaultConfiguration];
+    // 产生随机密钥
+    NSMutableData *key = [NSMutableData dataWithLength:64];
+    SecRandomCopyBytes(kSecRandomDefault, key.length, (uint8_t *)key.mutableBytes);// 打开加密文件RLMRealmConfiguration *config = [RLMRealmConfiguration defaultConfiguration];
+    config.encryptionKey = key;
+    NSError *error = nil;
+    RLMRealm *realm = [RLMRealm realmWithConfiguration:config error:&amp;error];
+    if (!realm) {
+        // 如果密钥错误，`error` 会提示数据库不可访问
+        NSLog(@"Error opening realm: %@", error);
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>32D3D2E6-9E25-444D-8F34-76C9E01F575B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>realm数据库加密</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_realmEncry_oc</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

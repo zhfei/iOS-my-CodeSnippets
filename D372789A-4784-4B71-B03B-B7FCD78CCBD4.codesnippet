@@ -9,19 +9,23 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    -fno-objc-arc
-    -fobjc-arc</string>
+	<string>$(inherited)：继承上层设置,Basic的Project中的配置－》此处的Target的配置－》具体的Debug还是Release的配置
+Header Search Paths：系统类搜索路径
+User Header Search Paths： 用户类搜索路径
+$(SRCROOT)宏和$(PROJECT_DIR)宏： 指当前工程目录
+-fno-objc-arc
+-fobjc-arc</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>D372789A-4784-4B71-B03B-B7FCD78CCBD4</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>my_arc_class</string>
+	<string>对类arc与mrc的编译修饰</string>
 	<key>IDECodeSnippetTitle</key>
 	<string>my_arc_class</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>

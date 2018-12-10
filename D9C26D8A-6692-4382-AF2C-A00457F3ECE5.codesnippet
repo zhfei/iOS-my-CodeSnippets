@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_realmNotifi_oc</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// 获取 Realm 通知
+    token = [realm addNotificationBlock:^(NSString *notification, RLMRealm * realm) {
+        [myViewController updateUI];
+    }];
+    
+    [token stop];
+    // 移除通知
+    [realm removeNotification:self.token];
+    [tableView beginUpdates];
+    [tableView deleteRowsAtIndexPaths:[changes deletionsInSection:0]
+                     withRowAnimation:UITableViewRowAnimationAutomatic];
+    [tableView insertRowsAtIndexPaths:[changes insertionsInSection:0]
+                     withRowAnimation:UITableViewRowAnimationAutomatic];
+    [tableView reloadRowsAtIndexPaths:[changes modificationsInSection:0]
+                     withRowAnimation:UITableViewRowAnimationAutomatic];
+    [tableView endUpdates];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D9C26D8A-6692-4382-AF2C-A00457F3ECE5</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>realm数据库通知</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_realmNotifi_oc</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
