@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_dispatchAfterCancle_swift</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    typealias DelayCancleTask = (_ cancel: Bool) -&gt; ()
+    @discardableResult func delay(_ time: TimeInterval, task: @escaping () -&gt; ()) -&gt; DelayCancleTask?{
+        func dispatch_later(block: @escaping () -&gt; ()) {
+            let t = DispatchTime.now() + time
+            DispatchQueue.main.asyncAfter(deadline: t, execute: block)
+        }
+
+        var closure: (() -&gt; Void)? = task
+        var result: DelayCancleTask?
+        
+        let delayedClosure: DelayCancleTask = {
+            cancel in
+            if let closure = closure {
+                if !cancel {
+                    DispatchQueue.main.async(execute: closure)
+                }
+            }
+            closure = nil
+            result = nil
+        }
+        
+        result = delayedClosure
+        dispatch_later {
+            if let result = result {
+                result(false)
+            }
+        }
+        return result
+    }
+    
+    func cancel(_ task: DelayCancleTask?) {
+        task?(true)
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>154B3BFA-90B3-4F50-B923-1E8050371B40</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>可取消dispatch延时任务</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_dispatchAfterCancle_swift</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_timerAfterCancle_swift</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    var timer: Timer?
+    func timerAfter() {
+        Timer.scheduledTimer(withTimeInterval: 7, repeats: false) { (timer) in
+            //内部自动添加到了当前RunLoop的defaultMode
+            //内部自动触发定时器
+        }
+        
+        timer = Timer.init(timeInterval: 7, target: self, selector: #selector(timerAction), userInfo: nil, repeats: false)
+        //添加到当前线程的RunLoop
+        RunLoop.current.add(timer!, forMode: RunLoopMode.commonModes)
+         //触发定时器
+        timer!.fire()
+    }
+    
+    @objc func timerAction() {
+        //消毁定时器(消毁持有链：RunLoop-&gt;timer-&gt;self)
+        timer?.invalidate()
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>91148962-6CD8-4AAA-B837-4576F065802F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>延时执行timer定时器任务</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_timerAfterCancle_swift</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
