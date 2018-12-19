@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_dateFormat2_swift</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>func timeFormat2() -&gt; String {
+        let str = self
+        let format = DateFormatter()
+        format.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+        let formatZH = DateFormatter()
+        formatZH.dateFormat = "yyyy年MM月dd日 HH:mm:ss"
+        guard let date = format.date(from: str) else {
+            return ""
+        }
+        let ret = formatZH.string(from: date)
+        return ret
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3C87D022-78C7-4219-B7DA-531E0907D876</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>swift将标准0区时间转化成东8区时间</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_dateFormat2_swift</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

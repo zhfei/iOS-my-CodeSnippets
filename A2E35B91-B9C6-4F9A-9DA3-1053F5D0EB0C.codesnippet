@@ -22,7 +22,7 @@
             maker.top.equalTo(label.snp.bottom).offset(24)
         }
         
-        func btnAction(_ sender: UIButton) {
+        @objc func btnAction(_ sender: UIButton) {
             
         }</string>
 	<key>IDECodeSnippetIdentifier</key>

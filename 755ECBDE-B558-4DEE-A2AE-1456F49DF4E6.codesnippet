@@ -3,24 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_select#</string>
+	<string>my_mainQueue_swift</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#selector()</string>
+	<string>DispatchQueue.main.async {
+            
+        }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>EE6158ED-BBE6-4550-B083-3B8E2C8B2680</string>
+	<string>755ECBDE-B558-4DEE-A2AE-1456F49DF4E6</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>自动补全swift的选择子</string>
+	<string>swift主线程</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_select#</string>
+	<string>my_mainQueue_swift</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

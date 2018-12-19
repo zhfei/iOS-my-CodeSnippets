@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_suStr_swift</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//获取子字符串
+    private func substingInRange(str: String, r: Range&lt;Int&gt;) -&gt; String? {
+        if r.lowerBound &lt; 0 || r.upperBound &gt; str.count {
+            return nil
+        }
+//        let subStr1 = str.prefix(3) //前3个字符
+//        let subStr2 = str.suffix(3) //后3个字符
+        
+        let startIndex = str.index(str.startIndex, offsetBy:r.lowerBound)
+        let endIndex   = str.index(str.startIndex, offsetBy:r.upperBound)
+        return String(str[startIndex..&lt;endIndex])
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2035DEE2-B441-47B4-A666-210614D79445</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>子字符串swift版本</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_suStr_swift</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

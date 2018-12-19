@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_dateStand_swift</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    let day = 1*24*60*60
+    let hour = 1*60*60
+    let minitor = 60
+    private func timeStand(timerInter: TimeInterval) -&gt; String {
+        var timerI = timerInter
+        var str = ""
+        //天
+        let d = Int(timerI / TimeInterval(day))
+        str.append(String(format: "%d 天",d))
+        timerI -= TimeInterval(day*d)
+        //时
+        let h = Int(timerI / TimeInterval(hour))
+        str.append(String(format: "%d 时",h))
+        timerI -= TimeInterval(hour*h)
+        //分
+        let m = Int(timerI / TimeInterval(minitor))
+        str.append(String(format: "%d 分",m))
+        
+        return str
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>61D90089-0054-43EE-B2E9-2B15D6A245A4</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>将时间间隔转化成日，时，分</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_dateStand_swift</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
