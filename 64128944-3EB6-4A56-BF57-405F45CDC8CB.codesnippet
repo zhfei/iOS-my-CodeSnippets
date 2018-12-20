@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_bezier_swift</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let temp = CGPoint(x: width*0.5, y: 0)
+            let bez = UIBezierPath()
+            bez.move(to: temp)
+            bez.addLine(to: CGPoint(x: width-height*0.5, y: 0))
+            bez.addArc(withCenter: CGPoint(x: width*0.5, y: height*0.5), radius: height*0.5, startAngle: CGFloat(M_PI_2), endAngle: -CGFloat(M_PI_2), clockwise: false)
+             bez.addLine(to: CGPoint(x: width*0.5, y: height))
+             bez.addArc(withCenter: CGPoint(x: width*0.5, y: height*0.5), radius: height*0.5, startAngle: -CGFloat(M_PI_2), endAngle: CGFloat(M_PI_2), clockwise: true)</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>64128944-3EB6-4A56-BF57-405F45CDC8CB</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>bezier曲线swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_bezier_swift</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

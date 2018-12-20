@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_layerGradient_swift</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let gradientLayer = CAGradientLayer()
+            gradientLayer.colors = [UIColor(hex: "7963e6").cgColor, UIColor(hex: "b972d7").cgColor]
+             //(I.e. [0,0] is the bottom-left corner of the layer, [1,1] is the top-right corner.)
+            gradientLayer.startPoint = CGPoint(x: 0, y: 0)
+            gradientLayer.endPoint = CGPoint(x: 1, y: 0)
+            gradientLayer.position = CGPoint(x: width*0.5, y: height*0.5)
+            gradientLayer.bounds = CGRect(origin: CGPoint.zero, size: CGSize(width: width, height: height))
+            self.layer.insertSublayer(gradientLayer, at: 0)</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B0566506-AC7C-49A7-B14A-35CF9122887C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>渐变色图层swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_layerGradient_swift</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

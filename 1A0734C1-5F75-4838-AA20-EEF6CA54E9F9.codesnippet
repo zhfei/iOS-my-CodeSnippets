@@ -3,26 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_mainQueue_swift</string>
+	<string>my_layer_swift</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>DispatchQueue.main.async {
-            
-        }</string>
+	<string>            let layer = CALayer()
+            layer.backgroundColor = UIColor.red.cgColor
+            layer.bounds = CGRect(origin: CGPoint.zero, size: CGSize(width: width, height: height))
+            layer.position = CGPoint(x: width*0.3, y: height*0.5)
+            bottomLayer = layer
+            layer.cornerRadius = height*0.5</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>755ECBDE-B558-4DEE-A2AE-1456F49DF4E6</string>
+	<string>1A0734C1-5F75-4838-AA20-EEF6CA54E9F9</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>swift主线程</string>
+	<string>CALayer的创建使用swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_mainQueue_swift</string>
+	<string>my_layer_swift</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
