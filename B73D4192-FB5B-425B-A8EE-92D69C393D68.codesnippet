@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_alertVC</string>
+	<string>my_alertVC_oc_block</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
@@ -17,8 +17,10 @@
 	<string>B73D4192-FB5B-425B-A8EE-92D69C393D68</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>系统弹框</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_alertVC</string>
+	<string>my_alertVC_oc_block</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

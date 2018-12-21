@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_async_main</string>
+	<string>my_dispatchMainQueue_oc_block</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
@@ -16,8 +16,10 @@
 	<string>544937C2-1B9B-4F7F-B10E-29D6D7D3928F</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>OC主线程</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_async_main</string>
+	<string>my_dispatchMainQueue_oc_block</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

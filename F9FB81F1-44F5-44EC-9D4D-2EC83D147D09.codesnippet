@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_GCD_group_queue</string>
+	<string>my_dispatchgroup_oc_block</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
@@ -49,8 +49,10 @@
 	<string>F9FB81F1-44F5-44EC-9D4D-2EC83D147D09</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>dispatch组OC</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_GCD_group_queue</string>
+	<string>my_dispatchgroup_oc_block</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

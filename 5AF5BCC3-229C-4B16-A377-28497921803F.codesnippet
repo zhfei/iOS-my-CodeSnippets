@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_dispatchGlobalQueue_oc_block</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
@@ -14,8 +16,10 @@
 	<string>5AF5BCC3-229C-4B16-A377-28497921803F</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>global子线程</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_async_global</string>
+	<string>my_dispatchGlobalQueue_oc_block</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

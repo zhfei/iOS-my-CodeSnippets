@@ -35,17 +35,39 @@ my_名词 动作_oc_block
 ##### 代码块类型
 
 ###### swift部分
-1.serial(序列化功能)
+1.dispatch(大中枢并发)
+- my_dispatchAfter_swift_block
+- my_dispatchAfterCancle_swift_func
+- my_dispatchgroup_swift_block
+- my_dispatchMainQueue_swift_block
+
+2.serial(序列化功能)
 - my_serialDataToJson_swift_func
 - my_serialJsonToStr_swift_func
 
+3.realm(Realm数据库操作)
 
+4.alertVC(系统弹框)
+- my_alertVC_swift_block
 
-
+5.bezier(贝塞尔曲线)
+- my_bezier_swift_block
 
 ###### oc部分
+1.dispatch(大中枢并发)
+- my_dispatchAfter_oc_block
+- my_dispatchMainQueue_oc_block
+- my_dispatchGlobalQueue_oc_block
+- my_dispatchgroup_oc_block
 
+2.serial(序列化功能)
+3.realm(Realm数据库操作)
+- my_realmCreate_oc_block
+- my_realmEncry_oc_block
+- my_realmMigrat_oc_block
+- my_realmNotifi_oc_block
 
+4.alertVC(系统弹框)
+- my_alertVC_oc_block
 
-
-
+5.bezier(贝塞尔曲线)
