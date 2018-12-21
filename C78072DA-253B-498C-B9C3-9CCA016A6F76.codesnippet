@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_dispatchAfter_oc</string>
+	<string>my_dispatchAfter_oc_block</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
@@ -16,8 +16,10 @@
 	<string>C78072DA-253B-498C-B9C3-9CCA016A6F76</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>dispatch延时执行</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_dispatchAfter_oc</string>
+	<string>my_dispatchAfter_oc_block</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

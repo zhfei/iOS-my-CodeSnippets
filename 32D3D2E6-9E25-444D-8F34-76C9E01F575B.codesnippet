@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_realmEncry_oc</string>
+	<string>my_realmEncry_oc_block</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
@@ -27,7 +27,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>realm数据库加密</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_realmEncry_oc</string>
+	<string>my_realmEncry_oc_block</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

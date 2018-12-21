@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_realmCreate_oc</string>
+	<string>my_realmCreate_oc_block</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
@@ -38,7 +38,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>Realm创建OC</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_realmCreate_oc</string>
+	<string>my_realmCreate_oc_block</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

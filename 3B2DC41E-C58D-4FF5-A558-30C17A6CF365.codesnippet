@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_dispatchgroup_swift</string>
+	<string>my_dispatchgroup_swift_block</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
@@ -30,8 +30,10 @@
 	<string>3B2DC41E-C58D-4FF5-A558-30C17A6CF365</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>dispatch组操作</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_dispatchgroup_swift</string>
+	<string>my_dispatchgroup_swift_block</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_dispatchAfterCancle_swift</string>
+	<string>my_dispatchAfterCancle_swift_func</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
@@ -49,7 +49,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>可取消dispatch延时任务</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_dispatchAfterCancle_swift</string>
+	<string>my_dispatchAfterCancle_swift_func</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

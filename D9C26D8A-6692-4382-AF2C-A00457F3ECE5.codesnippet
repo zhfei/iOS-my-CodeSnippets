@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_realmNotifi_oc</string>
+	<string>my_realmNotifi_oc_block</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
@@ -32,7 +32,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>realm数据库通知</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_realmNotifi_oc</string>
+	<string>my_realmNotifi_oc_block</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
