@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_dateFormat2_swift</string>
+	<string>my_dateFormat2Str_swift_func</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
@@ -28,7 +28,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>swift将标准0区时间转化成东8区时间</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_dateFormat2_swift</string>
+	<string>my_dateFormat2Str_swift_func</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

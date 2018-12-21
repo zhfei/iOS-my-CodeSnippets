@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_PropertString</string>
+	<string>my_propert_oc_A</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassInterfaceMethods</string>
@@ -13,9 +13,11 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>55784A0F-0B50-4DF0-AE13-4758124B35AD</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>OC属性开始定义</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_PropertString</string>
+	<string>my_propert_oc_A</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

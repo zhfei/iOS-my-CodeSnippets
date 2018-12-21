@@ -53,6 +53,25 @@ my_名词 动作_oc_block
 5.bezier(贝塞尔曲线)
 - my_bezier_swift_block
 
+6.button(按钮创建)
+- my_btnCreate_swift_block
+
+7.dire(目录)
+8.dateFormatter(格式化时间)
+- my_dateFormat2Date_swift_func
+- my_dateFormat2Str_swift_func
+
+9.property(属性创建)
+
+10.predicate(谓词)
+11.screenShot(截屏)
+- my_screenShot_swift_func
+- my_screenShotToPhoto_swift_func
+
+12.suStr(子字符串)
+- my_suStr_swift_func
+
+
 ###### oc部分
 1.dispatch(大中枢并发)
 - my_dispatchAfter_oc_block
@@ -71,3 +90,21 @@ my_名词 动作_oc_block
 - my_alertVC_oc_block
 
 5.bezier(贝塞尔曲线)
+
+6.button(按钮创建)
+7.dire(目录)
+- my_dirCache_oc_block
+- my_dirDocu_oc_block
+
+8.dateFormatter(格式化时间)
+
+9.property(属性创建)
+- my_propert_oc_A
+
+10.predicate(谓词)
+- my_predicate_oc_block
+
+11.screenShot(截屏)
+
+12.suStr(子字符串)
+

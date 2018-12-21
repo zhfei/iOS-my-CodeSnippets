@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_screenShotToPhoto_swift</string>
+	<string>my_screenShotToPhoto_swift_func</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
@@ -31,9 +31,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>my_screenShotToPhoto_swift</string>
+	<string>swift截屏到相册</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_screenShotToPhoto_swift</string>
+	<string>my_screenShotToPhoto_swift_func</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

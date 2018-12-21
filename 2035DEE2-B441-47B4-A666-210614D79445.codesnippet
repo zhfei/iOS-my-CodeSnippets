@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_suStr_swift</string>
+	<string>my_suStr_swift_func</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
@@ -28,7 +28,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>子字符串swift版本</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_suStr_swift</string>
+	<string>my_suStr_swift_func</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
