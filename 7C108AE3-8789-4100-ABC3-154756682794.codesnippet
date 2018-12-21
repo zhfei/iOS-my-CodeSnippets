@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_serialDataToJson_swift</string>
+	<string>my_serialDataToJson_swift_func</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
@@ -20,9 +20,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>my_serialDataToJson_swift</string>
+	<string>DataToJson_swift序列化方法</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_serialDataToJson_swift</string>
+	<string>my_serialDataToJson_swift_func</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

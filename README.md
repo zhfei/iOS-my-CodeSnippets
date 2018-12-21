@@ -22,3 +22,30 @@ git clone git@github.com:zhfei/iOS-my-CodeSnippets.git ~/Library/Developer/Xcode
 
 ***
 ==代码块命名规则制定中...==
+```
+//代码块命名规则
+//1.基本规范
+my_名词 动作_swift
+my_名词 动作_oc
+//2.添加block。func补充说明
+my_名词 动作_swift_func
+my_名词 动作_oc_block
+```
+
+##### 代码块类型
+
+###### swift部分
+1.serial(序列化功能)
+- my_serialDataToJson_swift_func
+- my_serialJsonToStr_swift_func
+
+
+
+
+
+###### oc部分
+
+
+
+
+
