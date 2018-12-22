@@ -38,7 +38,8 @@ txt:工程配置变量，VC结构分割
 
 ##### 代码块类型
 
-###### swift部分
+***
+##### swift部分
 1.dispatch(大中枢并发)
 - my_dispatchAfter_swift_block
 - my_dispatchAfterCancle_swift_func
@@ -102,8 +103,8 @@ txt:工程配置变量，VC结构分割
 
 
 
-
-###### OC部分
+***
+##### OC部分
 1.dispatch(大中枢并发)
 - my_dispatchAfter_oc_block
 - my_dispatchMainQueue_oc_block
@@ -163,7 +164,8 @@ txt:工程配置变量，VC结构分割
 - my_log_oc_block
 
 
-###### 工程设置，文档部分
+***
+##### 工程设置，文档部分
 
 A.arc(arc类文件设置，搜索路径)
 - my_arc_txt
