@@ -101,6 +101,18 @@ txt:工程配置变量，VC结构分割
 
 21.log(log使用)
 
+22.selector(selector选择子)
+- my_selector_swift_block
+
+23.weakSelf(weakSelf弱引用)
+
+
+
+
+
+
+
+
 
 
 ***
@@ -163,6 +175,12 @@ txt:工程配置变量，VC结构分割
 21.log(log使用)
 - my_log_oc_block
 
+22.selector(selector选择子)
+
+23.weakSelf(weakSelf弱引用)
+- my_weakSelf_oc_block
+
+
 
 ***
 ##### 工程设置，文档部分
@@ -181,4 +199,5 @@ C.structure(structure结构)
 
 D.property(property定义)
 - my_propert_oc_txt
+
 
