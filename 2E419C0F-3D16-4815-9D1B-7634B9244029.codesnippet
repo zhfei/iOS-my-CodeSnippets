@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_semaphore_swift</string>
+	<string>my_dispatchSemaphoreCreate_swift_block</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
@@ -17,8 +17,10 @@
 	<string>2E419C0F-3D16-4815-9D1B-7634B9244029</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>创建信号量</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_semaphore_swift</string>
+	<string>my_dispatchSemaphoreCreate_swift_block</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

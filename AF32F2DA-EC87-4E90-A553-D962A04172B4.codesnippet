@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_VCBody</string>
+	<string>my_structureCN_oc_txt</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
@@ -26,11 +26,11 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>AF32F2DA-EC87-4E90-A553-D962A04172B4</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>my_VCBody结构</string>
+	<string>structure中文控制器结构</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_VCBody结构</string>
+	<string>my_structureCN_oc_txt</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

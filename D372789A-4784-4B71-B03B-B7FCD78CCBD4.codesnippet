@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_arc_class</string>
+	<string>my_arc_txt</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
@@ -22,7 +22,7 @@ $(SRCROOT)宏和$(PROJECT_DIR)宏： 指当前工程目录
 	<key>IDECodeSnippetSummary</key>
 	<string>对类arc与mrc的编译修饰</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_arc_class</string>
+	<string>my_arc_txt</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_timerAfterCancle_swift</string>
+	<string>my_timerAfterCancle_swift_block</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
@@ -34,7 +34,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>延时执行timer定时器任务</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_timerAfterCancle_swift</string>
+	<string>my_timerAfterCancle_swift_block</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

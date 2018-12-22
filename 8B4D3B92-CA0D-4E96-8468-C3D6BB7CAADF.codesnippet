@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_labelCreate_swift</string>
+	<string>my_labelCreate_swift_block</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
@@ -25,9 +25,9 @@
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>my_labelCreate_swift</string>
+	<string>label 创建swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_labelCreate_swift</string>
+	<string>my_labelCreate_swift_block</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

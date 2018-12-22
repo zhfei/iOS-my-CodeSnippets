@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_log</string>
+	<string>my_log_oc_block</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
@@ -14,11 +14,11 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>3E9719EC-BA73-48A4-886A-071663FB69E5</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
 	<string>NSLog</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>NSLog</string>
+	<string>my_log_oc_block</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

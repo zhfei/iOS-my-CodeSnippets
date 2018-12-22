@@ -27,10 +27,14 @@ git clone git@github.com:zhfei/iOS-my-CodeSnippets.git ~/Library/Developer/Xcode
 //1.基本规范
 my_名词 动作_swift
 my_名词 动作_oc
-//2.添加block。func补充说明
+//2.添加block,func,txt补充说明
 my_名词 动作_swift_func
 my_名词 动作_oc_block
+my_名词 动作_oc_txt
 ```
+block: 方法内的代码块
+func: 完整的方法
+txt:工程配置变量，VC结构分割
 
 ##### 代码块类型
 
@@ -40,6 +44,7 @@ my_名词 动作_oc_block
 - my_dispatchAfterCancle_swift_func
 - my_dispatchgroup_swift_block
 - my_dispatchMainQueue_swift_block
+- my_dispatchSemaphoreCreate_swift_block
 
 2.serial(序列化功能)
 - my_serialDataToJson_swift_func
@@ -71,8 +76,34 @@ my_名词 动作_oc_block
 12.suStr(子字符串)
 - my_suStr_swift_func
 
+13.imageView(imageView创建)
+- my_imageViewCreate_swift_block
 
-###### oc部分
+14.label(label创建)
+- my_labelCreate_swift_block
+
+15.layer(layer创建)
+- my_layerCreate_swift_block
+
+16.layerGradient(layerGradient渐变色图层创建)
+- my_layerGradientCreate_swift_block
+
+17.tableView(tableView代理)
+
+18.uiFactory(uiFactor创建)
+- my_uiFactory_swift_func
+
+19.enum(enum枚举定义)
+
+20.timer(timer创建使用)
+- my_timerAfterCancle_swift_block
+
+21.log(log使用)
+
+
+
+
+###### OC部分
 1.dispatch(大中枢并发)
 - my_dispatchAfter_oc_block
 - my_dispatchMainQueue_oc_block
@@ -99,7 +130,7 @@ my_名词 动作_oc_block
 8.dateFormatter(格式化时间)
 
 9.property(属性创建)
-- my_propert_oc_A
+
 
 10.predicate(谓词)
 - my_predicate_oc_block
@@ -107,4 +138,45 @@ my_名词 动作_oc_block
 11.screenShot(截屏)
 
 12.suStr(子字符串)
+
+13.imageView(imageView创建)
+
+14.label(label创建)
+
+15.layer(layer创建)
+- my_layerLine_oc_block
+
+16.layerGradient(layerGradient渐变色图层创建)
+
+17.tableView(tableView代理)
+- my_tableViewAll_oc_block
+- my_tableViewParter_oc_block
+
+18.uiFactory(uiFactor创建)
+
+19.enum(enum枚举定义)
+- my_enum+Type_oc_block
+
+20.timer(timer创建使用)
+
+21.log(log使用)
+- my_log_oc_block
+
+
+###### 工程设置，文档部分
+
+A.arc(arc类文件设置，搜索路径)
+- my_arc_txt
+
+B.note(note注释)
+- my_note_txt
+
+C.structure(structure结构)
+- my_structure_oc_txt
+- my_structureCN_oc_txt
+- my_structureHeardCN_oc_txt
+- my_structure_swift_txt
+
+D.property(property定义)
+- my_propert_oc_txt
 

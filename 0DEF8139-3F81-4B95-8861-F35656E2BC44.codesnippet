@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_OC_Structure</string>
+	<string>my_structure_oc_txt</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
@@ -28,8 +28,10 @@
 	<string>0DEF8139-3F81-4B95-8861-F35656E2BC44</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>OC控制器结构</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_OC_Structure</string>
+	<string>my_structure_oc_txt</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

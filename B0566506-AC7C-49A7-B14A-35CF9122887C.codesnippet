@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_layerGradient_swift</string>
+	<string>my_layerGradientCreate_swift_block</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
@@ -24,10 +24,10 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>渐变色图层swift</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_layerGradient_swift</string>
+	<string>my_layerGradientCreate_swift_block</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>

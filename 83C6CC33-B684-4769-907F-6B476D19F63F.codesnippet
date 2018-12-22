@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_layerLine</string>
+	<string>my_layerLine_oc_block</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>CodeBlock</string>
@@ -18,8 +18,10 @@
 	<string>83C6CC33-B684-4769-907F-6B476D19F63F</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>图层下滑线</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_layerLine</string>
+	<string>my_layerLine_oc_block</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

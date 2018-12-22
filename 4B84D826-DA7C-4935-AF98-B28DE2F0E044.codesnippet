@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_TableParter</string>
+	<string>my_tableViewParter_oc_block</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>ClassImplementation</string>
@@ -37,8 +37,10 @@
 	<string>4B84D826-DA7C-4935-AF98-B28DE2F0E044</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>tableView部分代理</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_TableParter</string>
+	<string>my_tableViewParter_oc_block</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
