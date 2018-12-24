@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_dispatchGroupEnter_swift_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>        let group = DispatchGroup()
+        let myQueue = DispatchQueue.global()
+        
+        group.enter()
+        myQueue.async {
+            for _ in 0...10 {
+                sleep(UInt32(0.02))
+                print("耗时任务一")
+            }
+            group.leave()
+        }
+
+        group.enter()
+        myQueue.async {
+            for _ in 0...10 {
+                print("耗时任务二")
+            }
+            group.leave()
+        }
+        //执行完上面的两个耗时操作, 回到myQueue队列中执行下一步的任务
+        group.notify(queue: myQueue) {
+            print("回到该队列中执行，所有都结束了...")
+            
+        }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>556BB109-29AA-4201-8D91-491E65440252</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>dispatchGroup enter方式</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_dispatchGroupEnter_swift_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

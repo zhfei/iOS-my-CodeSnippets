@@ -44,6 +44,7 @@ txt:工程配置变量，VC结构分割
 - my_dispatchAfter_swift_block
 - my_dispatchAfterCancle_swift_func
 - my_dispatchgroup_swift_block
+- my_dispatchGroupEnter_swift_block
 - my_dispatchMainQueue_swift_block
 - my_dispatchSemaphoreCreate_swift_block
 
