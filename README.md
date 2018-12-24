@@ -111,8 +111,9 @@ txt:工程配置变量，VC结构分割
 - my_widthV+heightV_swift_block
 - my_widthS+heightS_swift_block
 
-
-
+25.regex(regex正则表达式)
+- my_regex2str_swift_func
+- my_regex2bool_swift_func
 
 
 
@@ -184,6 +185,7 @@ txt:工程配置变量，VC结构分割
 
 24.width(width视图宽高)
 
+25.regex(regex正则表达式)
 
 ***
 ##### 工程设置，文档部分

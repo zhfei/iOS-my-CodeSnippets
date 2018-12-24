@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_regex2bool_swift_func</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    // 1.匹配结果bool
+    func textRegex(patternStr: String,targetStr: String) -&gt; Bool{
+        let check = "^[1-5a-z]{12}$"
+        let accountCheck = NSPredicate(format: "SELF MATCHES %@", check)
+        guard accountCheck.evaluate(with: targetStr) else {
+            self.showHUD("请输入合法的账户名")
+            return false
+        }
+        return true
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C8B50CE6-171B-4581-80F4-9295C6892BCC</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>正则表达式结果为bool</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_regex2bool_swift_func</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

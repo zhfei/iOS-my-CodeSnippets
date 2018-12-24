@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_regex2str_swift_func</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    // 1.匹配结果string
+    func textRegex(pattern: String,str: String,font: CGFloat) -&gt; NSMutableAttributedString{
+        //富文本设置
+        let attributeString = NSMutableAttributedString(string:str)
+        do {
+            // 1.1.定义规则
+            //let pattern = "ben"
+            // 1.2.创建正则表达式对象
+            let regex = try NSRegularExpression(pattern: pattern, options: NSRegularExpression.Options.caseInsensitive)
+            // 1.3.开始匹配
+            let res = regex.matches(in: str, options: NSRegularExpression.MatchingOptions(rawValue: 0), range: NSMakeRange(0, str.count))
+            
+            for checkingRes in res
+            {
+                print("range\(checkingRes.range)")
+                // substring 截取符合规定规则的字符串
+                print((str as NSString).substring(with: checkingRes.range))
+                //从文本checkingRes.range个字符字体HelveticaNeue-Bold
+                attributeString.addAttribute(NSAttributedStringKey.font, value: UIFont(name: "HelveticaNeue-Bold", size: 22)!,range: checkingRes.range)
+                //设置字体颜色
+                attributeString.addAttribute(NSAttributedStringKey.foregroundColor, value: UIColor.blue,range: checkingRes.range)
+                //设置文字背景颜色
+                attributeString.addAttribute(NSAttributedStringKey.backgroundColor, value: UIColor.green,range: checkingRes.range)
+            }
+            return attributeString
+            
+        } catch {
+            
+            print(error)
+        }
+        return attributeString
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>4AF1912A-FE55-4407-94F4-E72B7C544870</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>正则表达式结果为string</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_regex2str_swift_func</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
