@@ -190,19 +190,22 @@ txt:工程配置变量，VC结构分割
 ***
 ##### 工程设置，文档部分
 
-A.arc(arc类文件设置，搜索路径)
+1.arc(arc类文件设置，搜索路径)
 - my_arc_txt
 
-B.note(note注释)
+2.note(note注释)
 - my_note_txt
 
-C.structure(structure结构)
+3.structure(structure结构)
 - my_structure_oc_txt
 - my_structureCN_oc_txt
 - my_structureHeardCN_oc_txt
 - my_structure_swift_txt
 
-D.property(property定义)
+4.property(property定义)
 - my_propert_oc_txt
+
+5.keyboard(keyboard键盘类型)
+- my_keyboardtype_txt
 
 

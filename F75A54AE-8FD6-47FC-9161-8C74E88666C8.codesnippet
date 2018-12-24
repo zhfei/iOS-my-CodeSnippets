@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_keyboardtype_txt</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>        /*
+         //输入密码可以用这种，所有字符都有，不存在中文输入，
+         1、UIKeyboardTypeAlphabet
+         2、UIKeyboardTypeASCIICapable//跟上面没什么区别
+         //纯数字键盘，加点 和 退格键“x”， 推荐输入金额专用
+         3、UIKeyboardTypeDecimalPad
+         4、UIKeyboardTypeDefault//功能挺齐全的，有个地球小图标切换输入方式，还有表情
+         5、UIKeyboardTypeEmailAddress//功能基本跟上面一样的
+         6、UIKeyboardTypeNamePhonePad//也是跟上面一样的
+         //这种它的缺点就是缺点－－－－－－没有小数点啊被我命名为缺点键盘
+         7、UIKeyboardTypeNumberPad
+         8、UIKeyboardTypeNumbersAndPunctuation//这种键盘看起来也是跟上面几个功能齐全的差不多，只是有点动态，有个格子秒变空格
+         //跟“缺点”键盘相比多了好几个功能，电话键盘专用；有暂停、等待键
+         9、UIKeyboardTypePhonePad
+         10、UIKeyboardTypeTwitter//功能齐全键盘，跟第八种差不多，切换过来空格键上显示当前键盘类型一秒钟就变成空格了
+         11、UIKeyboardTypeURL？//功能相当齐全，九键英文模式下面多了个右向小箭头
+         12、UIKeyboardTypeWebSearch//相当好玩，齐全的功能，return键变成了“前往”了，这种键盘用于跳转网页好点
+         4  5  6  8  10  11  12这些类型都差不多，大同小异。
+         */</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F75A54AE-8FD6-47FC-9161-8C74E88666C8</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>键盘类型</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_keyboardtype_txt</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
