@@ -11,6 +11,8 @@
 	<key>IDECodeSnippetContents</key>
 	<string>    // 1.匹配结果bool
     func textRegex(patternStr: String,targetStr: String) -&gt; Bool{
+        //整数或者小数
+        var pattern = "^([1-9][0-9]*.?|0.)[0-9]*$"
         let check = "^[1-5a-z]{12}$"
         let accountCheck = NSPredicate(format: "SELF MATCHES %@", check)
         guard accountCheck.evaluate(with: targetStr) else {
@@ -30,6 +32,6 @@
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>
