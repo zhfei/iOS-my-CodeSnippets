@@ -3,24 +3,25 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_animRotation_swift_block</string>
+	<string>my_clangUndecSelector_txt</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>            UIView.animate(withDuration: 0.3) {
-                //绝对旋转角度
-                self.arrow.transform = CGAffineTransform(rotationAngle: CGFloat(M_PI/2))
-            }</string>
+	<string>//为了消除未定义选择器的警告
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored"-Wundeclared-selector"
+    
+#pragma clang diagnostic pop</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>855E4659-B000-430F-B092-E2573873BDF3</string>
+	<string>713A901C-0223-4274-B8FB-86B1BD9013ED</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>给view添加旋转动画swift</string>
+	<string>消除方法名未定义警告</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_animRotation_swift_block</string>
+	<string>my_clangUndecSelector_txt</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
