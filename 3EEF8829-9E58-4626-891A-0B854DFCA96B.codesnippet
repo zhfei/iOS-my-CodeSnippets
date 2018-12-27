@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_animRotationBase_swift_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>            let basicAnima = CABasicAnimation(keyPath: "transform.rotation.z")
+            basicAnima.fromValue = 0
+            basicAnima.toValue = M_PI_2
+            basicAnima.duration = 1
+            basicAnima.repeatCount = 1 //旋转次数
+            basicAnima.isCumulative = true//指定动画重复是否累加
+            basicAnima.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)//动画节奏
+            basicAnima.autoreverses = false//动画完成后，是否再已动画的方式回到原点
+            self.arrow.layer.add(basicAnima, forKey: "basicAnima")</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3EEF8829-9E58-4626-891A-0B854DFCA96B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>基本动画旋转swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_animRotationBase_swift_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

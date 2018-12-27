@@ -115,7 +115,9 @@ txt:工程配置变量，VC结构分割
 - my_regex2str_swift_func
 - my_regex2bool_swift_func
 
-
+26.anim(anim动画)
+- my_animRotation_swift_block
+- my_animRotationBase_swift_block
 
 
 ***
@@ -186,6 +188,8 @@ txt:工程配置变量，VC结构分割
 24.width(width视图宽高)
 
 25.regex(regex正则表达式)
+
+26.anim(anim动画)
 
 ***
 ##### 工程设置，文档部分
