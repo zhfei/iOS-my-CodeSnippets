@@ -129,6 +129,9 @@ txt:工程配置变量，VC结构分割
 - my_dispatchgroup_oc_block
 
 2.serial(序列化功能)
+- my_serialDataToJson_oc_func
+- my_serialJsonToStr_oc_func
+
 3.realm(Realm数据库操作)
 - my_realmCreate_oc_block
 - my_realmEncry_oc_block

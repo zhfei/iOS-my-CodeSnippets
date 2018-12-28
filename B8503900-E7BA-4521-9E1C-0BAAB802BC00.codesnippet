@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_serialDataToJson_oc_func</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (NSDictionary *)dataToJson {
+    NSError *error;
+    NSString *dataStr = @"{'name':'lose'}";
+    NSData *dataResult = [dataStr dataUsingEncoding:NSUTF8StringEncoding];
+    NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:dataResult options:NSJSONReadingMutableContainers error:&amp;error];
+    return dict;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B8503900-E7BA-4521-9E1C-0BAAB802BC00</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>OC序列化data-&gt;json</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_serialDataToJson_oc_func</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
