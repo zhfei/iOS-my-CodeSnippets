@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_classStrInt_swift_func</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>struct TStrInt: Codable {
+    var int:Int {
+        didSet {
+            let stringValue = String(int)
+            if  stringValue != string {
+                string = stringValue
+            }
+        }
+    }
+    
+    var string:String {
+        didSet {
+            if let intValue = Int(string), intValue != int {
+                int = intValue
+            }
+        }
+    }
+    
+    init(from decoder: Decoder) throws {
+        let singleValueContainer = try decoder.singleValueContainer()
+        
+        if let stringValue = try? singleValueContainer.decode(String.self)
+        {
+            string = stringValue
+            int = Int(stringValue) ?? 0
+            
+        } else if let intValue = try? singleValueContainer.decode(Int.self)
+        {
+            int = intValue
+            string = String(intValue);
+        } else
+        {
+            int = 0
+            string = ""
+        }
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6B8F372B-66C2-4641-8BEE-4E0A76D0E2B0</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>自定义类Int_Str都可以接受swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_classStrInt_swift_func</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

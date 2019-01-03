@@ -119,6 +119,8 @@ txt:工程配置变量，VC结构分割
 - my_animRotation_swift_block
 - my_animRotationBase_swift_block
 
+27.class(class自定义类)
+- my_classStrInt_swift_func
 
 ***
 ##### OC部分
@@ -193,6 +195,8 @@ txt:工程配置变量，VC结构分割
 25.regex(regex正则表达式)
 
 26.anim(anim动画)
+
+27.class(class自定义类)
 
 ***
 ##### 工程设置，文档部分
