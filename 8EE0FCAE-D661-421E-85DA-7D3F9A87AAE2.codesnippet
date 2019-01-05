@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_widthS+heightS_oc_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    CGFloat widthS = [UIScreen mainScreen].bounds.size.width;
+    CGFloat heightS = [UIScreen mainScreen].bounds.size.height;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>8EE0FCAE-D661-421E-85DA-7D3F9A87AAE2</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>屏幕宽高OC</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_widthS+heightS_oc_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
