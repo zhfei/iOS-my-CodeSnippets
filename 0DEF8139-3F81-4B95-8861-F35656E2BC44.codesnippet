@@ -18,6 +18,21 @@
 #pragma mark - Public Method
     
 #pragma mark - Private Method
+- (void)setupData {
+    
+}
+
+- (void)setupUI {
+    
+}
+
+- (void)resetData {
+    
+}
+
+- (void)resetUI {
+    
+}
     
 #pragma mark - Delegate
     
