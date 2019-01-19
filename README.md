@@ -122,6 +122,9 @@ txt:工程配置变量，VC结构分割
 27.class(class自定义类)
 - my_classStrInt_swift_func
 
+28.IBOutIBActio(属性、动作连线)
+
+
 ***
 ##### OC部分
 1.dispatch(大中枢并发)
@@ -199,6 +202,9 @@ txt:工程配置变量，VC结构分割
 26.anim(anim动画)
 
 27.class(class自定义类)
+
+28.IBOutIBActio(属性、动作连线)
+- my_ibOut_ibAction_oc_block
 
 ***
 ##### 工程设置，文档部分

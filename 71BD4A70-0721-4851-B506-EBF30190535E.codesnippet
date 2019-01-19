@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_ibOut_ibAction_oc_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>@property (nonatomic, weak) IBOutlet UIButton *planBtn;
+@property (nonatomic, weak) IBOutlet UIButton *resultBtn;
+- (IBAction)sportsPlan:(UIButton *)sender ;
+- (IBAction)sportsResult:(UIButton *)sender ;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>71BD4A70-0721-4851-B506-EBF30190535E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>IB连线，属性，动作OC</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_ibOut_ibAction_oc_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
