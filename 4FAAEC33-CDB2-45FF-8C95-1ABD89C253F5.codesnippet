@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_cgcontextStr_oc_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    CGContextRef context = UIGraphicsGetCurrentContext();
+    //背景色
+    CGContextSetFillColorWithColor(context, [UIColor redColor].CGColor);
+    CGContextFillRect(context, rect);
+    //字体属性
+    CGContextSetLineWidth(context, 1.0);
+    UIFont *font = [UIFont boldSystemFontOfSize:15.0];
+    
+    CGRect warnRect = CGRectInset(rect, 10, 10);
+    
+    [warnning drawInRect:warnRect withAttributes:@{NSFontAttributeName:font,NSForegroundColorAttributeName:[UIColor whiteColor]}];
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>4FAAEC33-CDB2-45FF-8C95-1ABD89C253F5</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>cgContext字符串绘制oc</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_cgcontextStr_oc_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

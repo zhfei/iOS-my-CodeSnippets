@@ -3,24 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_propert_oc_txt</string>
+	<string>my_labelCreate_oc_block</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassInterfaceMethods</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, strong) &lt;#NSString#&gt; *&lt;#string#&gt;;</string>
+	<string>    UILabel *label = [UILabel new];
+    label.text = text;
+    label.textColor = [UIColor whiteColor];
+    label.textAlignment = NSTextAlignmentCenter;
+    label.font = [UIFont systemFontOfSize:16];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>55784A0F-0B50-4DF0-AE13-4758124B35AD</string>
+	<string>6DEFBAAD-F121-4415-8A6C-8B24B340C780</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>OC属性开始定义</string>
+	<string>label创建方法oc</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_propert_oc_txt</string>
+	<string>my_labelCreate_oc_block</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

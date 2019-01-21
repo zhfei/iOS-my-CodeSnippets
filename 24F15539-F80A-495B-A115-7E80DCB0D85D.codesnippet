@@ -3,24 +3,34 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_propert_oc_txt</string>
+	<string>my_uiFactory_oc_func</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassInterfaceMethods</string>
+		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, strong) &lt;#NSString#&gt; *&lt;#string#&gt;;</string>
+	<string>- (UILabel *)labelFactory:(NSString *)text {
+    return [UILabel new];
+}
+
+- (UIImageView *)imageViewFactory:(NSString *)imageName {
+    return [UIImageView new];
+}
+
+- (UIButton *)buttonFactory:(NSString *)text {
+    return [UIButton new];
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>55784A0F-0B50-4DF0-AE13-4758124B35AD</string>
+	<string>24F15539-F80A-495B-A115-7E80DCB0D85D</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>OC属性开始定义</string>
+	<string>常见控件工程方法OC</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_propert_oc_txt</string>
+	<string>my_uiFactory_oc_func</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

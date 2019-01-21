@@ -123,7 +123,7 @@ txt:工程配置变量，VC结构分割
 - my_classStrInt_swift_func
 
 28.IBOutIBActio(属性、动作连线)
-
+29.CGContext(核心绘图，常用绘制)
 
 ***
 ##### OC部分
@@ -149,6 +149,8 @@ txt:工程配置变量，VC结构分割
 5.bezier(贝塞尔曲线)
 
 6.button(按钮创建)
+- my_btnCreate_oc_block
+
 7.dire(目录)
 - my_dirCache_oc_block
 - my_dirDocu_oc_block
@@ -166,8 +168,10 @@ txt:工程配置变量，VC结构分割
 12.suStr(子字符串)
 
 13.imageView(imageView创建)
+- my_imageViewCreate_oc_block
 
 14.label(label创建)
+- my_labelCreate_oc_block
 
 15.layer(layer创建)
 - my_layerLine_oc_block
@@ -179,6 +183,7 @@ txt:工程配置变量，VC结构分割
 - my_tableViewParter_oc_block
 
 18.uiFactory(uiFactor创建)
+- my_uiFactory_oc_func
 
 19.enum(enum枚举定义)
 - my_enum+Type_oc_block
@@ -205,6 +210,10 @@ txt:工程配置变量，VC结构分割
 
 28.IBOutIBActio(属性、动作连线)
 - my_ibOut_ibAction_oc_block
+
+29.CGContext(核心绘图，常用绘制)
+- my_cgcontextStr_oc_block
+
 
 ***
 ##### 工程设置，文档部分
