@@ -205,6 +205,7 @@ txt:工程配置变量，VC结构分割
 25.regex(regex正则表达式)
 
 26.anim(anim动画)
+- my_animMoveBase_oc_block
 
 27.class(class自定义类)
 
