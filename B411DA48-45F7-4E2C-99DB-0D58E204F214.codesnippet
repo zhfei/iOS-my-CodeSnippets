@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_animMoveBase_oc_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    //移动：position
+    //移动：transform.translation.y
+    //旋转：transform.rotation.z
+    //缩放：transform.scale
+    CABasicAnimation *base = [CABasicAnimation animationWithKeyPath:@"transform.translation.y"];
+    base.fromValue = [NSNumber numberWithInteger:0];
+    base.toValue = [NSNumber numberWithInteger:20];
+    base.repeatCount = NSIntegerMax;
+    base.autoreverses = YES;//依动画的方式返回原位置
+    base.duration = 1;
+    [self.caLayer addAnimation:base forKey:@"move"];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B411DA48-45F7-4E2C-99DB-0D58E204F214</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>基础动画移动OC</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_animMoveBase_oc_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
