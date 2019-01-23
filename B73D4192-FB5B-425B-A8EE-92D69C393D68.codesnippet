@@ -9,10 +9,22 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"播放失败" message:error.description preferredStyle:1];
-    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
-    [alert addAction:defaultAction];
-    [self presentViewController:alert animated:YES completion:nil];</string>
+	<string>UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"请输入支付信息" message:@"" preferredStyle:UIAlertControllerStyleAlert];
+UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:nil];
+[alert addAction:defaultAction];
+UIAlertAction* cancleAction = [UIAlertAction actionWithTitle:@"Cancle" style:UIAlertActionStyleCancel handler:nil];
+[alert addAction:cancleAction];
+
+[alert addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+    textField.placeholder=@"请输入用户名";
+}];
+[alert addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+    textField.placeholder=@"请输入支付密码";
+    textField.secureTextEntry=YES;
+}];
+
+[self presentViewController:alert animated:YES completion:nil];
+</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>B73D4192-FB5B-425B-A8EE-92D69C393D68</string>
 	<key>IDECodeSnippetLanguage</key>
