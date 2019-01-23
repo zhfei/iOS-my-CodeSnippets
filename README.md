@@ -125,6 +125,14 @@ txt:工程配置变量，VC结构分割
 28.IBOutIBActio(属性、动作连线)
 29.CGContext(核心绘图，常用绘制)
 30.nibLoad(nib文件加载)
+31.viewController(控制器)
+
+
+
+
+
+
+
 ***
 ##### OC部分
 1.dispatch(大中枢并发)
@@ -218,6 +226,8 @@ txt:工程配置变量，VC结构分割
 30.nibLoad(nib文件加载)
 - my_nibload_oc_block
 
+31.viewController(控制器)
+- my_rootVC_oc_block
 
 ***
 ##### 工程设置，文档部分
