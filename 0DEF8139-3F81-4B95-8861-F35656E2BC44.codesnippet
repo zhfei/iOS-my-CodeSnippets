@@ -18,11 +18,27 @@
 #pragma mark - Public Method
     
 #pragma mark - Private Method
+[self setupUI];
+[self setupLayout];
+[self setupData];
+
+- (void)setupUI {
+    
+}
+
+- (void)setupLayout {
+    
+}
+
 - (void)setupData {
     
 }
 
-- (void)setupUI {
+- (void)resetUI {
+    
+}
+
+- (void)resetLayout {
     
 }
 
@@ -30,9 +46,6 @@
     
 }
 
-- (void)resetUI {
-    
-}
     
 #pragma mark - Delegate
     
