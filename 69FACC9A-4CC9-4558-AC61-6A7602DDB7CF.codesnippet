@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_tabbarHide_swift_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let about = SDCAboutViewController.aboutViewController()
+about.hidesBottomBarWhenPushed = true
+self.navigationController?.pushViewController(about, animated: true)
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>69FACC9A-4CC9-4558-AC61-6A7602DDB7CF</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>隐藏tabbar swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_tabbarHide_swift_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

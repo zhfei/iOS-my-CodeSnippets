@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_gesCancle_swift_func</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>override func viewDidAppear(_ animated: Bool) {
+    if (self.navigationController?.responds(to: #selector(getter: UINavigationController.interactivePopGestureRecognizer)))! {
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
+    }
+}
+
+override func viewWillDisappear(_ animated: Bool) {
+    if (self.navigationController?.responds(to: #selector(getter: UINavigationController.interactivePopGestureRecognizer)))! {
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
+    }
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>127E17CA-550F-4AB6-9E32-123151A6A1D5</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>取消手势， swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_gesCancle_swift_func</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

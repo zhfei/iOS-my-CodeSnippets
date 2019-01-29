@@ -127,7 +127,12 @@ txt:工程配置变量，VC结构分割
 30.nibLoad(nib文件加载)
 31.viewController(控制器)
 
+32.navigationController(导航控制器)
+- my_naviBarHide_swift_func
+- my_gesCancle_swift_func
 
+33.tabBarController(tabBar控制器)
+- my_tabbarHide_swift_block
 
 
 
