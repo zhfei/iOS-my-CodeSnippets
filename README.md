@@ -230,6 +230,14 @@ txt:工程配置变量，VC结构分割
 31.viewController(控制器)
 - my_rootVC_oc_block
 
+32.navigationController(导航控制器)
+- my_naviBarHide_oc_func
+- my_gesCancle_oc_func
+
+33.tabBarController(tabBar控制器)
+- my_tabbarHide_oc_block
+
+
 ***
 ##### 工程设置，文档部分
 
