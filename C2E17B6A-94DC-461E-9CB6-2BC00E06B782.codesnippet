@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_appearUISet_oc_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    //appearance:视图样式代理默认样式设置，所有的视图样式均可以使用，因为UIView实现了这个协议
+    //[UINavigationBar appearance]：统一全局修改
+    //⚠️：通过代理设置,UIAppearance为外观协议，要想改变外观就要实现外观协议协议，（装饰器模式）
+    //⚠️：使用appearance设置只会在view layout time 时生效，否则无效。
+    //⚠️: 1与2互斥，且1的优先级高
+    //1.设置导航背景
+    UIImage *bg = [UIImage pureImageWithColor:[UIColor brownColor]];
+    [[UINavigationBar appearance] setBackgroundImage:bg forBarMetrics:UIBarMetricsDefault];
+    //2.设置导航颜色
+    [[UINavigationBar appearance] setBarTintColor:[UIColor redColor]];
+    //3.设置导航文字颜色
+    [[UINavigationBar appearance] setTintColor:[UIColor blueColor]];
+    //设置导航字体
+    NSShadow *shadow = [[NSShadow alloc] init];
+    shadow.shadowColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.8];
+    shadow.shadowOffset = CGSizeMake(0, 1);
+    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys: [UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1.0], NSForegroundColorAttributeName, shadow, NSShadowAttributeName, [UIFont fontWithName:@"HelveticaNeue-CondensedBlack" size:21.0], NSFontAttributeName, nil]];
+
+    //只负责控件在特定环境或某种场合下外观，的外观代理
+    //水平紧凑型，UINavigationBar默认外观为粉色
+    [[UINavigationBar appearanceForTraitCollection:[UITraitCollection traitCollectionWithHorizontalSizeClass:UIUserInterfaceSizeClassCompact]] setBarTintColor:[UIColor purpleColor]];
+    
+    //其他...
+    //让一类控件同时表现出某种属性
+    [[UIButton appearance] setBackgroundColor:[UIColor yellowColor]];
+    [[UIButton appearance] setTitle:@"同一设置" forState:UIControlStateNormal];
+    //让一类控件在某种环境下表现出某种外观样式
+    [[UIButton appearanceWhenContainedInInstancesOfClasses:@[[UINavigationBar class]]] setTitle:@"比较特别" forState:UIControlStateNormal];
+    [[UIButton appearanceWhenContainedInInstancesOfClasses:@[[UINavigationBar class]]] setBackgroundColor:[UIColor redColor]];
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C2E17B6A-94DC-461E-9CB6-2BC00E06B782</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>UI控件外观统一设置</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_appearUISet_oc_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

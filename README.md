@@ -134,7 +134,7 @@ txt:工程配置变量，VC结构分割
 33.tabBarController(tabBar控制器)
 - my_tabbarHide_swift_block
 
-
+34.appearUISet(UI控件全局统一设置)
 
 
 
@@ -243,6 +243,8 @@ txt:工程配置变量，VC结构分割
 33.tabBarController(tabBar控制器)
 - my_tabbarHide_oc_block
 
+34.appearUISet(UI控件全局统一设置)
+- my_appearUISet_oc_block
 
 ***
 ##### 工程设置，文档部分
