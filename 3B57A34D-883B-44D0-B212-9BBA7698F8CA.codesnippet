@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_animMoveBase_oc_block</string>
+	<string>my_animGroupBase_oc_block</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
@@ -20,18 +20,31 @@
     base.autoreverses = YES;//依动画的方式返回原位置
     base.duration = 1;
     base.removedOnCompletion = NO;
-    [self.caLayer addAnimation:base forKey:@"move"];</string>
+    
+    CABasicAnimation *base2 = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
+    base2.fromValue = 0;
+    base2.toValue = @(M_PI*2);
+    base2.repeatCount = NSIntegerMax;
+    base2.autoreverses = YES;//依动画的方式返回原位置
+    base2.duration = 1;
+    base2.removedOnCompletion = NO;
+    
+    CAAnimationGroup *group = [CAAnimationGroup animation];
+    group.animations = @[base];
+    
+    
+    [self.caLayer addAnimation:group forKey:@"move"];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>B411DA48-45F7-4E2C-99DB-0D58E204F214</string>
+	<string>3B57A34D-883B-44D0-B212-9BBA7698F8CA</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>基础动画移动OC</string>
+	<string>基础动画组oc</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_animMoveBase_oc_block</string>
+	<string>my_animGroupBase_oc_block</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
