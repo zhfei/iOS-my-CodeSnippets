@@ -239,6 +239,7 @@ txt:工程配置变量，VC结构分割
 32.navigationController(导航控制器)
 - my_naviBarHide_oc_func
 - my_gesCancle_oc_func
+- my_navigationBarSet_oc_block
 
 33.tabBarController(tabBar控制器)
 - my_tabbarHide_oc_block

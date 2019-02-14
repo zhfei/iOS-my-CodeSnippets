@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_navigationBarSet_oc_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    //appearance:视图样式代理默认样式设置，所有的视图样式均可以使用，因为UIView实现了这个协议
+    //[UINavigationBar appearance]：统一全局修改
+    //⚠️：通过代理设置,UIAppearance为外观协议，要想改变外观就要实现外观协议协议，（装饰器模式）
+    //⚠️：使用appearance设置只会在view layout time 时生效，否则无效。
+    //⚠️: 1与2互斥，且1的优先级高
+    //1.设置导航背景
+    UIImage *bg = [UIImage pureImageWithColor:[UIColor brownColor]];
+    [self.navigationController.navigationBar setBackgroundImage:bg forBarMetrics:UIBarMetricsDefault];
+    //2.设置导航颜色
+    [self.navigationController.navigationBar setBarTintColor:[UIColor redColor]];
+    //3.设置导航文字颜色
+    [self.navigationController.navigationBar setTintColor:[UIColor blueColor]];
+    //设置导航字体
+    NSShadow *shadow = [[NSShadow alloc] init];
+    shadow.shadowColor = [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:0.8];
+    shadow.shadowOffset = CGSizeMake(0, 1);
+    [self.navigationController.navigationBar setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys: [UIColor colorWithRed:245.0/255.0 green:245.0/255.0 blue:245.0/255.0 alpha:1.0], NSForegroundColorAttributeName, shadow, NSShadowAttributeName, [UIFont fontWithName:@"HelveticaNeue-CondensedBlack" size:21.0], NSFontAttributeName, nil]];
+
+    
+    CGFloat widthS = [UIScreen mainScreen].bounds.size.width;
+    CGFloat heightS = [UIScreen mainScreen].bounds.size.height;
+    //中间title自定义
+    self.navigationController.navigationBar.backgroundColor = [UIColor greenColor];
+    UIView *titleView = [[UIView alloc] initWithFrame:CGRectMake(0,0,widthS-100,35)];
+    UISearchBar *searchBar = [[UISearchBar alloc]init];
+    searchBar.delegate = self ;
+    searchBar.frame=CGRectMake(0,0,titleView.width,35);
+    searchBar.layer.cornerRadius=18;
+    searchBar.layer.masksToBounds=YES;
+    //边框线粗细
+    [searchBar.layer setBorderWidth:8];
+    //设置边框为白色是为了盖住UISearchBar上的灰色
+    [searchBar.layer setBorderColor:[UIColor whiteColor].CGColor];
+    searchBar.placeholder=@"搜索你想要的东西";
+    [titleView addSubview:searchBar];
+    self.navigationItem.titleView= titleView;
+    
+    
+    //设置多个导航按钮
+    UIBarButtonItem *shareItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:nil];
+//    UIBarButtonItem *cameraItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCamera target:self action:nil];
+//    NSArray *actionButtonItems = @[shareItem, cameraItem];
+//    self.navigationItem.rightBarButtonItems = actionButtonItems;
+    self.navigationItem.rightBarButtonItem = shareItem;
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>DA3136CF-360C-4F9C-B13F-B5588A57264E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>自定义设置navigationBar</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_navigationBarSet_oc_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
