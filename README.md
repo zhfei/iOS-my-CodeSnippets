@@ -258,6 +258,7 @@ txt:工程配置变量，VC结构分割
 
 3.structure(structure结构)
 - my_structure_oc_txt
+- my_structureView_oc_txt
 - my_structureCN_oc_txt
 - my_structureHeardCN_oc_txt
 - my_structure_swift_txt

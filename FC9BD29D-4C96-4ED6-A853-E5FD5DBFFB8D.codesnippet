@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_structureView_oc_txt</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - Life Cycle
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        [self setupUI];
+    }
+    return self;
+}
+
+
+
+#pragma mark - Getter, Setter
+
+#pragma mark - Event
+
+#pragma mark - Public Method
+
+#pragma mark - Private Method
+- (void)setupUI {
+    
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>FC9BD29D-4C96-4ED6-A853-E5FD5DBFFB8D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>View结构OC</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_structureView_oc_txt</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
