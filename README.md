@@ -160,6 +160,7 @@ txt:工程配置变量，VC结构分割
 - my_alertVC_oc_block
 
 5.bezier(贝塞尔曲线)
+- my_bezierBorder_oc_block
 
 6.button(按钮创建)
 - my_btnCreate_oc_block
