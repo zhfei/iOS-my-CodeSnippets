@@ -136,7 +136,7 @@ txt:工程配置变量，VC结构分割
 
 34.appearUISet(UI控件全局统一设置)
 
-
+35.drawRect(画图)
 
 ***
 ##### OC部分
@@ -249,6 +249,9 @@ txt:工程配置变量，VC结构分割
 
 34.appearUISet(UI控件全局统一设置)
 - my_appearUISet_oc_block
+
+35.drawRect(画图)
+- my_drawCircle_oc_block
 
 ***
 ##### 工程设置，文档部分

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_drawCircle_oc_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string> //画圆圈
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSaveGState(context);//入栈
+    CGContextRestoreGState(context);//出栈
+    CGContextSetFillColorWithColor(context, [UIColor whiteColor].CGColor);
+    CGFloat cWidth = 15;
+    CGFloat cHeigh = 15;
+    CGFloat cWidth1 = rect.size.width - cWidth - 10;
+    CGFloat cHeigh1 = 10;
+    CGRect circle = CGRectMake(cWidth1, cHeigh1, cWidth, cHeigh);
+    self.circleRect = circle;
+    CGContextAddEllipseInRect(context, circle);
+    CGContextClip(context);
+    CGContextFillRect(context, circle);
+//    CGContextAddArc(context, cWidth1, cHeigh1, 7.5, 0, M_PI*2, NO);
+//    CGContextFillPath(context);
+    
+    //画红叉
+    CGFloat lw = 4;
+    CGContextSetLineWidth(context, 1);
+    CGContextSetStrokeColorWithColor(context, [UIColor redColor].CGColor);
+    CGContextMoveToPoint(context, circle.origin.x + lw, circle.origin.y + lw);
+    CGContextAddLineToPoint(context, circle.origin.x + cWidth - lw, circle.origin.y + cHeigh - lw);
+
+    CGContextMoveToPoint(context, circle.origin.x + cWidth - lw, circle.origin.y + lw);
+    CGContextAddLineToPoint(context, circle.origin.x + lw, circle.origin.y + cHeigh - lw);
+//    CGContextDrawPath(context, kCGPathStroke);
+    CGContextStrokePath(context);</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A3DB8366-9B90-4E11-A0C4-64CA972E2F1C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>绘图画X，OC</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_drawCircle_oc_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
