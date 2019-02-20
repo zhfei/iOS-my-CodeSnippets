@@ -10,17 +10,22 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>#pragma mark - Life Cycle
-    
+
 #pragma mark - Getter, Setter
-    
+
 #pragma mark - Event
-    
+
 #pragma mark - Public Method
-    
+
 #pragma mark - Private Method
+[self addUI];
 [self setupUI];
 [self setupLayout];
 [self setupData];
+
+- (void)addUI {
+    
+}
 
 - (void)setupUI {
     
@@ -34,23 +39,12 @@
     
 }
 
-- (void)resetUI {
-    
-}
 
-- (void)resetLayout {
-    
-}
 
-- (void)resetData {
-    
-}
-
-    
 #pragma mark - Delegate
-    
+
 #pragma mark - NSCopying
-    
+
 #pragma mark - NSObject</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>0DEF8139-3F81-4B95-8861-F35656E2BC44</string>
