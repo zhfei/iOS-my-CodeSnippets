@@ -220,6 +220,7 @@ txt:工程配置变量，VC结构分割
 - my_widthV+heightV_oc_block
 
 25.regex(regex正则表达式)
+- my_regex2bool_oc_func
 
 26.anim(anim动画)
 - my_animMoveBase_oc_block
