@@ -253,6 +253,9 @@ txt:工程配置变量，VC结构分割
 35.drawRect(画图)
 - my_drawCircle_oc_block
 
+36.textField(textField常用方法)
+my_textFieldDelegate_oc_func
+
 ***
 ##### 工程设置，文档部分
 
