@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_realmModelUse_oc_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//定义
+@interface QSAddressModel : RLMObject
+@property NSString *identityCard;//身份证
+@property BOOL switchState;//默认地址状态
+@property NSTimeInterval timestamp;//时间戳
+@end
+RLM_ARRAY_TYPE(QSAddressModel)
+
+//配置
+@implementation QSAddressModel
++ (NSString *)primaryKey {
+    return @"identityCard";
+}
+
++ (NSDictionary *)defaultPropertyValues {
+    return @{@"detailAddress":@"请填写详细地址"};
+}
+
+@end
+
+
+//查询，排序
+RLMRealm *realm = [UYRealmManager defaultRealm];
+RLMResults *result = [[QSAddressModel allObjectsInRealm:realm] sortedResultsUsingKeyPath:@"timestamp" ascending:NO];
+self.dataSource = [[[RLMArray alloc] initWithObjectClassName:@"QSAddressModel"] addObjects:result];
+
+//条件查询
+if (model.switchState) {
+    RLMResults *models = [QSAddressModel objectsInRealm:realm where:@"switchState == 1"];
+    //批量更新
+    [realm transactionWithBlock:^{
+        for (int i = 0; i &lt; models.count; i++) {
+            QSAddressModel *model = [models objectAtIndex:i];
+            model.switchState = NO;
+        }
+    }];
+}
+
+//添加或更新
+[realm transactionWithBlock:^{
+    [realm addOrUpdateObject:model];
+}];
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>0C2BB557-A866-4A76-82E4-945FDEF3C510</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>realm模型使用</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_realmModelUse_oc_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

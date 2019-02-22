@@ -163,6 +163,7 @@ txt:工程配置变量，VC结构分割
 - my_realmEncry_oc_block
 - my_realmMigrat_oc_block
 - my_realmNotifi_oc_block
+- my_realmModelUse_oc_block
 
 4.alertVC(系统弹框)
 - my_alertVC_oc_block
