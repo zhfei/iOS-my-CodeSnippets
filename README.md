@@ -138,6 +138,14 @@ txt:工程配置变量，VC结构分割
 
 35.drawRect(画图)
 
+36.textField(textField常用代理方法)
+
+37.textView(textView常用代理)
+
+38.refreshUI(mj_refresh控件添加)
+
+
+
 ***
 ##### OC部分
 1.dispatch(大中枢并发)
@@ -254,8 +262,14 @@ txt:工程配置变量，VC结构分割
 35.drawRect(画图)
 - my_drawCircle_oc_block
 
-36.textField(textField常用方法)
-my_textFieldDelegate_oc_func
+36.textField(textField常用代理方法)
+- my_textFieldDelegate_oc_func
+
+37.textView(textView常用代理)
+- my_textViewDelegate_oc_func
+
+38.refreshUI(mj_refresh控件添加)
+- my_refreshUIAdd_oc_block
 
 ***
 ##### 工程设置，文档部分

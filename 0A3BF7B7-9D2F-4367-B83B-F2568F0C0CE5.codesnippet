@@ -3,36 +3,35 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_textFieldDelegate_oc_func</string>
+	<string>my_textViewDelegate_oc_func</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>//确认关闭键盘
-- (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    [textField resignFirstResponder];
+	<string>#pragma mark UITextViewDelegate
+- (BOOL)textViewShouldEndEditing:(UITextView *)textView {
     return YES;
 }
-//关闭后回调
-- (BOOL)textFieldShouldEndEditing:(UITextField *)textField {
-    return YES;
-}
-//过滤输入字符
-- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text {
+    if ([text isEqualToString:@"\n"]) {
+        [textView resignFirstResponder];
+    }
+    
     return YES;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>8E337834-04DD-4407-B114-35C76416B329</string>
+	<string>0A3BF7B7-9D2F-4367-B83B-F2568F0C0CE5</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>textFieldDelegate 常用方法oc</string>
+	<string>textView代理添加oc</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_textFieldDelegate_oc_func</string>
+	<string>my_textViewDelegate_oc_func</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
