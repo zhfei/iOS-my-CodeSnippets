@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_labelAutoWidth_oc_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//1.左侧填充，宽度自适应。
+//右侧紧挨着左label，伴随左侧而改变
+- (void)setupUI {
+    [self addSubview:self.left];
+    [self addSubview:self.right];
+    
+    [self.left mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(0);
+        make.top.mas_equalTo(20);
+        make.height.mas_equalTo(18);
+    }];
+    
+    [self.right mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(self.left.mas_right);
+        make.top.mas_equalTo(self.left);
+        make.right.mas_offset(0);
+    }];
+    [self.left setContentHuggingPriority:UILayoutPriorityDefaultHigh forAxis:UILayoutConstraintAxisHorizontal];
+}
+//2.收到计算方式
+- (UILabel *)left1 {
+    if (!_left1) {
+        UILabel * textLabel = [UILabel new];
+        textLabel.font = [UIFont systemFontOfSize:16];
+        NSString *str = @"222222222222222";
+        textLabel.text = str;
+        textLabel.backgroundColor = [UIColor redColor];
+        textLabel.numberOfLines = 0;//根据最大行数需求来设置
+        textLabel.lineBreakMode = NSLineBreakByTruncatingTail;
+        CGSize maximumLabelSize = CGSizeMake(200, 9999);//labelsize的最大值
+        //关键语句
+        CGSize expectSize = [textLabel sizeThatFits:maximumLabelSize];
+        //别忘了把frame给回label，如果用xib加了约束的话可以只改一个约束的值
+        textLabel.frame = CGRectMake(20, 70, expectSize.width, expectSize.height);
+        
+        _left1 = textLabel;
+    }
+    return _left1;
+}
+
+- (void)setupUI1 {
+    [self addSubview:self.left1];
+    [self addSubview:self.right1];
+    [self.right1 setFrame:CGRectMake(CGRectGetMaxX(self.left1.frame)+10, CGRectGetMinY(self.left1.frame), 50, 20)];
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>C13956D5-C7AB-461C-A45F-2A6DB1018FDD</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>label自动宽 OC</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_labelAutoWidth_oc_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
