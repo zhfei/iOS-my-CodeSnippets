@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_tableViewBaseVC_oc_txt</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#import &lt;Masonry.h&gt;
+#import &lt;MJRefresh/MJRefresh.h&gt;
+
+static NSString *cellID =@"myCell";
+
+@interface QSMessageUnreadVC () &lt;UITableViewDelegate, UITableViewDataSource&gt;
+@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) NSMutableArray *dataSource;
+@end
+
+@implementation QSMessageUnreadVC
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    [self addUI];
+    [self setupUI];
+    [self setupLayout];
+    [self setupData];
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self resetData];
+}
+
+#pragma mark - Life Cycle
+
+#pragma mark - Getter, Setter
+- (UITableView *)tableView {
+    if (!_tableView) {
+        CGFloat widthV = self.view.frame.size.width;
+        CGFloat heightV = self.view.frame.size.height;
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, widthV, heightV) style:UITableViewStylePlain];
+        _tableView.dataSource = self;
+        _tableView.delegate = self;
+    }
+    return _tableView;
+}
+
+- (NSMutableArray *)dataSource {
+    if (!_dataSource) {
+        _dataSource = @[@"1",@"2",@"3"].mutableCopy;
+    }
+    return _dataSource;
+}
+#pragma mark - Event
+
+#pragma mark - Public Method
+
+#pragma mark - Private Method
+- (void)addUI {
+    [self.view addSubview:self.tableView];
+}
+
+- (void)setupUI {
+    [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellID];
+    
+    __weak typeof(self)weakSelf=self;
+    self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        NSLog(@"下拉刷新...");
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [weakSelf.tableView.mj_header endRefreshing];
+            [weakSelf.tableView reloadData];
+        });
+    }];
+    
+    self.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
+        NSLog(@"上拉刷新...");
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [weakSelf.tableView.mj_footer endRefreshing];
+            [weakSelf.tableView reloadData];
+        });
+    }];
+}
+
+- (void)setupLayout {
+    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.mas_equalTo(UIEdgeInsetsZero);
+    }];
+}
+
+- (void)setupData {
+    
+}
+
+- (void)resetData {
+    [self.tableView.mj_header beginRefreshing];
+}
+
+#pragma mark - Delegate
+#pragma mark dataSource
+//header
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 0.01;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+    return [UIView new];
+}
+//footer
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    return 0.01;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    return [UIView new];
+}
+//cell
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.dataSource.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
+    cell.textLabel.text = @"内容...";
+ 
+    return cell;
+ }
+#pragma mark UITableViewDelegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
+#pragma mark - NSCopying
+
+#pragma mark - NSObject
+
+@end
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>BDC5E47D-61F9-42F5-8E30-9181B63B4B9E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>简化tableView控制器 oc</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_tableViewBaseVC_oc_txt</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
