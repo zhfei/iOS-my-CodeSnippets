@@ -277,6 +277,7 @@ txt:工程配置变量，VC结构分割
 
 39.navigationItem(导航条Item)
 - my_navigationItemRight_oc_block
+- my_navigationItemSearchBar_oc_block
 
 ***
 ##### 工程设置，文档部分

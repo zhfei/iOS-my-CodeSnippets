@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_navigationItemSearchBar_oc_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>self.navigationItem.titleView = [MTSearchBar searchBar];
+
+@interface MTSearchBar : UITextField
++ (instancetype)searchBar;
+@end
+
+@implementation MTSearchBar
++(instancetype)searchBar {
+    return [[self alloc] init];
+}
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        self.size = CGSizeMake(300, 30);
+        self.font = [UIFont systemFontOfSize:15];
+        self.placeholder = @"请输入查询条件";
+        // 提前在Xcode上设置图片中间拉伸
+        self.background = [UIImage imageNamed:@"searchbar_textfield_background"];
+        
+        // 通过init初始化的控件大多都没有尺寸
+        UIImageView *searchIcon = [[UIImageView alloc] init];
+        searchIcon.image = [UIImage imageNamed:@"searchbar_textfield_search_icon"];
+        // contentMode：default is UIViewContentModeScaleToFill，要设置为UIViewContentModeCenter：使图片居中，防止图片填充整个imageView
+        searchIcon.contentMode = UIViewContentModeCenter;
+        searchIcon.size = CGSizeMake(30, 30);
+        
+        self.leftView = searchIcon;
+        self.leftViewMode = UITextFieldViewModeAlways;
+    }
+    return self;
+}
+@end</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>8080A988-2B2B-49F8-9E03-A6B1F2D00542</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>navigationItem中间搜索条</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_navigationItemSearchBar_oc_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
