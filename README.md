@@ -144,7 +144,7 @@ txt:工程配置变量，VC结构分割
 37.textView(textView常用代理)
 
 38.refreshUI(mj_refresh控件添加)
-
+39.navigationItem(导航条Item)
 
 
 ***
@@ -274,6 +274,9 @@ txt:工程配置变量，VC结构分割
 
 38.refreshUI(mj_refresh控件添加)
 - my_refreshUIAdd_oc_block
+
+39.navigationItem(导航条Item)
+- my_navigationItemRight_oc_block
 
 ***
 ##### 工程设置，文档部分
