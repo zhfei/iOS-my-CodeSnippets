@@ -208,6 +208,8 @@ txt:工程配置变量，VC结构分割
 - my_tableViewAll_oc_block
 - my_tableViewParter_oc_block
 - my_tableViewDelegate_oc_func
+- my_tableCellAutoHeigh_oc_block
+
 
 18.uiFactory(uiFactor创建)
 - my_uiFactory_oc_func
