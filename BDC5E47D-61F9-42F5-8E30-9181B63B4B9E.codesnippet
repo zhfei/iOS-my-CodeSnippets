@@ -66,6 +66,7 @@ static NSString *cellID =@"myCell";
 
 - (void)setupUI {
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:cellID];
+    self.tableView.rowHeight = 50;
     
     __weak typeof(self)weakSelf=self;
     self.tableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
@@ -154,6 +155,6 @@ static NSString *cellID =@"myCell";
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>
