@@ -28,7 +28,7 @@
 }
 
 - (void)setupUI {
-    
+    self.view.backgroundColor = [UIColor whiteColor];
 }
 
 - (void)setupLayout {

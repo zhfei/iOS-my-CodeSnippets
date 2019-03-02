@@ -145,7 +145,7 @@ txt:工程配置变量，VC结构分割
 
 38.refreshUI(mj_refresh控件添加)
 39.navigationItem(导航条Item)
-
+40.lock(lock多线程锁)
 
 ***
 ##### OC部分
@@ -278,6 +278,9 @@ txt:工程配置变量，VC结构分割
 39.navigationItem(导航条Item)
 - my_navigationItemRight_oc_block
 - my_navigationItemSearchBar_oc_block
+
+40.lock(lock多线程锁)
+- my_lock_oc_block
 
 ***
 ##### 工程设置，文档部分

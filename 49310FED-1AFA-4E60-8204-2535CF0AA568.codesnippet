@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_lock_oc_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//1.OSSpinLock 自旋锁
+    __block OSSpinLock oslock = OS_SPINLOCK_INIT;
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSLog(@"线程1 准备上锁");
+        OSSpinLockLock(&amp;oslock);
+        sleep(4);
+        NSLog(@"线程1");
+        OSSpinLockUnlock(&amp;oslock);
+        NSLog(@"线程1 解锁成功");
+        NSLog(@"--------------------------------------------------------");
+    });
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSLog(@"线程2 准备上锁");
+        OSSpinLockLock(&amp;oslock);
+        NSLog(@"线程2");
+        OSSpinLockUnlock(&amp;oslock);
+        NSLog(@"线程2 解锁成功");
+    });
+    
+    //2.dispatch_semaphore_t 信号量
+    dispatch_semaphore_t signal = dispatch_semaphore_create(1); //传入值必须 &gt;=0, 若传入为0则阻塞线程并等待timeout,时间到后会执行其后的语句
+    dispatch_time_t overTime = dispatch_time(DISPATCH_TIME_NOW, 3.0f * NSEC_PER_SEC);
+
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSLog(@"线程1 等待ing");
+        dispatch_semaphore_wait(signal, overTime); //signal 值 -1
+        NSLog(@"线程1");
+        dispatch_semaphore_signal(signal); //signal 值 +1
+        NSLog(@"线程1 发送信号");
+        NSLog(@"--------------------------------------------------------");
+    });
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSLog(@"线程2 等待ing");
+        dispatch_semaphore_wait(signal, overTime);
+        NSLog(@"线程2");
+        dispatch_semaphore_signal(signal);
+        NSLog(@"线程2 发送信号");
+    });
+    
+    //3.NSLock 普通锁
+    NSLock *lock = [NSLock new];
+    //线程1
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSLog(@"线程1 尝试加速ing...");
+        [lock lock];
+        sleep(3);//睡眠5秒
+        NSLog(@"线程1");
+        [lock unlock];
+        NSLog(@"线程1解锁成功");
+    });
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        NSLog(@"线程2 尝试加速ing...");
+        BOOL x =  [lock lockBeforeDate:[NSDate dateWithTimeIntervalSinceNow:4]];
+        if (x) {
+            NSLog(@"线程2");
+            [lock unlock];
+        }else{
+            NSLog(@"失败");
+        }
+    });
+
+    //4.NSConditionLock 条件锁
+    NSConditionLock *cLock = [[NSConditionLock alloc] initWithCondition:0];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        if([cLock tryLockWhenCondition:0]){
+            NSLog(@"线程1");
+            [cLock unlockWithCondition:1];
+        }else{
+            NSLog(@"失败");
+        }
+    });
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        [cLock lockWhenCondition:3];
+        NSLog(@"线程2");
+        [cLock unlockWithCondition:2];
+    });
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        [cLock lockWhenCondition:1];
+        NSLog(@"线程3");
+        [cLock unlockWithCondition:3];
+    });
+    
+    //5.NSRecursiveLock 递归锁
+    NSLock *rLock = [NSRecursiveLock new];//[NSLock new];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        static void (^RecursiveBlock)(int);
+        RecursiveBlock = ^(int value) {
+            [rLock lock];
+            if (value &gt; 0) {
+                NSLog(@"线程%d", value);
+                RecursiveBlock(value - 1);
+            }
+            [rLock unlock];
+        };
+        RecursiveBlock(4);
+    });
+
+    //6.@synchronized 同步锁
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        @synchronized (self) {
+            sleep(2);
+            NSLog(@"线程1");
+        }
+    });
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        @synchronized (self) {
+            NSLog(@"线程2");
+        }
+    });
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>49310FED-1AFA-4E60-8204-2535CF0AA568</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>多线程锁 OC</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_lock_oc_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
