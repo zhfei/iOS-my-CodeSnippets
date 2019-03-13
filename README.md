@@ -147,7 +147,7 @@ txt:工程配置变量，VC结构分割
 39.navigationItem(导航条Item)
 40.lock(lock多线程锁)
 41.keyboard(keyboard键盘展示与消失)
-
+42.setting(settingApp的偏好设置)
 ***
 ##### OC部分
 1.dispatch(大中枢并发)
@@ -286,7 +286,9 @@ txt:工程配置变量，VC结构分割
 41.keyboard(keyboard键盘展示与消失)
 - my_keyboardShow_oc_block
 
-
+42.setting(settingApp的偏好设置)
+- my_settingOpenState_oc_block
+- my_settingPageForApp_oc_block
 
 ***
 ##### 工程设置，文档部分
