@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_settingPageForApp_oc_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    dispatch_async(dispatch_get_main_queue(), ^{
+        UIApplication *application = [UIApplication sharedApplication];
+        NSURL *url = [NSURL URLWithString:UIApplicationOpenSettingsURLString];
+        if ([application canOpenURL:url]) {
+            if (@available(iOS 10.0, *)) {
+                if ([application respondsToSelector:@selector(openURL:options:completionHandler:)]) {
+                    [application openURL:url options:@{} completionHandler:nil];
+                }
+            }else {
+                [application openURL:url];
+            }
+        }
+    });</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>BC14638D-5692-4B94-B190-6D338F3E4993</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>进入app的设置页面</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_settingPageForApp_oc_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

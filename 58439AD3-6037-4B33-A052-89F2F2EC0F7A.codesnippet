@@ -3,29 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_timeExecuLong_oc_txt</string>
+	<string>my_macro_oc_txt</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>        CFAbsoluteTime startTime =CFAbsoluteTimeGetCurrent();
-        //在这写入要计算时间的代码
-        block();
-        //打印出来为代码执行时间 单位ms
-        CFAbsoluteTime linkTime = (CFAbsoluteTimeGetCurrent() - startTime);
-        NSLog(@"Linked in %f ms", linkTime *1000.0);</string>
+	<string>    if (@available(iOS 10.0, *)) {
+        
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>DA0599D9-82F4-451C-8D43-38623100C86E</string>
+	<string>58439AD3-6037-4B33-A052-89F2F2EC0F7A</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>代码执行时长</string>
+	<string>OC常用的宏</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_timeExecuLong_oc_txt</string>
+	<string>my_macro_oc_txt</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

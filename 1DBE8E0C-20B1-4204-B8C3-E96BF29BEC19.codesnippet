@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_settingOpenState_oc_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    if (@available(iOS 10.0, *)) {
+        UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+        __block BOOL isOn = NO;
+        [center getNotificationSettingsWithCompletionHandler:^(UNNotificationSettings * _Nonnull settings) {
+            if (settings.notificationCenterSetting == UNNotificationSettingEnabled) {
+                isOn = YES;
+                NSLog(@"打开了通知");
+            }else {
+                isOn = NO;
+                NSLog(@"关闭了通知");
+                [self showAlertView];
+            }
+        }];
+    } else {
+        if ([[UIApplication sharedApplication] currentUserNotificationSettings].types == UIUserNotificationTypeNone){
+            NSLog(@"关闭了通知");
+            [self showAlertView];
+        }else {
+            NSLog(@"打开了通知");
+        }
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1DBE8E0C-20B1-4204-B8C3-E96BF29BEC19</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>设置打开情况查询</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_settingOpenState_oc_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
