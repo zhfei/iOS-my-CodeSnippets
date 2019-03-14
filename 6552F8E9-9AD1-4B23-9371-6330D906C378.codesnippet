@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_arm_txt</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//    arm64：iPhone6s | iphone6s plus｜iPhone6｜ iPhone6 plus｜iPhone5S | iPad Air｜ iPad mini2(iPad mini with Retina Display)
+//    armv7s：iPhone5｜iPhone5C｜iPad4(iPad with Retina Display)
+//    armv7：iPhone4｜iPhone4S｜iPad｜iPad2｜iPad3(The New iPad)｜iPad mini｜iPod Touch 3G｜iPod Touch4
+//
+//    i386是针对intel通用微处理器32位处理器
+//    x86_64是针对x86架构的64位处理器
+//
+//    模拟器32位处理器测试需要i386架构，
+//    模拟器64位处理器测试需要x86_64架构，
+//    真机32位处理器需要armv7,或者armv7s架构，
+//    真机64位处理器需要arm64架构。</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6552F8E9-9AD1-4B23-9371-6330D906C378</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>arm架构类型</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_arm_txt</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
