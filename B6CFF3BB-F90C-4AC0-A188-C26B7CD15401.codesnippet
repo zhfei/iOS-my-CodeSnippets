@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_timer3kind_oc_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    //1.NSTimer
+    NSTimer *timer = [NSTimer timerWithTimeInterval:5.0 target:self selector:@selector(timerMethod3) userInfo:nil repeats:NO];
+    [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSRunLoopCommonModes];
+    //fire：可以上定时器立即触发，但不会改变预定周期性调度；invalidate：将timer从NSRunLoop中移出
+    
+    //2.CADisplayLink：基于屏幕刷新率(1/60)。其本质也是通过RunLoop。所以任务耗时也会卡屏。
+    CADisplayLink *disLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(linkMethod3)];
+    // 添加至RunLoop中
+    [disLink addToRunLoop:[NSRunLoop currentRunLoop] forMode:NSRunLoopCommonModes];
+    //invalidate：将timer从NSRunLoop中移出
+
+    //3.GCDTimer:准时的原因是dispatch(dispatch source)源监听系统内核对象并处理。
+    /** 创建定时器对象
+     * para1: DISPATCH_SOURCE_TYPE_TIMER 为定时器类型
+     * para2-3: 中间两个参数对定时器无用
+     * para4: 最后为在什么调度队列中使用
+     */
+    dispatch_source_t gcdTimer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatch_get_global_queue(0, 0));
+    /** 设置定时器
+     * para2: 任务开始时间
+     * para3: 任务的间隔
+     * para4: 可接受的误差时间，设置0即不允许出现误差
+     * Tips: 单位均为纳秒
+     */
+    dispatch_source_set_timer(gcdTimer, DISPATCH_TIME_NOW, 2.0 * NSEC_PER_SEC, 0.0 * NSEC_PER_SEC);
+    /** 设置定时器任务
+     * 可以通过block方式
+     * 也可以通过C函数方式
+     */
+    dispatch_source_set_event_handler(gcdTimer, ^{
+        static int gcdIdx = 0;
+        NSLog(@"GCD Method: %d", gcdIdx++);
+        NSLog(@"%@", [NSThread currentThread]);
+        
+        if(gcdIdx == 5) {
+            // 终止定时器
+            dispatch_suspend(gcdTimer);
+        }
+    });
+    // 启动任务，GCD计时器创建后需要手动启动
+    dispatch_resume(gcdTimer);
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B6CFF3BB-F90C-4AC0-A188-C26B7CD15401</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>oc的三种定时器</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_timer3kind_oc_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
