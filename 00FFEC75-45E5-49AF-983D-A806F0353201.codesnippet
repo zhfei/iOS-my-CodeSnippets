@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_rectContains_oc_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//    //rect1包含了rect2时
+//    CGRectContainsRect(&lt;#CGRect rect1#&gt;, &lt;#CGRect rect2#&gt;)
+//    //rect包含了point时
+//    CGRectContainsPoint(&lt;#CGRect rect#&gt;, &lt;#CGPoint point#&gt;)
+//    //rect1相交rect2时
+//    CGRectIntersectsRect(&lt;#CGRect rect1#&gt;, &lt;#CGRect rect2#&gt;)</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>00FFEC75-45E5-49AF-983D-A806F0353201</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Rect包含操作</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_rectContains_oc_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

@@ -297,8 +297,10 @@ txt:工程配置变量，VC结构分割
 - my_settingPageForApp_oc_block
 
 43.convert(convert不同坐标系转换)
-- my_convertpoint_oc_block
+- my_pointconvert_oc_block
 
+44.rect(rect包含/交互操作)
+- my_rectContains_oc_block
 
 ***
 ##### 工程设置，文档部分
