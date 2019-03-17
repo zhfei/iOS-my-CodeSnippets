@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_textFieldCreate_oc_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    UITextField *textField = [[UITextField alloc] initWithFrame:CGRectMake(20, 200, 100, 50)];
+    //第一种
+    UIColor *color = [UIColor redColor];
+    _textField.attributedPlaceholder = [[NSAttributedString alloc] initWithString:@"占位字符串" attributes:@{NSForegroundColorAttributeName: color}];
+    //第二种
+//    [_textField setValue:[UIColor redColor] forKeyPath:@"_placeholderLabel.textColor"];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B1558DE4-BAEF-4F3F-8CF4-F9053CDBB859</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>textField创建</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_textFieldCreate_oc_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
