@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_dirAll_oc_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    //程序包路径：获取应用程序程序包中资源文件路径的方法
+    NSString *bundle = [[NSBundle mainBundle] bundlePath];
+    
+    // 获取沙盒根目录路径
+    NSString *homeDir = NSHomeDirectory();
+    // 获取Documents目录路径
+    NSString *docDir = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask,YES) firstObject];
+    //获取Library的目录路径
+    NSString *libDir = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory,NSUserDomainMask,YES) lastObject];
+    // 获取cache目录路径
+    NSString *cachesDir = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory,NSUserDomainMask,YES) firstObject];
+    // 获取tmp目录路径
+    NSString *tmpDir =NSTemporaryDirectory();</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>91F189E5-9C54-4CB0-9DE1-6B63103B7E01</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>所有重要的路径oc</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_dirAll_oc_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

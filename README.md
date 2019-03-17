@@ -185,6 +185,7 @@ txt:工程配置变量，VC结构分割
 7.dire(目录)
 - my_dirCache_oc_block
 - my_dirDocu_oc_block
+- my_dirAll_oc_block
 
 8.dateFormatter(格式化时间)
 - my_dateformat_oc_block
