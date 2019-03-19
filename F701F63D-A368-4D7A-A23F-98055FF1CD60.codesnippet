@@ -9,8 +9,27 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>typedef NS_ENUM(NSInteger,&lt;#type#&gt;) {
-    &lt;#typeState#&gt; = 0,
+	<string>//单个类型枚举
+typedef NS_ENUM(NSInteger,AIType) {
+    AITypeOpen = 0,
+    AITypeClose
+};
+//位类型枚举
+typedef NS_OPTIONS(NSUInteger, YYNetworkTrafficType) {
+    YYNetworkTrafficTypeWWANSent     = 1 &lt;&lt; 0,
+    YYNetworkTrafficTypeWWANReceived = 1 &lt;&lt; 1,
+    YYNetworkTrafficTypeWIFISent     = 1 &lt;&lt; 2,
+    YYNetworkTrafficTypeWIFIReceived = 1 &lt;&lt; 3,
+    YYNetworkTrafficTypeAWDLSent     = 1 &lt;&lt; 4,
+    YYNetworkTrafficTypeAWDLReceived = 1 &lt;&lt; 5,
+    
+    YYNetworkTrafficTypeWWAN = YYNetworkTrafficTypeWWANSent | YYNetworkTrafficTypeWWANReceived,
+    YYNetworkTrafficTypeWIFI = YYNetworkTrafficTypeWIFISent | YYNetworkTrafficTypeWIFIReceived,
+    YYNetworkTrafficTypeAWDL = YYNetworkTrafficTypeAWDLSent | YYNetworkTrafficTypeAWDLReceived,
+    
+    YYNetworkTrafficTypeALL = YYNetworkTrafficTypeWWAN |
+    YYNetworkTrafficTypeWIFI |
+    YYNetworkTrafficTypeAWDL,
 };</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>F701F63D-A368-4D7A-A23F-98055FF1CD60</string>
