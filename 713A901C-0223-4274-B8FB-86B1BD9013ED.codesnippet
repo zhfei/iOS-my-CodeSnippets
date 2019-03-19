@@ -12,8 +12,12 @@
 	<string>//为了消除未定义选择器的警告
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored"-Wundeclared-selector"
-    
-#pragma clang diagnostic pop</string>
+
+#pragma clang diagnostic pop
+
+#warning 手动写一个警告
+#error 手动写一个错误
+#pragma unused(test) 消除一个变量未使用的警告</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>713A901C-0223-4274-B8FB-86B1BD9013ED</string>
 	<key>IDECodeSnippetLanguage</key>
