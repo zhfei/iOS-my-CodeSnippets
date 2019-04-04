@@ -9,7 +9,19 @@
 		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>NSPredicate *predice =[NSPredicate predicateWithFormat:@"age&lt;%d",30];
+	<string>
+//"*":0个或多个；"?":1个；
+//[c]不区分大小写，[d]不区分重音，[cd]都不区分；
+//比较运算符：&gt;、&lt;、==、&gt;=、&lt;=、!=
+//范围运算符：IN、BETWEEN 。例如：@"number BETWEEN {1,5}",@"name IN {'jack','lose'}"
+//字符串本身：SELF 。 例如：@"SELF == 'jack'"
+//字符串比较：BEGINSWITH、ENDSWITH、CONTAINS 。例如：@"name endswith[d] 'ang'"， @"name startswith[c] 'sh'"
+//通配符：LIKE。 例如：@"name LIKE[cd] '*er*'", @"name like[cd] '???er*'"
+//正则表达式：MATCHES。例如：NSString *reg = @"^A.+e$"; @"name matches %@",reg
+//合计操作：表示任意元素（ANY,SOME），所有元素（ALL）,没有元素(NONE),左边内容出现在右边集合中(IN)。
+//例如：ANY stu.age &gt; 18 ， ALL stu.age &lt; 18, NONE str.age == 18 。
+
+NSPredicate *predice =[NSPredicate predicateWithFormat:@"age&lt;%d",30];
 NSPredicate *predice1 =[NSPredicate predicateWithFormat:@"name='tom' &amp;&amp; age&lt;%d",30];
 NSPredicate *predice2 =[NSPredicate predicateWithFormat:@"self.name IN {'tom','rose'} || self.age IN {20,30}"];
 //以a开头
@@ -22,7 +34,8 @@ NSPredicate *predice5 =[NSPredicate predicateWithFormat:@"name contains 'c'"];
 //只要有s字母就满足
 NSPredicate *predice6 =[NSPredicate predicateWithFormat:@"name like 's'"];
 //第二个字符为s就满足,?代表一个字符
-NSPredicate *predice7 =[NSPredicate predicateWithFormat:@"name like '?s'"];</string>
+NSPredicate *predice7 =[NSPredicate predicateWithFormat:@"name like '?s'"];
+</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>7FE226BA-452D-43D3-B37B-977255539689</string>
 	<key>IDECodeSnippetLanguage</key>
