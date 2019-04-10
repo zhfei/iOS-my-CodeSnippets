@@ -9,19 +9,17 @@
 		<string>ClassImplementation</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>//
-//#pragma mark - 生命周期
-//
-//#pragma mark - 自定义getter, setter
-//
-//#pragma mark - 事件
-//
-//#pragma mark - 公共方法
+	<string>//#pragma mark - 生命周期
 //
 //#pragma mark - 私有方法
 //
+//#pragma mark - 公共方法
+//
+//#pragma mark - 事件
+//
 //#pragma mark - 相关代理
-
+//
+//#pragma mark - 自定义getter, setter
 </string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>AF32F2DA-EC87-4E90-A553-D962A04172B4</string>

@@ -11,12 +11,6 @@
 	<key>IDECodeSnippetContents</key>
 	<string>// MARK: - Life Cycle
 
-// MARK: - Event
-
-// MARK: - Getter, Setter
-
-// MARK: - Public Method
-
 // MARK: - Private Method
 func setupData() {
     
@@ -34,14 +28,19 @@ func resetUI() {
     
 }
 
+// MARK: - Public Method
+
+// MARK: - Event
+
 // MARK: - Delegate
+
+// MARK: - Getter, Setter
 
 // MARK: - NSCopying
 
 // MARK: - NSObject
 
-// MARK: - Extension
-</string>
+// MARK: - Extension</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>7EE23DE1-958D-4EF9-A436-E71D55E744F7</string>
 	<key>IDECodeSnippetLanguage</key>

@@ -19,19 +19,16 @@
     return self;
 }
 
-
-
-#pragma mark - Getter, Setter
-
-#pragma mark - Event
-
-#pragma mark - Public Method
-
 #pragma mark - Private Method
 - (void)setupUI {
     
 }
-</string>
+
+#pragma mark - Public Method
+
+#pragma mark - Event
+
+#pragma mark - Getter, Setter</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>FC9BD29D-4C96-4ED6-A853-E5FD5DBFFB8D</string>
 	<key>IDECodeSnippetLanguage</key>

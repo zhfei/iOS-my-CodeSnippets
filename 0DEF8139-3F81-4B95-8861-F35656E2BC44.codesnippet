@@ -11,12 +11,6 @@
 	<key>IDECodeSnippetContents</key>
 	<string>#pragma mark - Life Cycle
 
-#pragma mark - Getter, Setter
-
-#pragma mark - Event
-
-#pragma mark - Public Method
-
 #pragma mark - Private Method
 [self addUI];
 [self setupUI];
@@ -39,13 +33,18 @@
     
 }
 
+#pragma mark - Public Method
 
+#pragma mark - Event
 
 #pragma mark - Delegate
 
+#pragma mark - Getter, Setter
+
 #pragma mark - NSCopying
 
-#pragma mark - NSObject</string>
+#pragma mark - NSObject
+</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>0DEF8139-3F81-4B95-8861-F35656E2BC44</string>
 	<key>IDECodeSnippetLanguage</key>
