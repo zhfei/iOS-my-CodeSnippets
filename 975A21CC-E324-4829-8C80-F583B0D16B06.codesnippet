@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_attributeStr_oc_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    NSAttributedString *att = [[NSAttributedString alloc] initWithString:@"text1" attributes:@{NSForegroundColorAttributeName:[UIColor blackColor],
+                     NSFontAttributeName:[UIFont systemFontOfSize:12]}];
+    
+    NSAttributedString *att1 = [[NSAttributedString alloc] initWithString:@"text2" attributes:@{NSForegroundColorAttributeName:[UIColor redColor],
+                     NSFontAttributeName:[UIFont systemFontOfSize:12]}];
+    
+    NSMutableAttributedString *attM = [[NSMutableAttributedString alloc] init];
+    [attM appendAttributedString:att];
+    [attM appendAttributedString:att1];
+    self.startTimeLabel.attributedText = attM;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>975A21CC-E324-4829-8C80-F583B0D16B06</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>富文本</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_attributeStr_oc_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

@@ -151,7 +151,7 @@ txt:工程配置变量，VC结构分割
 43.convert(convert不同坐标系转换)
 44.rect(rect包含/交互操作)
 45.textField(textField相关的操作)
-
+46.attributeStr(attribute富文本)
 
 
 ***
@@ -303,9 +303,12 @@ txt:工程配置变量，VC结构分割
 
 44.rect(rect包含/交互操作)
 - my_rectContains_oc_block
+
 45.textField(textField相关的操作)
 - my_textFieldCreate_oc_block
 
+46.attributeStr(attribute富文本)
+- my_attributeStr_oc_block
 
 
 ***
