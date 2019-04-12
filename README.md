@@ -152,6 +152,7 @@ txt:工程配置变量，VC结构分割
 44.rect(rect包含/交互操作)
 45.textField(textField相关的操作)
 46.attributeStr(attribute富文本)
+47.methodSinInvocation(methodSinInvocation方法签名+命令模式)
 
 
 ***
@@ -310,6 +311,8 @@ txt:工程配置变量，VC结构分割
 46.attributeStr(attribute富文本)
 - my_attributeStr_oc_block
 
+47.methodSinInvocation(methodSinInvocation方法签名+命令模式)
+- my_methodSinInvocation_oc_block
 
 ***
 ##### 工程设置，文档部分

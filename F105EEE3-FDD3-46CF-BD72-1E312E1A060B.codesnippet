@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_methodSinInvocation_oc_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    //方法
+    SEL action = @selector(applyBtnAction:);
+    //参数
+    id para = @"test";
+    
+    NSMethodSignature *methodSin = [self methodSignatureForSelector:action];
+    const char * returnType = [methodSin methodReturnType];
+    
+    NSInvocation *invocation = [NSInvocation invocationWithMethodSignature:methodSin];
+    if (strcmp(returnType, @encode(void)) == 0) {
+        [invocation setArgument:&amp;para atIndex:2];
+        [invocation setTarget:self];
+        [invocation setSelector:action];
+        [invocation invoke];
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F105EEE3-FDD3-46CF-BD72-1E312E1A060B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>方法签名+Invocation命令对象</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_methodSinInvocation_oc_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
