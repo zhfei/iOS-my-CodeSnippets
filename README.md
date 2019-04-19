@@ -343,7 +343,12 @@ txt:工程配置变量，VC结构分割
 
 7.baseVC(vc模版)
 - my_tableViewBaseVC_oc_txt
+
 8.timeExecuLong(timelong代码执行时长)
 - my_timeExecuLong_oc_txt
+
 9.arm(arm设备架构)
 - my_arm_txt
+
+10.mark(mark常用的标示)
+- my_mark5_txt

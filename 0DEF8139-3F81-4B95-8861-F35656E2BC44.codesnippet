@@ -16,6 +16,7 @@
 [self setupUI];
 [self setupLayout];
 [self setupData];
+[self initData];
 
 - (void)addUI {
     
@@ -26,6 +27,10 @@
 }
 
 - (void)setupLayout {
+    
+}
+
+- (void)initData {
     
 }
 

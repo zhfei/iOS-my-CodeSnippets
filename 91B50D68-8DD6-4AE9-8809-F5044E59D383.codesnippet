@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_mark5_txt</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>// TODO: 要做啥
+// MARK: 做标记
+// FIXME: 有bug
+// !!!: 要注意
+// ???: 有疑问
+
+#pragma mark - TODO: 要做啥
+#pragma mark - MARK: 做标记
+#pragma mark - FIXME: 有bug
+#pragma mark - !!!: 要注意
+#pragma mark - ???: 有疑问</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>91B50D68-8DD6-4AE9-8809-F5044E59D383</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>常用的mark标示</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_mark5_txt</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
