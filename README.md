@@ -153,6 +153,7 @@ txt:工程配置变量，VC结构分割
 45.textField(textField相关的操作)
 46.attributeStr(attribute富文本)
 47.methodSinInvocation(methodSinInvocation方法签名+命令模式)
+48.keypath(keypath操作)
 
 
 ***
@@ -315,6 +316,10 @@ txt:工程配置变量，VC结构分割
 
 47.methodSinInvocation(methodSinInvocation方法签名+命令模式)
 - my_methodSinInvocation_oc_block
+
+48.keypath(keypath操作)
+- my_keypath_oc_block
+
 
 ***
 ##### 工程设置，文档部分

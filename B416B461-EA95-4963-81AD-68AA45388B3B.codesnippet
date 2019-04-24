@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_keypath_oc_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>        常见操作
+        CGFloat sum = [[array valueForKeyPath:@"@sum.floatValue"] floatValue];
+        CGFloat avg = [[array valueForKeyPath:@"@avg.floatValue"] floatValue];//平均值
+        CGFloat max =[[array valueForKeyPath:@"@max.floatValue"] floatValue];
+        CGFloat min =[[array valueForKeyPath:@"@min.floatValue"] floatValue];
+        
+        2、一层获取
+        NSArray *arr = @[@{@"city":@"beijing",@"person":@{@"name":@"zhangsan"}},@{@"city":@"chengdu"}];
+        [arr valueForKeyPath:@"city"] 可以获取到city数组 @[@"beijing",@"chengdu"]
+         
+        3、多层获取
+        NSDictionary *dict1 = @{@"dic1":@{@"dic2":@{@"name":@"lisi",@"info":@{@"age":@"12"}}}};
+        id res = [dict1 valueForKeyPath:@"dict1.dict2.name"];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B416B461-EA95-4963-81AD-68AA45388B3B</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>keypath常见操作 oc</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_keypath_oc_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
