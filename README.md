@@ -183,6 +183,7 @@ txt:工程配置变量，VC结构分割
 
 6.button(按钮创建)
 - my_btnCreate_oc_block
+- my_buttonGetter_oc_block
 
 7.dire(目录)
 - my_dirCache_oc_block
@@ -205,9 +206,11 @@ txt:工程配置变量，VC结构分割
 
 13.imageView(imageView创建)
 - my_imageViewCreate_oc_block
+- my_imageViewGetter_oc_block
 
 14.label(label创建)
 - my_labelCreate_oc_block
+- my_labelGetter_oc_block
 
 15.layer(layer创建)
 - my_layerLine_oc_block
@@ -319,6 +322,9 @@ txt:工程配置变量，VC结构分割
 
 48.keypath(keypath操作)
 - my_keypath_oc_block
+
+49.view(view操作)
+- my_viewGetter_oc_block
 
 
 ***

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_viewGetter_oc_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (UIView *)contentView {
+    
+    if (!_contentView) {
+        _contentView = [UIView new];
+        _contentView.translatesAutoresizingMaskIntoConstraints = NO;
+        _contentView.backgroundColor = [UIColor clearColor];
+        _contentView.userInteractionEnabled = YES;
+        _contentView.alpha = 0;
+    }
+    return _contentView;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>24233071-8D6E-44D2-AE00-5224EEAEDCAE</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>view快速getter</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_viewGetter_oc_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

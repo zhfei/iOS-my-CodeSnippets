@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_labelGetter_oc_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (UILabel *)titleLabel {
+    
+    if (!_titleLabel) {
+        _titleLabel = [UILabel new];
+        _titleLabel.translatesAutoresizingMaskIntoConstraints = NO;
+        _titleLabel.backgroundColor = [UIColor clearColor];
+        
+        _titleLabel.font = [UIFont systemFontOfSize:27.0];
+        _titleLabel.textColor = [UIColor colorWithWhite:0.6 alpha:1.0];
+        _titleLabel.textAlignment = NSTextAlignmentCenter;
+        _titleLabel.lineBreakMode = NSLineBreakByWordWrapping;
+        _titleLabel.numberOfLines = 0;
+        _titleLabel.accessibilityIdentifier = @"empty set title";
+        
+    }
+    return _titleLabel;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D38BE29E-23A2-4B34-9E12-715098D6F333</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>label快速getter</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_labelGetter_oc_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
