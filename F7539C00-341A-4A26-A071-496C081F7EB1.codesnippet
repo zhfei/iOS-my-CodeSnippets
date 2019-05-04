@@ -12,10 +12,10 @@
 	<string>- (void)dealloc
 {
     //指定context 防治父类移除后子类重复移除造成崩溃
-    [self.searchController removeObserver:self forKeyPath:@"active" context:(__bridge void * _Nullable)(NSStringFromClass([self class]))];
+    [self.searchController removeObserver:self forKeyPath:@"active" context:"CurrentClassName"];
 }
 
-[self.searchController addObserver:self forKeyPath:@"active" options:NSKeyValueObservingOptionOld|NSKeyValueObservingOptionNew context:(__bridge void * _Nullable)(NSStringFromClass([self class]))];
+[self.searchController addObserver:self forKeyPath:@"active" options:NSKeyValueObservingOptionOld|NSKeyValueObservingOptionNew context:"CurrentClassName"];
 
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary&lt;NSKeyValueChangeKey,id&gt; *)change context:(void *)context {
