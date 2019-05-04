@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_observer_oc_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)dealloc
+{
+    //指定context 防治父类移除后子类重复移除造成崩溃
+    [self.searchController removeObserver:self forKeyPath:@"active" context:(__bridge void * _Nullable)(NSStringFromClass([self class]))];
+}
+
+[self.searchController addObserver:self forKeyPath:@"active" options:NSKeyValueObservingOptionOld|NSKeyValueObservingOptionNew context:(__bridge void * _Nullable)(NSStringFromClass([self class]))];
+
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary&lt;NSKeyValueChangeKey,id&gt; *)change context:(void *)context {
+    if ([keyPath isEqualToString:@"active"]) {
+        NSLog(@"change: %@",change);
+    } else {
+        //子类处理完自己的事件后，交给父类继续处理
+        [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F7539C00-341A-4A26-A071-496C081F7EB1</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>OC添加观察者</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_observer_oc_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

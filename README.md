@@ -154,6 +154,9 @@ txt:工程配置变量，VC结构分割
 46.attributeStr(attribute富文本)
 47.methodSinInvocation(methodSinInvocation方法签名+命令模式)
 48.keypath(keypath操作)
+49.view(view操作)
+50.observer（observer添加kvo观察者）
+
 
 
 ***
@@ -325,6 +328,9 @@ txt:工程配置变量，VC结构分割
 
 49.view(view操作)
 - my_viewGetter_oc_block
+
+50.observer（observer添加kvo观察者）
+- my_observer_oc_block
 
 
 ***
