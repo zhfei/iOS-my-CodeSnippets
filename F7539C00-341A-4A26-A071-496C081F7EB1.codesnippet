@@ -11,7 +11,7 @@
 	<key>IDECodeSnippetContents</key>
 	<string>- (void)dealloc
 {
-    //指定context 防治父类移除后子类重复移除造成崩溃
+    //指定context 防止父类移除后子类重复移除造成崩溃
     [self.searchController removeObserver:self forKeyPath:@"active" context:"CurrentClassName"];
 }
 
@@ -37,6 +37,6 @@
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>
