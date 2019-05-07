@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_timerCreate_oc_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)dealloc {
+    [_activationDelayTimer invalidate];
+}
+
+- (void)startActivationDelayTimer {
+    [self.activationDelayTimer invalidate];
+    self.activationDelayTimer = [NSTimer
+                                 timerWithTimeInterval:self.activationDelay target:self selector:@selector(activationDelayTimerFired) userInfo:nil repeats:NO];
+    [[NSRunLoop mainRunLoop] addTimer:self.activationDelayTimer forMode:NSRunLoopCommonModes];
+}
+
+- (void)activationDelayTimerFired {
+    if (self.networkActivityOccurring) {
+        [self setCurrentState:AFNetworkActivityManagerStateActive];
+    } else {
+        [self setCurrentState:AFNetworkActivityManagerStateNotActive];
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D0C4B134-75E2-4F12-9913-FAA858818835</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>创建定时器</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_timerCreate_oc_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
