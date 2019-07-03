@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_bundleSub_oc_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    NSString *subMoudle = [[NSBundle mainBundle] pathForResource:@"子模块A" ofType:@"bundle"];
+    UIImage *subMoudleImage = [[UIImage alloc] initWithContentsOfFile:subMoudle];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>5070E1B9-820A-4A81-90AE-5739795543A8</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>子模块bundle</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_bundleSub_oc_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
