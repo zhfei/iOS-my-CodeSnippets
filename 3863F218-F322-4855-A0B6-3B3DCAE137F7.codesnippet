@@ -18,11 +18,11 @@
     //6. 身份证号(15位、18位数字)：^\d{15}|\d{18}$
     //7. 整数或者小数："^([1-9][0-9]*.?|0.)[0-9]*$"
     //8. 12位数字字母："^[1-5a-z]{12}$"
-    
     NSString *check = @"^[0-9]*$";
-    NSPredicate *predice =[NSPredicate predicateWithFormat:@"self matches",check];
-    BOOL result = [predice evaluateWithObject:targetStr];
-    return result;
+    NSRegularExpression *regular = [NSRegularExpression regularExpressionWithPattern:check options:NSRegularExpressionCaseInsensitive error:nil];
+    NSInteger num = [regular numberOfMatchesInString:targetStr options:NSMatchingReportProgress range:NSMakeRange(0, targetStr.length-1)];
+    
+    return num == 1;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>3863F218-F322-4855-A0B6-3B3DCAE137F7</string>
