@@ -1,3 +1,4 @@
+
 # iOS-my-CodeSnippets
 
 ***
@@ -157,7 +158,7 @@ txt:工程配置变量，VC结构分割
 49.view(view操作)
 50.observer（observer添加kvo观察者）
 51.bundle(bundle包资源)
-
+52.shadow(shadow阴影)
 
 ***
 ##### OC部分
@@ -336,6 +337,8 @@ txt:工程配置变量，VC结构分割
 51.bundle(bundle包资源)
 - my_bundleSub_oc_block
 
+52.shadow(shadow阴影)
+- my_shadow_oc_block
 
 
 ***
