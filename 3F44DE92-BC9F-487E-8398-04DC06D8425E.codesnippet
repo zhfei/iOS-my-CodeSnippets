@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_runtimeExchangeMethod_oc_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    Method method = class_getClassMethod(self, @selector(addSubview:));
+    Method wy_method = class_getClassMethod(self, @selector(wy_addSubviews:));
+    method_exchangeImplementations(method, wy_method);</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3F44DE92-BC9F-487E-8398-04DC06D8425E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>运行时方法交换 OC</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_runtimeExchangeMethod_oc_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
