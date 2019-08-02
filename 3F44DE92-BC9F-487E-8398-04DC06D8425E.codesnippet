@@ -9,9 +9,16 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    Method method = class_getClassMethod(self, @selector(addSubview:));
-    Method wy_method = class_getClassMethod(self, @selector(my_addSubviews:));
-    method_exchangeImplementations(method, my_method);</string>
+	<string>Method method = class_getInstanceMethod([self class], @selector(addSubview:));
+Method my_method = class_getInstanceMethod([self class], @selector(my_addSubviews:));
+
+BOOL didAdd = class_addMethod([self class], @selector(addSubview:), method_getImplementation(my_method), method_getTypeEncoding(my_method));
+//交叉进行方法交换
+if (didAdd) {
+    class_replaceMethod([self class], @selector(wy_addSubviews:), method_getImplementation(method), method_getTypeEncoding(method));
+} else {
+    method_exchangeImplementations(method, my_method);
+    }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>3F44DE92-BC9F-487E-8398-04DC06D8425E</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -23,6 +30,6 @@
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>
