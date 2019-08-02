@@ -10,8 +10,8 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>    Method method = class_getClassMethod(self, @selector(addSubview:));
-    Method wy_method = class_getClassMethod(self, @selector(wy_addSubviews:));
-    method_exchangeImplementations(method, wy_method);</string>
+    Method wy_method = class_getClassMethod(self, @selector(my_addSubviews:));
+    method_exchangeImplementations(method, my_method);</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>3F44DE92-BC9F-487E-8398-04DC06D8425E</string>
 	<key>IDECodeSnippetLanguage</key>
