@@ -306,7 +306,8 @@ txt:工程配置变量，VC结构分割
 - my_lock_oc_block
 
 41.keyboard(keyboard键盘展示与消失)
-- my_keyboardShow_oc_block
+- my_keyboardNotif_oc_block
+- my_keyBoardHide_oc_block
 
 42.setting(settingApp的偏好设置)
 - my_settingOpenState_oc_block

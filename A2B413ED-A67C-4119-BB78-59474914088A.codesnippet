@@ -3,26 +3,28 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_keyboardNotif_oc_block</string>
+	<string>my_keyBoardHide_oc_block</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showMethod) name:UIKeyboardWillShowNotification object:nil];
+	<string>    [self.phoneNumTextField resignFirstResponder];
+    [self.alertContainer endEditing:YES];
     
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(hideMethod) name:UIKeyboardDidHideNotification object:nil];</string>
+    [[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder) to:nil from:nil forEvent:nil];
+    [[[UIApplication sharedApplication] keyWindow] endEditing:YES];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>9FEDA833-40D0-49CA-B3CF-6306AB0579D0</string>
+	<string>A2B413ED-A67C-4119-BB78-59474914088A</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>键盘弹出与消失通知监听</string>
+	<string>键盘隐藏 oc</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_keyboardNotif_oc_block</string>
+	<string>my_keyBoardHide_oc_block</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
