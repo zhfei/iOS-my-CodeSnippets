@@ -325,6 +325,7 @@ txt:工程配置变量，VC结构分割
 46.attributeStr(attribute富文本)
 - my_attributeStr_oc_block
 - my_attriStrClickYY_oc_block
+- my_attributeParagraphStyle_oc_block
 
 47.methodSinInvocation(methodSinInvocation方法签名+命令模式)
 - my_methodSinInvocation_oc_block
