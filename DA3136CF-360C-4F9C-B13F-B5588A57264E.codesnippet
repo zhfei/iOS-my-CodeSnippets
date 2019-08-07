@@ -9,7 +9,23 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    //appearance:视图样式代理默认样式设置，所有的视图样式均可以使用，因为UIView实现了这个协议
+	<string>    
+//设置背景色，背景色上面带透明磨砂效果
+[[UINavigationBar appearance] setBackgroundColor:[UIColor blueColor]];
+
+//设置背景图片
+[[UINavigationBar appearance] setBackgroundImage:[UIImage imageNamed:@""] forBarMetrics:UIBarMetricsDefault];
+//设置背景色（navigationBar+statusBar）
+[[UINavigationBar appearance] setBarTintColor:[UIColor blueColor]];
+
+//设置字体颜色
+[[UINavigationBar appearance] setTintColor:[UIColor lightGrayColor]];
+//设置字体属性
+NSDictionary *dict = @{NSForegroundColorAttributeName:[UIColor whiteColor]};
+[[UINavigationBar appearance] setTitleTextAttributes:dict];
+
+
+//appearance:视图样式代理默认样式设置，所有的视图样式均可以使用，因为UIView实现了这个协议
     //[UINavigationBar appearance]：统一全局修改
     //⚠️：通过代理设置,UIAppearance为外观协议，要想改变外观就要实现外观协议协议，（装饰器模式）
     //⚠️：使用appearance设置只会在view layout time 时生效，否则无效。
