@@ -160,7 +160,7 @@ txt:工程配置变量，VC结构分割
 51.bundle(bundle包资源)
 52.shadow(shadow阴影)
 53.runtime(runtime方法交换)
-
+54.collectionView(collectionView创建)
 
 
 ***
@@ -347,6 +347,10 @@ txt:工程配置变量，VC结构分割
 
 53.runtime(runtime方法交换)
 - my_runtimeExchangeMethod_oc_block
+
+54.collectionView(collectionView创建)
+- my_collectionView_oc_block
+
 
 ***
 ##### 工程设置，文档部分
