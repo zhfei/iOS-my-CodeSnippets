@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_widthFix_oc_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (CGFloat)calculateWidthString:(NSString *)string {
+    CGFloat buttonHeigh = 28;
+    CGSize size = CGSizeMake(CGFLOAT_MAX, buttonHeigh);
+    CGSize tempSize;
+    NSDictionary *attribute = @{NSFontAttributeName: BtnFont};
+    tempSize = [string boundingRectWithSize:size options: NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:attribute context:nil].size;
+    return tempSize.width;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>6EA12C64-5791-4FFA-ACC1-34687CE6DA76</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>OC自适应宽度</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_widthFix_oc_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

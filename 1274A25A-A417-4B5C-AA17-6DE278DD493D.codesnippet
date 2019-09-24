@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_btnArrayCreate_oc_func</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#define SelectedColor [UIColor blueColor]
+#define unSelectedColor [UIColor lightGrayColor]
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+#define BtnFont    [UIFont systemFontOfSize:14]
+
+- (UIButton *)createBtn:(NSString *)title frame:(CGRect)frame {
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [btn setFrame:frame];
+    [btn setTitle:title forState:UIControlStateNormal];
+    btn.titleLabel.font = BtnFont;
+    [btn addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self unSelectItem:btn];
+    return btn;
+}
+
+- (CGFloat)calculateWidthString:(NSString *)string {
+    CGFloat buttonHeigh = 28;
+    CGSize size = CGSizeMake(CGFLOAT_MAX, buttonHeigh);
+    CGSize tempSize;
+    NSDictionary *attribute = @{NSFontAttributeName: BtnFont};
+    tempSize = [string boundingRectWithSize:size options: NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:attribute context:nil].size;
+    return tempSize.width;
+}
+
+- (void)updateContextView:(UIView *)contextView buttonTitles:(NSArray&lt;NSString *&gt;*)titles {
+    CGFloat leftMargin = 12;
+    CGFloat topMargin = 6;
+    CGFloat buttonHeigh = 28;
+    
+    [contextView.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+    __block CGFloat maxBtnX = 0;
+    __block CGFloat maxBtnY = topMargin;
+    
+    [titles enumerateObjectsUsingBlock:^(NSString *obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        CGFloat width = [self calculateWidthString:obj];
+        CGRect frame = CGRectMake(maxBtnX + leftMargin, maxBtnY, width+16, buttonHeigh);
+        if (CGRectGetMaxX(frame)+12 &gt; ScreenWidth) {
+            maxBtnY = CGRectGetMaxY(frame) + 6;
+            maxBtnX = 0;
+            frame = CGRectMake(maxBtnX + leftMargin, maxBtnY, width+16, buttonHeigh);
+        }
+        UIButton *btn = [self createBtn:obj frame:frame];
+        btn.tag = idx;
+        [contextView addSubview:btn];
+        maxBtnX = CGRectGetMaxX(btn.frame);
+    }];
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1274A25A-A417-4B5C-AA17-6DE278DD493D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>批量创建btn数组 oc版本</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_btnArrayCreate_oc_func</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

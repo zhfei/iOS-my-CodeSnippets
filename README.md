@@ -191,6 +191,7 @@ txt:工程配置变量，VC结构分割
 6.button(按钮创建)
 - my_btnCreate_oc_block
 - my_buttonGetter_oc_block
+- my_btnArrayCreate_oc_func
 
 7.dire(目录)
 - my_dirCache_oc_block
@@ -253,6 +254,7 @@ txt:工程配置变量，VC结构分割
 24.width(width视图宽高)
 - my_widthS+heightS_oc_block
 - my_widthV+heightV_oc_block
+- my_widthFix_oc_block
 
 25.regex(regex正则表达式)
 - my_regex2bool_oc_func
