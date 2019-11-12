@@ -1,4 +1,3 @@
-
 # iOS-my-CodeSnippets
 
 ***
@@ -161,7 +160,7 @@ txt:工程配置变量，VC结构分割
 52.shadow(shadow阴影)
 53.runtime(runtime方法交换)
 54.collectionView(collectionView创建)
-
+55.stackView(StackView创建)
 
 ***
 ##### OC部分
@@ -353,6 +352,8 @@ txt:工程配置变量，VC结构分割
 54.collectionView(collectionView创建)
 - my_collectionView_oc_block
 
+55.stackView(StackView创建)
+- my_stackViewCreate_oc_block
 
 ***
 ##### 工程设置，文档部分
