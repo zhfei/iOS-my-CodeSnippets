@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_dataArchive_oc_func</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//归档成data
+- (void)save2Archiver{
+    NSArray *array = @[@1, @2, @3];
+    //创建一个data文件路径
+//    NSString *path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
+    NSString *path = [NSString stringWithFormat:@"%@/Documents/archiverFile", NSHomeDirectory()];
+    //将基本类型归档成data
+    //自定义类型需要遵守NSCoding
+    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:array requiringSecureCoding:NO error:nil];
+    //将data保存到文件中
+    [data writeToFile:path atomically:YES];
+}
+
+- (id)dataFromArchiver {
+    //解档
+    NSString *path = [NSString stringWithFormat:@"%@/Documents/archiverFile", NSHomeDirectory()];
+    NSData *data = [[NSData alloc] initWithContentsOfFile:path];
+    NSArray *array = [NSKeyedUnarchiver unarchivedObjectOfClass:[NSArray class] fromData:data error:nil];
+    return array;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E2027B28-E2FE-4A29-A8F7-64A5AC16D5C9</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>基本数据归档成data OC</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_dataArchive_oc_func</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

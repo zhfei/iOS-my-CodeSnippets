@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_datakeychain_oc_func</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)save2Keychain {
+    NSDictionary *query = @{(__bridge id)kSecAttrAccessible : (__bridge id)kSecAttrAccessibleWhenUnlocked,
+                            (__bridge id)kSecClass : (__bridge id)kSecClassGenericPassword,
+                            (__bridge id)kSecValueData : [@"1234562" dataUsingEncoding:NSUTF8StringEncoding],
+                            (__bridge id)kSecAttrAccount : @"account name",
+                            (__bridge id)kSecAttrService : @"loginPassword",
+                            };
+    
+    CFErrorRef error = NULL;
+    OSStatus status = SecItemAdd((__bridge CFDictionaryRef)query, nil);
+    if (status == errSecSuccess) {
+        NSLog(@"保存成功");
+    }
+}
+
+- (void)dataFromKeychain {
+    NSDictionary *query = @{(__bridge id)kSecClass : (__bridge id)kSecClassGenericPassword,
+                            (__bridge id)kSecReturnData : @YES,
+                            (__bridge id)kSecMatchLimit : (__bridge id)kSecMatchLimitOne,
+                            (__bridge id)kSecAttrAccount : @"account name",
+                            (__bridge id)kSecAttrService : @"loginPassword",
+                            };
+    
+    CFTypeRef dataTypeRef = NULL;
+    OSStatus status = SecItemCopyMatching((__bridge CFDictionaryRef)query, &amp;dataTypeRef);
+    if (status == errSecSuccess) {
+        NSString *pwd = [[NSString alloc] initWithData:(__bridge NSData * _Nonnull)(dataTypeRef) encoding:NSUTF8StringEncoding];
+        NSLog(@"==result:%@", pwd);
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>5B790043-48F7-4999-8224-CC7A88E93EB3</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>keychain数据访问</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_datakeychain_oc_func</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

@@ -9,38 +9,41 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    NSCalendar *calender = [NSCalendar currentCalendar];
-    //first date
-    NSDateComponents *dateComp = [NSDateComponents new];
-    dateComp.year = 2019;
-    dateComp.month = 4;
-    dateComp.day = 15;
-    dateComp.hour = 13;
-    dateComp.minute = 58;
-    dateComp.second = 20;
-    NSDate *firstDate = [calender dateFromComponents:dateComp];
-    
-    //second date
-    //firstDate时间对应月中第几天
-    NSRange dayRange = [calender rangeOfUnit:NSCalendarUnitDay inUnit:NSCalendarUnitMonth forDate:firstDate];
-    dateComp.day = dayRange.length;
-    dateComp.hour = 23;
-    dateComp.minute = 59;
-    dateComp.second = 59;
-    NSDate *secondDate = [calender dateFromComponents:dateComp];
-    
-    //date 转 string
-    NSDateFormatter *dateFormatter = [NSDateFormatter new];
-    dateFormatter.dateFormat = @"yyyy-MM-dd HH:mm:ss";
-    NSString *firstDateStr = [dateFormatter stringFromDate:firstDate];
-    NSString *secondDateStr = [dateFormatter stringFromDate:secondDate];
-    
-    
+	<string>//first date
+//日历对象
+NSCalendar *calender = [NSCalendar currentCalendar];
+//时间组件
+NSDateComponents *dateComp = [NSDateComponents new];
+dateComp.year = 2019;
+dateComp.month = 4;
+dateComp.day = 15;
+dateComp.hour = 13;
+dateComp.minute = 58;
+dateComp.second = 20;
+//自定义时间组件，得到目标时间
+NSDate *firstDate = [calender dateFromComponents:dateComp];
+
+//second date
+//根据firstDate时间可以获得其所在的月中有多少天
+NSRange dayRange = [calender rangeOfUnit:NSCalendarUnitDay inUnit:NSCalendarUnitMonth forDate:firstDate];
+dateComp.day = dayRange.length;
+dateComp.hour = 23;
+dateComp.minute = 59;
+dateComp.second = 59;
+//再次自定义时间组件，得到第二个目标时间
+NSDate *secondDate = [calender dateFromComponents:dateComp];
+
+//date 转 string
+NSDateFormatter *dateFormatter = [NSDateFormatter new];
+dateFormatter.dateFormat = @"yyyy-MM-dd HH:mm:ss";
+NSString *firstDateStr = [dateFormatter stringFromDate:firstDate];
+NSString *secondDateStr = [dateFormatter stringFromDate:secondDate];
+
+
 //    //当前时间对应的周是一年中的第几周
 //    [[NSCalendar currentCalendar] ordinalityOfUnit:NSWeekCalendarUnit inUnit:NSYearCalendarUnit forDate:[NSDate date]];
 //    //firstDate时间对应月中第几天
-//    NSRange dayRange1 = [calender rangeOfUnit:NSCalendarUnitDay inUnit:NSCalendarUnitMonth forDate:firstDate];
-</string>
+//    NSRange dayRange1 = [calender rangeOfUnit:NSCalendarUnitDay inUnit:NSCalendarUnitMonth forDate:firstDate];</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>F4A42003-7837-4E6A-9580-123627EAA037</string>
 	<key>IDECodeSnippetLanguage</key>

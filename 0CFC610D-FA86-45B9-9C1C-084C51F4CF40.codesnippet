@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_dataPlist_oc_func</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//plist存储
+- (void)save2Plist{
+    NSArray *array = @[@1, @2, @3];
+    //创建一个plist文件路径
+//    NSString *path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
+    NSString *path = [NSString stringWithFormat:@"%@/Documents/arrayFile.plist", NSHomeDirectory()];
+    //将plist数据保存到plist文件中
+    [array writeToFile:path atomically:YES];
+}
+
+- (id)dataFromPlist {
+    //读取plist文件
+    NSString *path = [NSString stringWithFormat:@"%@/Documents/arrayFile.plist", NSHomeDirectory()];
+    NSArray *array = [NSArray arrayWithContentsOfFile:path];
+    return array;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>0CFC610D-FA86-45B9-9C1C-084C51F4CF40</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>plist存储OC</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_dataPlist_oc_func</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

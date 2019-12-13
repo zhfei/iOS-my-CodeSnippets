@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_kvcOper_oc_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    //KVC聚合运算
+    //age为Int类型
+    [persons valueForKeyPath:@"@sum.age"]
+    [persons valueForKeyPath:@"@min.age"]
+    [persons valueForKeyPath:@"@max.age"]
+    [persons valueForKeyPath:@"@avg.age"]
+    [persons valueForKeyPath:@"@count.age"]
+    //age为Number类型
+    NSArray&lt;NSNumber *&gt; *arr = @[@1, @2, @3, @4];
+    NSNumber *avg = [arr valueForKeyPath:@"@avg.floatValue"];
+    NSNumber *sum = [arr valueForKeyPath:@"@sum.integerValue"];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>CC777A6B-A2F2-4AF4-916F-DA0E1D288F4A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>kvc聚合运算</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_kvcOper_oc_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

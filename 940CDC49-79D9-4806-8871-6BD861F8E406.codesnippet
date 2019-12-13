@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_dispatchgroupEnter/leave_oc_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    dispatch_group_t group =dispatch_group_create();
+    dispatch_queue_t queue= dispatch_get_global_queue(0, 0);
+    
+    dispatch_group_enter(group);
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        int i = 100;
+        while (i--) {
+            sleep(0.5);
+        }
+        dispatch_group_leave(group);
+    });
+    dispatch_group_notify(group, queue, ^{
+        NSLog(@"所有操作都完成了-----:%@",[NSThread currentThread]);
+    });</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>940CDC49-79D9-4806-8871-6BD861F8E406</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>dispatch group enter C block</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_dispatchgroupEnter/leave_oc_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

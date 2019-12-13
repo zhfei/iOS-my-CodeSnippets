@@ -1,3 +1,5 @@
+
+
 # iOS-my-CodeSnippets
 
 ***
@@ -161,6 +163,8 @@ txt:工程配置变量，VC结构分割
 53.runtime(runtime方法交换)
 54.collectionView(collectionView创建)
 55.stackView(StackView创建)
+56.dataSave(数据持久化)
+57.kvcOper(kvc操作)
 
 ***
 ##### OC部分
@@ -169,6 +173,7 @@ txt:工程配置变量，VC结构分割
 - my_dispatchMainQueue_oc_block
 - my_dispatchGlobalQueue_oc_block
 - my_dispatchgroup_oc_block
+- my_dispatchgroupEnter/leave_oc_block
 
 2.serial(序列化功能)
 - my_serialDataToJson_oc_func
@@ -354,6 +359,15 @@ txt:工程配置变量，VC结构分割
 
 55.stackView(StackView创建)
 - my_stackViewCreate_oc_block
+
+56.dataSave(数据持久化)
+- my_datakeychain_oc_func
+- my_dataUserdefault_oc_func
+- my_dataArchive_oc_func
+- my_dataPlist_oc_func
+
+57.kvcOper(kvc操作)
+- my_kvcOper_oc_block
 
 ***
 ##### 工程设置，文档部分
