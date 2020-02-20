@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_checkShow_oc_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>        //将self.leftBarButtonContainerView.frame转换到window坐标系
+        CGRect leftContainerRect = [self.leftBarButtonContainerView convertRect:self.leftBarButtonContainerView.frame toView:nil];
+        CGRect windowRect = [UIScreen mainScreen].bounds;
+        //交集结果
+        CGRect intersectionRect =  CGRectIntersection(leftContainerRect, windowRect);
+        if (CGRectIsEmpty(intersectionRect) || CGRectIsNull(intersectionRect)) {} else {
+            //视图在window上
+            [self leftBarButtonItemDidClick:aiBtn];
+        }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>AA840995-B521-4284-9EC6-DB4735870798</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>判断视图是否可以看到</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_checkShow_oc_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

@@ -165,6 +165,8 @@ txt:工程配置变量，VC结构分割
 55.stackView(StackView创建)
 56.dataSave(数据持久化)
 57.kvcOper(kvc操作)
+58.checkShow(检查view是否可视)
+
 
 ***
 ##### OC部分
@@ -368,6 +370,9 @@ txt:工程配置变量，VC结构分割
 
 57.kvcOper(kvc操作)
 - my_kvcOper_oc_block
+
+58.checkShow(检查view是否可视)
+- my_checkShow_oc_block
 
 ***
 ##### 工程设置，文档部分
