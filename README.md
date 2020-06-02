@@ -166,7 +166,7 @@ txt:工程配置变量，VC结构分割
 56.dataSave(数据持久化)
 57.kvcOper(kvc操作)
 58.checkShow(检查view是否可视)
-
+59.blockLocalVarCreate(局部变量block创建)
 
 ***
 ##### OC部分
@@ -373,6 +373,9 @@ txt:工程配置变量，VC结构分割
 
 58.checkShow(检查view是否可视)
 - my_checkShow_oc_block
+
+59.blockLocalVarCreate(局部变量block创建)
+- my_blockCreat_LocalVar_block
 
 ***
 ##### 工程设置，文档部分
