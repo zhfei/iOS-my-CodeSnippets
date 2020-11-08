@@ -12,22 +12,14 @@
 	<string>#pragma mark - Life Cycle
 
 #pragma mark - Private Method
-[self addUI];
 [self setupUI];
-[self setupLayout];
 [self setupData];
 
-- (void)addUI {
-    
-}
 
 - (void)setupUI {
     self.view.backgroundColor = [UIColor whiteColor];
 }
 
-- (void)setupLayout {
-    
-}
 
 - (void)setupData {
     
