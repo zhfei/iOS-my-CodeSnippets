@@ -167,6 +167,8 @@ txt:工程配置变量，VC结构分割
 57.kvcOper(kvc操作)
 58.checkShow(检查view是否可视)
 59.blockLocalVarCreate(局部变量block创建)
+60.iosVersion(API版本限制)
+
 
 ***
 ##### OC部分
@@ -376,6 +378,9 @@ txt:工程配置变量，VC结构分割
 
 59.blockLocalVarCreate(局部变量block创建)
 - my_blockCreat_LocalVar_block
+
+60.iosVersion(API版本限制)
+my_version_oc_block
 
 ***
 ##### 工程设置，文档部分
