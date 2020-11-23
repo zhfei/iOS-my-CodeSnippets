@@ -167,8 +167,7 @@ txt:工程配置变量，VC结构分割
 57.kvcOper(kvc操作)
 58.checkShow(检查view是否可视)
 59.blockLocalVarCreate(局部变量block创建)
-60.iosVersion(API版本限制)
-
+60.deprecated(deprecated代码或API有版本限制)
 
 ***
 ##### OC部分
@@ -379,8 +378,9 @@ txt:工程配置变量，VC结构分割
 59.blockLocalVarCreate(局部变量block创建)
 - my_blockCreat_LocalVar_block
 
-60.iosVersion(API版本限制)
-my_version_oc_block
+60.deprecated(deprecated代码或API有版本限制)
+- my_code_dep_oc_block
+- my_api_dep_oc_block
 
 ***
 ##### 工程设置，文档部分
@@ -419,3 +419,6 @@ my_version_oc_block
 
 10.mark(mark常用的标示)
 - my_mark5_txt
+
+11.warn(warn注释或添加代码警告)
+- my_warn_txt

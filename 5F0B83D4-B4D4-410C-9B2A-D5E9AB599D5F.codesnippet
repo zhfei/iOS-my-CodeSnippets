@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string></string>
+	<string>my_code_dep_oc_block</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
@@ -13,14 +13,14 @@
 	<key>IDECodeSnippetIdentifier</key>
 	<string>5F0B83D4-B4D4-410C-9B2A-D5E9AB599D5F</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>my_version_oc_block</string>
+	<string>代码iOS版本限制</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_version_oc_block</string>
+	<string>my_code_dep_oc_block</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_warn_txt</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>        #pragma clang diagnostic push
+        #pragma clang diagnostic ignored "警告名称"
+        // 被夹在这中间的代码针对于此警告都会忽视不显示出来
+        //常见警告的名称
+        //1.声明变量未使用  "-Wunused-variable"
+        //2.方法定义未实现  "-Wincomplete-implementation"
+        //3.未声明的选择器  "-Wundeclared-selector"
+        //4.参数格式不匹配  "-Wformat"
+        //5.废弃掉的方法     "-Wdeprecated-declarations"
+        //6.不会执行的代码  "-Wunreachable-code"
+        //7.忽略在arc 环境下performSelector产生的 leaks 的警告 "-Warc-performSelector-leaks"
+        //8.忽略类别方法覆盖的警告 "-Wobjc-protocol-method-implementation"（修复开源库bug，覆盖开源库方法时会用到）
+        #pragma clang diagnostic pop
+
+        //添加警告
+        #warning TODO</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>03133BEE-90E1-4210-83DA-3D2211498BFC</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>警告注释，添加</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_warn_txt</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

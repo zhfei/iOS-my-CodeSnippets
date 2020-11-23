@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_api_dep_oc_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>        //方法从9_0可以使用
+        - (void)addTapAction1:(SEL)tapAction target:(id)target NS_AVAILABLE_IOS(9_0);
+        - (void)addTapAction:(SEL)tapAction target:(id)target NS_DEPRECATED_IOS(2_0, 4_0, "方法被废弃");
+        //ENUM枚举废弃
+        NS_ENUM_AVAILABLE_IOS(9_0);
+        NS_ENUM_DEPRECATED_IOS(2_0, 4_0, "方法被废弃");
+        //旧API废弃，带简单提示
+        - (void)addTapAction:(SEL)tapAction target:(id)target __attribute__((deprecated("这个接口已废弃，建议使用...代替")));
+        - (void)addTapAction:(SEL)tapAction target:(id)target DEPRECATED_MSG_ATTRIBUTE("这个接口已废弃，建议使用...代替");</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>693F16B6-F54E-47FE-815B-4CC43AD260F3</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>api不可用</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_api_dep_oc_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
