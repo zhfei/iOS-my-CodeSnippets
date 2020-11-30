@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_macro_ifdef_oc_txt</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#ifdef A3A
+    //如果定义了A3A
+#endif
+
+
+#if a3a
+    //如果a3a为真
+#else
+    //如果a3a为假
+#endif</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>68815488-8ACD-41AD-A66C-33FCB5136967</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>系统宏定义</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_macro_ifdef_oc_txt</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

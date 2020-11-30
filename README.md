@@ -422,3 +422,7 @@ txt:工程配置变量，VC结构分割
 
 11.warn(warn注释或添加代码警告)
 - my_warn_txt
+
+12.macro(macro系统常有的宏)
+- my_macro_oc_txt
+- my_macro_ifdef_txt
