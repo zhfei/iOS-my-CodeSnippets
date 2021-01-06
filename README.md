@@ -168,6 +168,8 @@ txt:工程配置变量，VC结构分割
 58.checkShow(检查view是否可视)
 59.blockLocalVarCreate(局部变量block创建)
 60.deprecated(deprecated代码或API有版本限制)
+61.theme(主题色设置)
+
 
 ***
 ##### OC部分
@@ -381,6 +383,9 @@ txt:工程配置变量，VC结构分割
 60.deprecated(deprecated代码或API有版本限制)
 - my_code_dep_oc_block
 - my_api_dep_oc_block
+
+61.theme(主题色设置)
+- my_theme_navbar_oc_func
 
 ***
 ##### 工程设置，文档部分

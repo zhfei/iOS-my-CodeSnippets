@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_theme_navbar_oc_func</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (void)setupThemeStyle {
+    //修改NavigationBar主题
+    UINavigationBar *navBar = [UINavigationBar appearance];
+    //1.导航栏的背景色
+    navBar.barTintColor = [UIColor colorWithRed:63/255.0 green:134/255.0 blue:255/255.0 alpha:1.00];
+    //2.主题文字颜色
+    NSMutableDictionary *textAttrs = [NSMutableDictionary dictionary];
+    textAttrs[NSForegroundColorAttributeName] = [UIColor whiteColor];
+    textAttrs[NSFontAttributeName] = [UIFont fontWithName:@"PingFangSC-Regular" size:18];
+    navBar.titleTextAttributes = textAttrs;
+    //3.返回按钮颜色
+    navBar.tintColor = [UIColor whiteColor];
+    //4.底部阴影线
+    navBar.shadowImage = [UIImage imageNamed:@"emptystyle_graynotline"];
+    //5.YES使用半透明效果，NO不透明
+    navBar.translucent = YES;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E7565B96-3603-4001-8C7A-E1D48444147A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>my_theme_navbar_oc_func</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_theme_navbar_oc_func</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
