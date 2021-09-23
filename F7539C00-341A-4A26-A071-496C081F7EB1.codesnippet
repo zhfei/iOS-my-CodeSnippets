@@ -9,20 +9,31 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>- (void)dealloc
-{
-    //指定context 防止父类移除后子类重复移除造成崩溃
-    [self.searchController removeObserver:self forKeyPath:@"active" context:"CurrentClassName"];
+	<string>static void *kClinicAVChatInviteMembersContent;
+
+#pragma mark - Life Cycle
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.clinicChatViewModel addObserver:self forKeyPath:@"allMembers" options:NSKeyValueObservingOptionOld|NSKeyValueObservingOptionNew context:&amp;kClinicAVChatInviteMembersContent];
 }
 
-[self.searchController addObserver:self forKeyPath:@"active" options:NSKeyValueObservingOptionOld|NSKeyValueObservingOptionNew context:"CurrentClassName"];
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    //指定context 防止父类移除后子类重复移除造成崩溃
+    [self.clinicChatViewModel removeObserver:self forKeyPath:@"allMembers" context:&amp;kClinicAVChatInviteMembersContent];
+}
 
+#pragma mark - Event
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary&lt;NSKeyValueChangeKey,id&gt; *)change context:(void *)context {
-    if ([keyPath isEqualToString:@"active"]) {
-        NSLog(@"change: %@",change);
+    if (context == &amp;kClinicAVChatInviteMembersContent) {
+        if ([keyPath isEqualToString:@"allMembers"]) {
+            WYDISPATCH_MAIN_ASYNC_SAFE(^{
+                [self.tableView reloadData];
+                [self refreshBottomView];
+            });
+        }
     } else {
-        //子类处理完自己的事件后，交给父类继续处理
         [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
     }
 }</string>
