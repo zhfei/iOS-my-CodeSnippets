@@ -234,6 +234,7 @@ txt:工程配置变量，VC结构分割
 - my_layerBorder_oc_block
 
 16.layerGradient(layerGradient渐变色图层创建)
+- my_gradientLayer_Color_oc_block
 
 17.tableView(tableView代理)
 - my_tableViewAll_oc_block

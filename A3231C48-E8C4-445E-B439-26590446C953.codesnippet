@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string></string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>CGFloat widthS = [UIScreen mainScreen].bounds.size.width;
+        
+        _container = [UIView new];
+        _container.frame = CGRectMake(16,10,widthS-32,60);
+        
+        CAGradientLayer *layer = [CAGradientLayer layer];
+        layer.frame = _container.bounds;
+        layer.bounds = _container.bounds;
+        layer.colors = @[(id)[UIColor wy_colorWithHex:0xE3EDFF].CGColor,
+                        (id)[UIColor wy_colorWithHex:0xFFFFFF].CGColor];
+        layer.locations = @[@0,@1];
+        layer.startPoint = CGPointMake(0, 0);
+        layer.endPoint = CGPointMake(0, 1);
+        layer.type = kCAGradientLayerAxial;
+        [_container.layer addSublayer:layer];
+        
+        _container.layer.cornerRadius = 8;
+        _container.layer.masksToBounds = YES;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A3231C48-E8C4-445E-B439-26590446C953</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>渐变色-图层</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_gradientLayer_Color_oc_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
