@@ -3,30 +3,39 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_shadow_oc_block</string>
+	<string>my_sharedInstance_oc_func</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>func screenshot(container: UIView) -&gt; UIImage {
-        UIGraphicsBeginImageContextWithOptions(container.frame.size, false, UIScreen.main.scale)
-        container.layer.render(in: UIGraphicsGetCurrentContext()!)
-        let image = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        return image!
-    }</string>
+	<string>+ (instancetype)sharedInstance{
+    static ShareObj *shareObj;
+    static dispatch_once_t onceKey;
+    dispatch_once(&amp;onceKey, ^{
+        shareObj = [[super allocWithZone:nil] init];
+    });
+    return shareObj;
+}
+
++ (instancetype)allocWithZone:(struct _NSZone *)zone {
+    return [self sharedInstance];
+}
+
+- (instancetype)copyWithZone:(struct _NSZone *)zone {
+    return self;
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>D046CCE7-85EB-4EF6-9B07-4DFBA5264F52</string>
+	<string>BA11E5CB-5B87-4063-B8EC-1227CB3F53D4</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>阴影 添加</string>
+	<string>单例</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_shadow_oc_block</string>
+	<string>my_sharedInstance_oc_func</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

@@ -169,7 +169,7 @@ txt:工程配置变量，VC结构分割
 59.blockLocalVarCreate(局部变量block创建)
 60.deprecated(deprecated代码或API有版本限制)
 61.theme(主题色设置)
-
+62.sharedInstance(单例)
 
 
 ***
@@ -388,6 +388,9 @@ txt:工程配置变量，VC结构分割
 
 61.theme(主题色设置)
 - my_theme_navbar_oc_func
+
+62.sharedInstance(单例)
+- my_sharedInstance_oc_func
 
 ***
 ##### 工程设置，文档部分
