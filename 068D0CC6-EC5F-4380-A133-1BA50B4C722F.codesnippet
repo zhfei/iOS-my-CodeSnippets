@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string></string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//    // 将像素point由point所在视图转换到目标视图view中，返回在目标视图view中的像素值
+//    - (CGPoint)convertPoint:(CGPoint)point toView:(UIView *)view;
+//    // 将像素point从view中转换到当前视图中，返回在当前视图中的像素值
+//    - (CGPoint)convertPoint:(CGPoint)point fromView:(UIView *)view;
+//    // 将rect由rect所在视图转换到目标视图view中，返回在目标视图view中的rect
+//    - (CGRect)convertRect:(CGRect)rect toView:(UIView *)view;
+//    // 将rect从view中转换到当前视图中，返回在当前视图中的rect
+//    - (CGRect)convertRect:(CGRect)rect fromView:(UIView *)view;</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>068D0CC6-EC5F-4380-A133-1BA50B4C722F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>OC预编译指令</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_point_to_superPoint_oc_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

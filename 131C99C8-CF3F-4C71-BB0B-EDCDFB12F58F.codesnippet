@@ -3,39 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_sharedInstance_oc_func</string>
+	<string></string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>+ (instancetype)sharedInstance{
-    static ShareObj *shareObj;
-    static dispatch_once_t onceKey;
-    dispatch_once(&amp;onceKey, ^{
-        shareObj = [[super allocWithZone:nil] init];
-    });
-    return shareObj;
-}
-
-+ (instancetype)allocWithZone:(struct _NSZone *)zone {
-    return [self sharedInstance];
-}
-
-- (instancetype)copyWithZone:(struct _NSZone *)zone {
-    return self;
-}</string>
+	<string>#if defined(__obfuscator__)
+#if defined(__cplusplus)
+extern "C"
+#endif // __cplusplus
+const char __obfuscator_module_flags[] = "obfus";
+#endif // __obfuscator__</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>BA11E5CB-5B87-4063-B8EC-1227CB3F53D4</string>
+	<string>131C99C8-CF3F-4C71-BB0B-EDCDFB12F58F</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>单例</string>
+	<string>预编译指令</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_sharedInstance_oc_func</string>
+	<string>my_pre_build_oc_text</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>

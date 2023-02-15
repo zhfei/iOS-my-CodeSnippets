@@ -170,7 +170,7 @@ txt:工程配置变量，VC结构分割
 60.deprecated(deprecated代码或API有版本限制)
 61.theme(主题色设置)
 62.sharedInstance(单例)
-
+63.pointer2pointer(坐标转换)
 
 ***
 ##### OC部分
@@ -392,6 +392,9 @@ txt:工程配置变量，VC结构分割
 62.sharedInstance(单例)
 - my_sharedInstance_oc_func
 
+63.pointer2pointer(坐标转换)
+- my_pointer_to_otherPointer_oc
+
 ***
 ##### 工程设置，文档部分
 
@@ -436,3 +439,6 @@ txt:工程配置变量，VC结构分割
 12.macro(macro系统常有的宏)
 - my_macro_oc_txt
 - my_macro_ifdef_txt
+
+13.proBuild(ios预编译指令)
+- my_pro_build_oc_text
