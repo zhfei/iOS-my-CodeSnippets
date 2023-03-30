@@ -171,6 +171,8 @@ txt:工程配置变量，VC结构分割
 61.theme(主题色设置)
 62.sharedInstance(单例)
 63.pointer2pointer(坐标转换)
+64.available(平台使用范围判断)
+- my_available_swift_block
 
 ***
 ##### OC部分
@@ -394,6 +396,7 @@ txt:工程配置变量，VC结构分割
 
 63.pointer2pointer(坐标转换)
 - my_pointer_to_otherPointer_oc
+64.available(平台使用范围判断)
 
 ***
 ##### 工程设置，文档部分

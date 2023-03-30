@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string></string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>if #available(iOS 10.0, macOS 11.0, *) {
+    // iOS 版本从10.0引入
+    // macOS 版本从11.0引入
+    // * 表示其他所有平台
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2F287B68-A134-4364-84F2-F0AFFA4C8240</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>my_available_swift_block</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_available_swift_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
