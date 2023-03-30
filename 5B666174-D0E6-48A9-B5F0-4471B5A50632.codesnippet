@@ -9,23 +9,32 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#if defined(__obfuscator__)
-#if defined(__cplusplus)
-extern "C"
-#endif // __cplusplus
-const char __obfuscator_module_flags[] = "obfus";
-#endif // __obfuscator__</string>
+	<string>// 操作系统
+#if os(macOS) || os(iOS)
+// CPU架构
+#elseif arch(arm64)
+// swift版本
+#elseif swift(&lt;5.0) &amp;&amp; swift(&gt;=3.0)
+// 模拟器
+#elseif targetEnvironment(simulator)
+// 可导入模块
+#elseif canImport(Foundation)
+//
+#else
+
+#endif
+</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>131C99C8-CF3F-4C71-BB0B-EDCDFB12F58F</string>
+	<string>5B666174-D0E6-48A9-B5F0-4471B5A50632</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Generic</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>预编译指令</string>
+	<string>swift条件编译</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_pre_build_oc_text</string>
+	<string>my_build_condition_swift_txt</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>2</integer>
+	<integer>0</integer>
 </dict>
 </plist>
