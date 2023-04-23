@@ -64,6 +64,7 @@ txt:工程配置变量，VC结构分割
 
 6.button(按钮创建)
 - my_btnCreate_swift_block
+- my_btn_lazy_var_swift_block
 
 7.dire(目录)
 8.date(时间)
