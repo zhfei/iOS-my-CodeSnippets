@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_imageCreate_waterMark_swift_func</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>生成水印图片
+//targetView: 是一个容器图，底部图片，上部水印表示
+private func fetchImage(_ targetView: UIView) -&gt; UIImage {
+    var result = UIImage()
+    UIGraphicsBeginImageContextWithOptions(targetView.bounds.size, false, UIScreen.main.scale)
+    targetView.layer.render(in: UIGraphicsGetCurrentContext()!)
+    guard let imageRet = UIGraphicsGetImageFromCurrentImageContext() else {
+        UIGraphicsEndImageContext();
+        return UIImage()
+    }
+    result = imageRet
+    UIGraphicsEndImageContext();
+    return result
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F2B87B07-0FAD-43F0-8A19-A7A58A124555</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>生成带水印的图片</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_imageCreate_waterMark_swift_func</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
