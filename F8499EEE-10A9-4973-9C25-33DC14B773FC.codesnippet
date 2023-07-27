@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_masnory_animation_swift_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>Masnory
+ 
+btn0.mas_bottom与bottom的区别
+mas_bottom:为属性
+bottom():为链式方法
+ 
+height.mas_equalTo()与equalTo()的区别
+mas_equalTo():等于一个具体的值
+equalTo()：等于一个视图的左边或右边
+ 
+ 
+动画
+self.containerView.mas_updateConstraints { maker in
+    maker?.bottom.mas_equalTo()(-100)
+}
+UIView.animate(withDuration: 0.3, animations: {[weak self] in
+    self?.bgView.backgroundColor = UIColor.init(white: 0, alpha: 0)
+    self?.containerView.superview?.layoutIfNeeded()
+}) { [weak self] complete in
+    self?.view.removeFromSuperview()
+    self?.removeFromParent()
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F8499EEE-10A9-4973-9C25-33DC14B773FC</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Masnory布局动画展示</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_masnory_animation_swift_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

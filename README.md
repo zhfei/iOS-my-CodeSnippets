@@ -175,6 +175,8 @@ txt:工程配置变量，VC结构分割
 63.pointer2pointer(坐标转换)
 64.available(平台使用范围判断)
 - my_available_swift_block
+65.masnory(自动布局)
+- my_masnory_animation_swift_block
 
 ***
 ##### OC部分
@@ -399,6 +401,7 @@ txt:工程配置变量，VC结构分割
 63.pointer2pointer(坐标转换)
 - my_pointer_to_otherPointer_oc
 64.available(平台使用范围判断)
+65.masnory(自动布局)
 
 ***
 ##### 工程设置，文档部分
