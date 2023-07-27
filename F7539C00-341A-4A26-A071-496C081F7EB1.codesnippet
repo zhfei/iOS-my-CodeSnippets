@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_observer_oc_block</string>
+	<string>my_observer_kvo_oc_block</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
@@ -44,7 +44,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>OC添加观察者</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_observer_oc_block</string>
+	<string>my_observer_kvo_oc_block</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

@@ -359,7 +359,7 @@ txt:工程配置变量，VC结构分割
 - my_viewGetter_oc_block
 
 50.observer（observer添加kvo观察者）
-- my_observer_kvo_swift_func
+- my_observer_kvo_oc_block
 
 51.bundle(bundle包资源)
 - my_bundleSub_oc_block
