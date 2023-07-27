@@ -160,6 +160,7 @@ txt:工程配置变量，VC结构分割
 48.keypath(keypath操作)
 49.view(view操作)
 50.observer（observer添加kvo观察者）
+
 51.bundle(bundle包资源)
 52.shadow(shadow阴影)
 53.runtime(runtime方法交换)
@@ -358,7 +359,7 @@ txt:工程配置变量，VC结构分割
 - my_viewGetter_oc_block
 
 50.observer（observer添加kvo观察者）
-- my_observer_oc_block
+- my_observer_kvo_swift_func
 
 51.bundle(bundle包资源)
 - my_bundleSub_oc_block

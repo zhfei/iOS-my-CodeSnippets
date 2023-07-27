@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_observer_kvo_swift_func</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>kvo监听
+class ViewController: UIViewController {
+    private var frameObservation: NSKeyValueObservation?
+     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+         
+        // 监听 view 的 frame 变化， \.表示当前对象
+        frameObservation = observe(\.view.frame, options: [.new]) { [weak self] _, change in
+            guard let self = self, let newFrame = change.newValue else { return }
+            print("View frame changed to \(newFrame)")
+            // 在这里做你想做的事情
+        }
+    }
+     
+    deinit {
+        frameObservation?.invalidate()
+    }
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1486C5A6-684D-4DDB-B0D4-6F4BB32E022E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>swift的kvo监听</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_observer_kvo_swift_func</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
