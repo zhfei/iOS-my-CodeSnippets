@@ -9,16 +9,18 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>            Image("phone7")
-            //尺寸
-                .resizable()
-                .frame(width: 250, height: 250, alignment: .center)
-            //圆角
-                .clipShape(Circle())
-            //描边
-                .overlay(Circle().stroke(Color.white, lineWidth: 4))
-            //阴影
-                .shadow(radius: 10)</string>
+	<string>Image("phone7")
+//尺寸
+    .resizable()
+    .frame(width: 250, height: 250, alignment: .center)
+//圆角
+    .cornerRadius(8)
+//剪裁
+    .clipShape(Circle())
+//描边
+    .overlay(Circle().stroke(Color.white, lineWidth: 4))
+//阴影
+    .shadow(radius: 10)</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>391AFC27-DDF0-4103-8D05-FA86FEA88C95</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -30,6 +32,6 @@
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>
