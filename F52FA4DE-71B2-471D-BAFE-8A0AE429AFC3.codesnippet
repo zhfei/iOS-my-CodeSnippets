@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_sharedInstance_swift_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>class MySingleton {
+    static let sharedInstance = MySingleton()
+     
+    private init() {
+        // 初始化代码
+    }
+     
+    func doSomething() {
+        // 单例的公共方法
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F52FA4DE-71B2-471D-BAFE-8A0AE429AFC3</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>swift单例</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_sharedInstance_swift_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

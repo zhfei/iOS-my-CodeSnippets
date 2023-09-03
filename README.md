@@ -173,6 +173,8 @@ txt:工程配置变量，VC结构分割
 60.deprecated(deprecated代码或API有版本限制)
 61.theme(主题色设置)
 62.sharedInstance(单例)
+- my_sharedInstance_swift_block
+
 63.pointer2pointer(坐标转换)
 64.available(平台使用范围判断)
 - my_available_swift_block
