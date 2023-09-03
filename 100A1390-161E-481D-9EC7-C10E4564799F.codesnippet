@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_runtime_associated_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//设置关联对象
+static NSString * const key = @"myName";
+@implementation** NSObject (myobj)
+- (NSString *)name
+{
+  return objc_getAssociatedObject(self, &amp;key);
+}
+- (void)setName:(NSString *)name
+{
+  objc_setAssociatedObject(self, &amp;key, name, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+@end</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>100A1390-161E-481D-9EC7-C10E4564799F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>runtime关联对象</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_runtime_associated_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
