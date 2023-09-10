@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_oc/block_swift/closure_txt</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//-------------------Object-C: Block----------------
+Object-C: Block
+
+类型定义：
+返回值类型(^block的名称)(block的参数)
+返回值(^block的名称）(形参列表) =  ^( 形参列表){
+    // 执行代码
+}；
+
+NSString* (^blockName)(NSString *str) = ^(NSString *str){
+    return str;
+};
+blockName(@"block")
+    
+//-------------------Swift闭包----------------
+Swift闭包: Closure
+类型：(参数)-&gt;(返回值类型)
+闭包名称 = { (形参列表) -&gt; return 返回值 in
+    // 执行代码
+}
+    
+let closure = { (str:String) -&gt; String in
+    return str
+}
+closure("closure")
+
+//因为Swift的类型推断，高阶函数中传递的闭包可以只传参数，返回值会自动被推断
+let numbers = [1,9,2,8,3,7,4,6];
+let numArr = numbers.sorted { (numA:Int, numB:Int) -&gt; Bool in
+    return numA &lt; numB
+}
+//简化，返回值被自动推断
+let numArr = numbers.sorted { numA,numB in
+    return numA &lt; numB
+}
+print(numArr)
+
+log
+[1, 2, 3, 4, 6, 7, 8, 9]
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B2781600-A23B-405D-AF02-D2998C395FDA</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>OC_Block/Swift_Closure的定义</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_oc/block_swift/closure_txt</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
