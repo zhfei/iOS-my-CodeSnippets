@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_algorithm_bubblingSort_c_func</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>void swap(int *left, int *right) {
+    *left = *left + *right;
+    *right = *left - *right;
+    *left = *left - *right;
+}
+
+void bubblingSort(int array[], int length) {
+    //1.外层从头到尾
+    for (int i = 0; i &lt; length; i++) {
+        
+        int index = length - 1;
+        //2.内层从尾到头的后一位
+        for (int j = index; j &gt; i; j--) {
+            if (array[j] &lt; array[j-1]) {
+                swap(&amp;array[j], &amp;array[j-1]);
+            }
+        }
+    }
+}
+
+void testBubblingSort() {
+    // insert code here...
+    int array[10] = {3,5,6,1,2,8,0,9,4,7};
+    bubblingSort(array, 10);
+    
+
+    for (int i = 0; i &lt; 10; i++) {
+        printf("%d\n",array[i]);
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>2F8DF476-D738-430E-8FFC-1322D98AE899</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>冒泡算法</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_algorithm_bubblingSort_c_func</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
