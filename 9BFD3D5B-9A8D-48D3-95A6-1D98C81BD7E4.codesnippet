@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_algorithm_selectSort_c_func</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>void selectSort(int array[], int length) {
+    //1.拿第一个和后面子数组中的所有元素进行比较
+    for (int i = 0; i &lt; length; i++) {
+        
+        //2.默认第一个位置为最小，如果后面的小，就和第一个下标进行交换
+        int minIndex = i;
+        int index = i + 1;
+        for (int j = index; j &lt; length; j++) {
+            if (array[minIndex] &gt; array[j]) {
+                minIndex = j;
+            }
+        }
+        
+        //3.如果记录的最新和当前i不一样则进行交换
+        if (minIndex != i) {
+            int tmp = array[i];
+            array[i] = array[minIndex];
+            array[minIndex] = tmp;
+        }
+    }
+}
+
+void testSelectSort() {
+    // insert code here...
+    int array[10] = {3,5,6,1,2,8,0,9,4,7};
+    selectSort(array, 10);
+    
+
+    for (int i = 0; i &lt; 10; i++) {
+        printf("%d\n",array[i]);
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>9BFD3D5B-9A8D-48D3-95A6-1D98C81BD7E4</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>选择排序</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_algorithm_selectSort_c_func</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

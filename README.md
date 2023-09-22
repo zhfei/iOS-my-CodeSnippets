@@ -465,3 +465,4 @@ txt:工程配置变量，VC结构分割
 
 15.算法
 - my_algorithm_bubblingSort_c_func
+- my_algorithm_selectSort_c_func
