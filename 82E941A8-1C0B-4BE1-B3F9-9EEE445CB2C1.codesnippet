@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_algorithm_heapSort8_c_func</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>typedef struct HeapNode {
+    int length;
+    int data[];
+}HeapNode, *SqList;
+
+
+void swap_(SqList L, int postion1 , int postion2) {
+    if (L-&gt;length-1 &lt; postion1 || L-&gt;length-1 &lt; postion2) {
+        return;
+    }
+    
+    int temp = L-&gt;data[postion1];
+    L-&gt;data[postion1] = L-&gt;data[postion2];
+    L-&gt;data[postion2] = temp;
+}
+
+/* 已知L-&gt;r[s..m]中记录的关键字除L-&gt;r[s]之外     均满足堆的定义 */
+/* 本函数调整L-&gt;r[s]的关键字，使L-&gt;r[s..m]成    为一个大顶堆 */
+void HeapAdjust(SqList L, int s, int m) {
+    int temp, j;
+    temp = L-&gt;data[s];
+    
+    /* 沿关键字较大的孩子结点向下筛选 */
+    for (j = 2*s; j &lt;= m; j *= 2) {
+        if (j &lt; m &amp;&amp; L-&gt;data[j] &lt; L-&gt;data[j + 1] ) {
+            /* j为关键字中较大的记录的下标 */
+            ++j;
+        }
+        
+        if (temp &gt;= L-&gt;data[j]) {
+            /* rc应插入在位置s上 */
+        }
+        
+        L-&gt;data[s] = L-&gt;data[j];
+        s = j;
+    }
+    
+    //插入
+    L-&gt;data[s] = temp;
+}
+
+
+void heapSort(SqList L) {
+    
+    int i;
+    //构建大顶堆
+    for (i = L-&gt;length/2; i &gt; 0; i--) {
+        HeapAdjust(L, i, L-&gt;length);
+    }
+    
+    for (i = L-&gt;length; i &gt; 1; i--) {
+        //将堆顶节点与列表最后一个节点交换
+        swap_(L, 1, i);
+        //将i-1个数据重新构建大顶堆
+        HeapAdjust(L, 1, i-1);
+    }
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>82E941A8-1C0B-4BE1-B3F9-9EEE445CB2C1</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>堆排序</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_algorithm_heapSort8_c_func</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_algorithm_insertSort3_c_func</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//插入排序
+//i = 1的意义是：第0个元素是一个有序数组，后面为无序数组
+//关键点是：
+//{3,5,1,6,7,8}
+// 当i在2的下标时，判断是不是大于前面的5，若不大于，则进入循环，
+//先判断（1&gt;5）不成立时，5移动到1的位置，继续判断（3&gt;5）,不成立时，3移动到5的位置，
+void insertSort(int array[], int length) {
+
+    
+    for (int i = 1; i &lt; length; i++) {
+        
+        int j, temp = array[i];
+        
+        if (array[i] &lt; array[i - 1]) {
+            
+            int index = i - 1;
+            for (j = index; array[j] &gt; temp; j--) {
+                array[j + 1] = array[j];
+            }
+            array[j+1] = temp;
+        }
+        
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>4FC11196-3CF5-45AA-99BF-3973B3885623</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>插入排序</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_algorithm_insertSort3_c_func</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

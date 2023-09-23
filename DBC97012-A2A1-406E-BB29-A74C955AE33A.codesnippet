@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_algorithm_shellSort4_c_func</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//希尔排序主要思想是先对整个数组进行动态分段，分段间隔逐渐缩小，直到间隔向临。
+//然后将不同分组间，对应开始位置的元素看作一个数组，然后对这个数组进行插入排序。
+//可以改造多种基本排序
+
+//跳跃式比较排序，如：{3,1,5,6,4,2,9,7,8,0}
+
+void shellSort(int array[], int length) {
+
+    
+    int gap = length;//10
+    
+    do {
+        
+        gap = gap/3 + 1;//4
+        
+        for (int i = gap; i &lt; length; i++) {
+            
+            int j, temp;
+            
+            for (int inde = 0; inde &lt; length; inde++) {
+                printf("%d-----i=:%d\n",array[inde],i);
+            }
+            printf("我是分割线\n\n\n");
+        
+            
+            if (array[i] &lt; array[i - gap]) {
+                temp = array[i];
+                for (j = i - gap; j&gt;=0 &amp;&amp; array[j] &gt; temp; j-=gap) {
+                    array[j + gap] = array[j];
+                }
+                array[j+gap] = temp;
+            }
+            
+        }
+        
+    } while (gap &gt; 1);
+    
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>DBC97012-A2A1-406E-BB29-A74C955AE33A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>希尔排序</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_algorithm_shellSort4_c_func</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

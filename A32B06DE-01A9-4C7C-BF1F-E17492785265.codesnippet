@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_algorithm_mergeSort6_c_func</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//  归并排序思想：先将一排数组元素拆分成最小有序数组单元（只有一个元素）
+//  之后对相邻的两个单元两两合并，直到合并到最后一个有序数组结束。
+
+void marging(int *list1,int list1_size,int *list2,int list2_size) {
+
+    int i,j,k,m;
+    int temp[10];
+    
+    i = j = k = m = 0;
+    
+    while (i &lt; list1_size &amp;&amp; j &lt; list2_size) {
+        
+        if (list1[i] &lt; list2[j]) {
+            temp[k++] = list1[i++];
+        } else {
+            temp[k++] = list2[j++];
+        }
+    }
+    
+    while (i &lt; list1_size) {
+        temp[k++] = list1[i++];
+    }
+    
+    while (j &lt; list2_size) {
+        temp[k++] = list2[j++];
+    }
+    
+    for (m = 0; m &lt; (list1_size + list2_size); m++) {
+        list1[m] = temp[m];
+    }
+    
+}
+
+void margeSort(int array[], int length) {
+
+    if (length &gt; 1) {
+        
+        int *list1 = array;
+        int list1_size = length/2;
+        int *list2 = list1 + list1_size;
+        int list2_size = length - list1_size;
+        
+        margeSort(list1, list1_size);
+        margeSort(list2, list2_size);
+        
+        marging(list1, list1_size, list2, list2_size);
+    }
+
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>A32B06DE-01A9-4C7C-BF1F-E17492785265</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>归并排序</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_algorithm_mergeSort6_c_func</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_algorithm_bubblingSort_c_func</string>
+	<string>my_algorithm_bubblingSort1_c_func</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
@@ -46,7 +46,7 @@ void testBubblingSort() {
 	<key>IDECodeSnippetSummary</key>
 	<string>冒泡算法</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_algorithm_bubblingSort_c_func</string>
+	<string>my_algorithm_bubblingSort1_c_func</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

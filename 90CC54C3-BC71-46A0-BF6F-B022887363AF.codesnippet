@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_algorithm_binarySort7_c_func</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>int binarySearch(int arr[], int num) {
+    int first = 0;
+    int last = sizeof(arr)-1;
+    
+    while (first &lt;= last) {
+        int mid = (first + last)/2;
+        
+        if (arr[mid] == num) {
+            return mid;
+        }
+        
+        if (num &lt; arr[mid]) {
+            last = mid - 1;
+        }
+        
+        if (num &gt; arr[mid]) {
+            first = mid + 1;
+        }
+    }
+    return first;
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>90CC54C3-BC71-46A0-BF6F-B022887363AF</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>二分查找</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_algorithm_binarySort7_c_func</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

@@ -464,5 +464,11 @@ txt:工程配置变量，VC结构分割
 - my_oc/block_swift/closure_txt
 
 15.算法
-- my_algorithm_bubblingSort_c_func
-- my_algorithm_selectSort_c_func
+- my_algorithm_bubblingSort1_c_func
+- my_algorithm_selectSort2_c_func
+- my_algorithm_insertSort3_c_func
+- my_algorithm_shellSort4_c_func
+- my_algorithm_quickSort5_c_func
+- my_algorithm_mergeSort6_c_func
+- my_algorithm_binarySort7_c_func
+- my_algorithm_heapSort8_c_func

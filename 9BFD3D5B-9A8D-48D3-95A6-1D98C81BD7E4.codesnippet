@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_algorithm_selectSort_c_func</string>
+	<string>my_algorithm_selectSort2_c_func</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
@@ -48,7 +48,7 @@ void testSelectSort() {
 	<key>IDECodeSnippetSummary</key>
 	<string>选择排序</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_algorithm_selectSort_c_func</string>
+	<string>my_algorithm_selectSort2_c_func</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
