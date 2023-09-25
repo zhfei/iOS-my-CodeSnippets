@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_textLabelCreate_swiftUI_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>                Text("纽约")
+                    .foregroundColor(.secondary)
+                    .font(.largeTitle)
+                    .padding()
+                    .transition(.move(edge: .trailing))</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>E0CCB7BF-1E8E-4DF3-946A-B5A111684EE7</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>文本text的创建</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_textLabelCreate_swiftUI_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
