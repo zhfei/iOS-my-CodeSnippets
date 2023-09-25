@@ -88,10 +88,6 @@ txt:工程配置变量，VC结构分割
 14.label(label创建)
 - my_labelCreate_swift_block
 - my_labelAutoWidth_oc_block
-- my_textLabelCreate_swiftUI_block
-- my_listNavigationBarCreate_swiftUI_block
-- my_uikit2swiftUI_swiftUI_block
-- my_VStack_HStack_swiftUI_block
 
 15.layer(layer创建)
 - my_layerCreate_swift_block
@@ -186,6 +182,14 @@ txt:工程配置变量，VC结构分割
 - my_masnory_animation_swift_block
 66.image(图片)
 - my_imageCreate_waterMark_swift_func
+
+67.swiftUI部分
+- my_textLabelCreate_swiftUI_block
+- my_listNavigationBarCreate_swiftUI_block
+- my_uikit2swiftUI_swiftUI_block
+- my_VStack_HStack_swiftUI_block
+- my_publishd_observed1_state2_combin_swiftUI_block
+
 
 ***
 ##### OC部分
