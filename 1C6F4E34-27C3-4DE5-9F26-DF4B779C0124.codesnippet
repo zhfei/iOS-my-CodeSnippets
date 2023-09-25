@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_scale_rotation_animation_swiftUI_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>            Button(action: {
+                isSelected.toggle()
+            }) {
+                Image(systemName: "star.leadinghalf.fill")
+                    .imageScale(Image.Scale.large)
+                    .rotationEffect(.degrees(isSelected ? 360/5 : 0))
+                    .scaleEffect(isSelected ? 1.5 : 1)
+                    .animation(.spring(),value: 1)
+                    .padding()
+            }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1C6F4E34-27C3-4DE5-9F26-DF4B779C0124</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>swiftui的旋转，缩放动画</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_scale_rotation_animation_swiftUI_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
