@@ -10,17 +10,29 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>Image("phone7")
-//尺寸
+    //尺寸
     .resizable()
     .frame(width: 250, height: 250, alignment: .center)
-//圆角
+    //圆角
     .cornerRadius(8)
-//剪裁
+    //剪裁
     .clipShape(Circle())
-//描边
+    //描边
     .overlay(Circle().stroke(Color.white, lineWidth: 4))
-//阴影
-    .shadow(radius: 10)</string>
+    //阴影
+    .shadow(radius: 10)
+    //展示模式
+    .aspectRatio(contentMode: zoomed ? .fill : .fit)
+    //点击事件
+    .onTapGesture {
+        //全局的方式添加动画：表示凡是使用这个@State双向绑定变量的地方都会带动画（可能在屏幕刷新时自动使用插值的方式逐个变动）
+        withAnimation(.default){
+            self.zoomed.toggle()
+        }
+    }
+    //导航栏标题
+    .navigationBarTitle(Text("自由女神像"),displayMode: NavigationBarItem.TitleDisplayMode.inline)
+</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>391AFC27-DDF0-4103-8D05-FA86FEA88C95</string>
 	<key>IDECodeSnippetLanguage</key>
