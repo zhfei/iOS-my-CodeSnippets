@@ -191,6 +191,7 @@ txt:工程配置变量，VC结构分割
 - my_publishd_observed1_state2_combin_swiftUI_block
 - my_swiftui2uikit_swiftUI_block
 - my_scale_rotation_animation_swiftUI_block
+- my_transition_animation_swiftUI_block
 
 
 ***
