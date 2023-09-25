@@ -9,7 +9,13 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>struct ContentView: View {
+	<string>struct Landmark: Identifiable {
+    var id = UUID()
+    let name: String
+}
+
+
+struct ContentView: View {
     var body: some View {
         NavigationView {
             /*
