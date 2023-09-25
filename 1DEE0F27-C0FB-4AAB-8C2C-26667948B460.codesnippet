@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_uikit2swiftUI_swiftUI_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>struct MapView: UIViewRepresentable {
+    let landmark: Landmark
+    func makeUIView(context: Context) -&gt; MKMapView {
+        return MKMapView()
+    }
+    
+    func updateUIView(_ uiView: MKMapView, context: Context) {
+        //地图中心点经纬度
+        let center = CLLocationCoordinate2DMake(39.9087243, 116.3952859)
+        //比例尺
+        let span = MKCoordinateSpan(latitudeDelta: 0.02, longitudeDelta: 0.02)
+        
+        uiView.setRegion(MKCoordinateRegion(center: landmark.locationCoordition, span: span), animated: true)
+    }
+}
+
+struct MapView_Previews: PreviewProvider {
+    static var previews: some View {
+        MapView(landmark: landmarks[0])
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1DEE0F27-C0FB-4AAB-8C2C-26667948B460</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>uikit转换成swiftUI</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_uikit2swiftUI_swiftUI_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

@@ -35,6 +35,22 @@
                         }
                     }
                 }
+                
+                //或者
+//                List{
+//                // $isOpen: 传入的是@State变量的引用，是双向绑定的效果，内部会自动对值取反操作
+//                    Toggle(isOn: $isOpen) {
+//                        Text("只展示收藏")
+//                    }
+//                    ForEach(userData.userLandmarks) { item in
+//                        if !isOpen || item.isFeatured {
+//                            NavigationLink(destination: LandmarkDetail(landmark: item, userData: userData)) {
+//                                LandmarkListCell(landmark: item)
+//                            }
+//                        }
+//                    }
+//                    .navigationBarTitle(Text("中国地标"))
+//                }
                  
             }.navigationBarTitle(Text("世界地标"),displayMode: NavigationBarItem.TitleDisplayMode.large)
         }
