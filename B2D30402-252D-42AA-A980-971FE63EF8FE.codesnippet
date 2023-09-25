@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_VStack_HStack_swiftUI_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>        VStack {
+            MapView(landmark: landmark)
+                .edgesIgnoringSafeArea(Edge.Set.top)
+                .frame(height:350)
+            
+            
+            Image(landmark.imageName)
+            //尺寸
+                .resizable()
+                .frame(width: 250, height: 250, alignment: .center)
+            //圆角
+                .clipShape(Circle())
+            //描边
+                .overlay(Circle().stroke(Color.white, lineWidth: 4))
+            //阴影
+                .shadow(radius: 10)
+            //偏移
+                .offset(x: 0, y: -100)
+            //内边距
+                .padding(Edge.Set.bottom, -100)
+            
+            VStack(alignment: .leading, spacing: 8){
+                HStack {
+                    Text(landmark.name).font(.title)
+                    Button(action: {
+                        self.userData.userLandmarks[self.userLandmarkIndex]
+                            .isFeatured.toggle()
+                    }){
+                        if landmark.isFeatured {
+                            Image("icon_rcxinhua_selected")
+                                .resizable().frame(width: 20, height: 20, alignment: .center)
+                        } else {
+                            Image("icon_rcxinhua_defaultselected")
+                                .resizable().frame(width: 20, height: 20, alignment: .center)
+                        }
+                    }
+                    
+                }
+                HStack{
+                    Text(landmark.city).font(.subheadline)
+                    Spacer()
+                    Text(landmark.proviance).font(.subheadline)
+                }
+            }.padding()
+            Spacer()
+        }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>B2D30402-252D-42AA-A980-971FE63EF8FE</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>水平布局和垂直布局</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_VStack_HStack_swiftUI_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
