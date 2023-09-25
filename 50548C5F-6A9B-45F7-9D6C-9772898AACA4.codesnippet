@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_listNavigationBarCreate_swiftUI_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>struct ContentView: View {
+    var body: some View {
+        NavigationView {
+            /*
+             List,ForEach等要求被循环的每个元素都要有一个唯一的标识
+             这样数据变更时，可以迅速定位刷新对应的UI，提高性能
+             两种方法：
+             1.ArrayData.identified(by: \.id) id为每个元素的唯一标识属性
+             2.数组中的元素要遵循Identifiable协议（实现id协议）
+              
+             */
+             
+            List(landmarks){ item in
+                //所有的视图容器，都是遵守了View协议的结构体，结构体会为它内部的属性自动生成构造函数
+//                LandmarkCell(landmark: item)
+                NavigationLink(destination: {LandmarkDetail(landmark: item)}) {
+                    HStack{
+                        Image("icon_consult_default_avatar_assistant")
+                        VStack {
+                            Text("长城")
+                            Text("北京")
+                                .font(.subheadline)
+                                .foregroundColor(Color.gray)
+                        }
+                    }
+                }
+                 
+            }.navigationBarTitle(Text("世界地标"),displayMode: NavigationBarItem.TitleDisplayMode.large)
+        }
+    }
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>50548C5F-6A9B-45F7-9D6C-9772898AACA4</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>消息列表+导航条</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_listNavigationBarCreate_swiftUI_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
