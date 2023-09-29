@@ -12,7 +12,12 @@
 	<string>                HikeDetailView()
                 //insertion: 入场动画
                 //removal: 出场动画
-                    .transition(AnyTransition.asymmetric(insertion: AnyTransition.move(edge: .trailing).combined(with: .opacity), removal: AnyTransition.scale(scale: 0.1).combined(with: .opacity)))</string>
+                    .transition(AnyTransition.asymmetric(insertion: AnyTransition.move(edge: .trailing).combined(with: .opacity), removal: AnyTransition.scale(scale: 0.1).combined(with: .opacity)))
+
+HikeDetailView()
+//insertion: 入场动画
+//removal: 出场动画
+    .transition(AnyTransition.asymmetric(insertion: AnyTransition.opacity.animation(.easeIn), removal: AnyTransition.scale(scale: 0.1).animation(.easeInOut(duration: 1.0))))</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>7D134BA8-17BA-4ED5-8351-F977CE2780BA</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -24,6 +29,6 @@
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>
