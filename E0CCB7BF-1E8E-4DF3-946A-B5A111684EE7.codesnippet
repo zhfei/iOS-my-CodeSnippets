@@ -9,11 +9,12 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>                Text("纽约")
-                    .foregroundColor(.secondary)
-                    .font(.largeTitle)
-                    .padding()
-                    .transition(.move(edge: .trailing))</string>
+	<string>Text("纽约")
+    .foregroundColor(.secondary)
+    .foregroundStyle(.primary)
+    .font(.largeTitle)
+    .padding()
+    .transition(.move(edge: .trailing))</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>E0CCB7BF-1E8E-4DF3-946A-B5A111684EE7</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -25,6 +26,6 @@
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
-	<integer>0</integer>
+	<integer>2</integer>
 </dict>
 </plist>

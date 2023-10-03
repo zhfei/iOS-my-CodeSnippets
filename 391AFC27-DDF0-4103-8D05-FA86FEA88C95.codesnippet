@@ -12,6 +12,8 @@
 	<string>Image("phone7")
 //尺寸
     .resizable()
+//NavigationLink内部的Image默认使用按钮样式，如有NavigationView，它会帮忙清掉默认样式
+    .renderingMode(.original)
 //内容填充样式
     .scaledToFill()
     .frame(width: 250, height: 250, alignment: .center)
