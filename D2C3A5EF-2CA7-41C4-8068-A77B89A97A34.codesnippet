@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_scrollview_swiftUI_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>                    let list = categories[cateName]
+                    ScrollView.init(.horizontal, showsIndicators: false) {
+                        HStack{
+                            ForEach(Range.init(0...10)) { index in
+                                let item = list![index%2]
+                                VStack(alignment: .leading){
+                                    Image(item.imageName)
+                                        .resizable()
+                                        .scaledToFill()
+                                        .frame(height:150)
+                                        .clipped()
+                                    Text(item.name)
+                                }
+                                .padding(.trailing,15)
+                                .padding([.bottom,.top],8)
+                            }
+                        }
+                    }
+                }
+                .listRowInsets(EdgeInsets())
+                .listRowSeparator(Visibility.hidden)</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>D2C3A5EF-2CA7-41C4-8068-A77B89A97A34</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>scrollview代码块</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_scrollview_swiftUI_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
