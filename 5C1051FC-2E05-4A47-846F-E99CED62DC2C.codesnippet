@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_present/push_swiftUI_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>            .navigationBarItems(trailing: Button(action: {
+                //@State var isEdit: Bool = false
+                self.isEdit.toggle()
+            }, label: {
+                Image(systemName: "person.circle.fill")
+                    .foregroundColor(isEdit ? .red : .blue)
+            }))
+            //PresentationLink的实现方案，对应NavigationLink
+            /*
+             NavigationLink方案
+             NavigationLink(destination: LandmarkList()) {
+                 Text("查看所有地标")
+             }
+             .listRowInsets(EdgeInsets.init())
+             */
+            //跟在list的后面
+            .sheet(isPresented: $isEdit) {
+                Text("Hello Jack")
+            }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>5C1051FC-2E05-4A47-846F-E99CED62DC2C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>页面弹出方式</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_present/push_swiftUI_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
