@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_picker_datePicker_swiftUI_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>                    VStack(alignment: .leading){
+                        Text("生日").bold()
+                        DatePicker( "生日选择", selection: $profile.birthday, displayedComponents: .date)
+                    }.padding(.top)</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>915FF907-8D71-4ECC-9798-B83A9895E98A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>datePicker时间选择器</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_picker_datePicker_swiftUI_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
