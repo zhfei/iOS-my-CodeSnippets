@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_lifeCircle_event_swiftUI_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>                }.onDisappear {
+                    profileCopy = profile
+                }.onAppear {
+                    
+                }.onTapGesture {
+                    
+                }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7BC54AAC-A0C3-4A57-9D4A-40E64DCAE244</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>swiftUI的View生命周期事件回调</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_lifeCircle_event_swiftUI_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
