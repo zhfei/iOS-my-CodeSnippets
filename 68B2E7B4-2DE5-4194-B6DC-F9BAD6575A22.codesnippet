@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_protocals_swiftUI_txt</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//Identifiable：遵守了这个协议可以直接作为ForEach的参数进行遍历
+struct User: Identifiable {
+    var id = UUID()
+}
+//CaseIterable: 遵守了这个协议就可以调用Season.allCases获取所有的枚举类型，返回一个枚举数组
+enum Season: String, CaseIterable {
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>68B2E7B4-2DE5-4194-B6DC-F9BAD6575A22</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>swiftUI中协议的说明</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_protocals_swiftUI_txt</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
