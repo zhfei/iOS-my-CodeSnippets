@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_binding_data_view_swiftUI_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>        //1.全局环境变量
+        @Environment(\.editMode) var editMode
+        #Preview {
+            Group {
+                Home()
+                //在调试时设置环境变量
+                Home().environment(\.colorScheme, .dark)
+            }
+        }
+     
+        
+        //2.当前View内，数据与视图的双向绑定
+        @State private var profile = User.default
+        @State private var profileCopy = User.default
+
+
+        //3.@ObservedObject: 全局环境变量绑定
+        @ObservedObject var userData: UserData = UserData()
+
+        //类中包裹的是已经存在的环境变量landmarks，它作为信号的发射源，可以在数据修改时发生信号
+        class UserData: ObservableObject {
+            @Published var userLandmarks:[Landmark] = landmarks
+            
+        }
+
+        //4.传递的参数是一个Binding类型，外界创建时传递参数ProfileEditor(profileCopy: $profileCopy)
+        //创建#Preview预览时，可以定义一个常量来模拟Binding类型ProfileEditor(profileCopy: .constant(User.default))
+        @Binding var profileCopy: User</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F29F51CB-B20D-4EB2-B011-DCF8CB7CA464</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>swiftUI双向绑定</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_binding_data_view_swiftUI_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

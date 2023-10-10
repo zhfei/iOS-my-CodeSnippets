@@ -199,6 +199,7 @@ txt:工程配置变量，VC结构分割
 - my_protocals_swiftUI_txt
 - my_glouble_environment_swiftUI_block
 - my_lifeCircle_event_swiftUI_block
+- my_binding_data_view_swiftUI_block
 
 
 ***
