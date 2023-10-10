@@ -13,8 +13,10 @@
     .foregroundColor(.secondary)
     .foregroundStyle(.primary)
     .font(.largeTitle)
+    .bold()
     .padding()
-    .transition(.move(edge: .trailing))</string>
+    .transition(.move(edge: .trailing))
+    .border(.yellow)</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>E0CCB7BF-1E8E-4DF3-946A-B5A111684EE7</string>
 	<key>IDECodeSnippetLanguage</key>
