@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_glouble_environment_swiftUI_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    //全局环境变量
+    @Environment(\.editMode) var editMode
+    
+    if editMode?.wrappedValue == .active {
+        Button(action: {
+            profile = profileCopy
+            //直接设置值没用动画
+//                        editMode?.wrappedValue = .inactive
+            //调用editMode?.animation()，返回的结果也是一个editMode，只是它的属性在被修改后，会有动画过度
+            editMode?.animation().wrappedValue = .inactive
+            
+        }) {
+            Text("完成")
+        }
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>4119C253-1D49-4CED-8D5B-A522144E55CE</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>读取和修改swiftUI中的全局环境变量</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_glouble_environment_swiftUI_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

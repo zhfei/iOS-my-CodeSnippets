@@ -197,6 +197,7 @@ txt:工程配置变量，VC结构分割
 - my_picker_menu/wheel/segmented_swiftUI_block
 - my_picker_datePicker_swiftUI_block
 - my_protocals_swiftUI_txt
+- my_glouble_environment_swiftUI_block
 
 
 ***
