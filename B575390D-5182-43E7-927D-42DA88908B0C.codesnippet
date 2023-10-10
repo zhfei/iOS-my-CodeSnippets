@@ -9,15 +9,19 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>                    VStack {
-                        Text("喜欢的季节")
-                        Picker("季节列表", selection: $profile.prefersSeason) {
-                            ForEach(Range(NSMakeRange(0, User.Season.allCases.count-1))!) { index in
-                                Text(User.Season.allCases[index].rawValue)
-                            }
-                            //(menu, wheel, segmented)
-                        }.pickerStyle(.wheel)
-                    }</string>
+	<string>VStack {
+    Text("喜欢的季节")
+    Picker("季节列表", selection: $profile.prefersSeason) {
+        //[item]数组内的元素item要遵守Identifiable协议
+//                            ForEach(["a"]){
+//                                
+//                            }
+        ForEach(Range(NSMakeRange(0, User.Season.allCases.count-1))!) { index in
+            Text(User.Season.allCases[index].rawValue).tag(index)
+        }
+        //(menu, wheel, segmented)
+    }.pickerStyle(.wheel)
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>B575390D-5182-43E7-927D-42DA88908B0C</string>
 	<key>IDECodeSnippetLanguage</key>
