@@ -194,6 +194,7 @@ txt:工程配置变量，VC结构分割
 - my_transition_animation_swiftUI_block
 - my_scrollview_swiftUI_block
 - my_present/push_swiftUI_block
+- my_picker_menu/wheel/segmented_swiftUI_block
 
 
 ***
