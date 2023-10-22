@@ -201,6 +201,9 @@ txt:工程配置变量，VC结构分割
 - my_lifeCircle_event_swiftUI_block
 - my_binding_data_view_swiftUI_block
 
+68.viewController基本模板
+- my_vc_swift_block
+
 
 ***
 ##### OC部分
