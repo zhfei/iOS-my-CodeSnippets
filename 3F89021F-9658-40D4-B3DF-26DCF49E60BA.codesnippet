@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_bundleSub_swift_func</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    func getPreviewItem(withName name:String) -&gt; URL {
+        let file = name.components(separatedBy: ".")
+        let path = Bundle.main.path(forResource: file.first, ofType: file.last)
+        let url = URL(fileURLWithPath: path!)
+        
+        return url
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3F89021F-9658-40D4-B3DF-26DCF49E60BA</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Swift的Bundle操作</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_bundleSub_swift_func</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

@@ -162,6 +162,8 @@ txt:工程配置变量，VC结构分割
 50.observer（observer添加kvo观察者）
 
 51.bundle(bundle包资源)
+- my_bundleSub_swift_func
+
 52.shadow(shadow阴影)
 53.runtime(runtime方法交换)
 54.collectionView(collectionView创建)
@@ -178,8 +180,12 @@ txt:工程配置变量，VC结构分割
 63.pointer2pointer(坐标转换)
 64.available(平台使用范围判断)
 - my_available_swift_block
+
+
 65.masnory(自动布局)
 - my_masnory_animation_swift_block
+
+
 66.image(图片)
 - my_imageCreate_waterMark_swift_func
 
