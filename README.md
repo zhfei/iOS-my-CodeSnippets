@@ -463,7 +463,7 @@ txt:工程配置变量，VC结构分割
 
 6.clang(clang编译器说明)
 - my_clangUndecSelector_txt
-- my_clangifdebug_txt
+- my_ifdebug_release_txt
 
 7.baseVC(vc模版)
 - my_tableViewBaseVC_oc_txt

@@ -3,17 +3,26 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_clangifdebug_txt</string>
+	<string>my_ifdebug_release_txt</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>#if DEBUG
+	<string>Swift下使用编译标记检查
+#if DEBUG
 
 #else
 
-#endif</string>
+#endif
+
+OC下使用宏定义
+#ifdef DEBUG
+    // Debug 模式下的代码
+#else
+    // Release 模式下的代码
+#endif
+</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>748B4DC9-BE6D-4F94-BB6A-916F97F5BFA2</string>
 	<key>IDECodeSnippetLanguage</key>
@@ -21,7 +30,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>编译指令 #if debug</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_clangifdebug_txt</string>
+	<string>my_ifdebug_release_txt</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
