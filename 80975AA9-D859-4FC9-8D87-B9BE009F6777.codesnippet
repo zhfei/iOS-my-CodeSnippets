@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_version_if_oc/swift_txt</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>    //OC
+    NSString *version = [UIDevice currentDevice].systemVersion;
+    if (version.doubleValue &gt;= 9.0) {
+        // 针对 9.0 以上的iOS系统进行处理
+    } else {
+        // 针对 9.0 以下的iOS系统进行处理
+    }
+    
+    //Swift
+    // iOS15适配，处理tabBar背景和分割线透明，选中颜色失效
+    if #available(iOS 15.0, *) {
+        let appearance = UITabBarAppearance();
+        if (bgColor != nil) {
+            appearance.backgroundColor = bgColor; // tabBar背景颜色
+        }
+
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>80975AA9-D859-4FC9-8D87-B9BE009F6777</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>版本号判断</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_version_if_oc/swift_txt</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
