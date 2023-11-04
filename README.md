@@ -454,6 +454,7 @@ txt:工程配置变量，VC结构分割
 - my_structureCN_oc_txt
 - my_structureHeardCN_oc_txt
 - my_structure_swift_txt
+- my_structure_swiftUI_txt
 
 4.property(property定义)
 - my_propert_oc_txt
