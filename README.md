@@ -279,7 +279,7 @@ txt:工程配置变量，VC结构分割
 17.tableView(tableView代理)
 - my_tableViewAll_oc_block
 - my_tableViewParter_oc_block
-- my_tableViewDelegate_oc_func
+- my_tableViewDelete_oc_func
 - my_tableCellAutoHeigh_oc_block
 
 

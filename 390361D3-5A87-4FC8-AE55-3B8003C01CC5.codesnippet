@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>my_tableViewDelegate_oc_func</string>
+	<string>my_tableViewDelete_oc_func</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
@@ -30,6 +30,26 @@
             //移除tableView中的数据
         }
     }
+}
+
+// ios11.0新增，左滑删除
+- (nullable UISwipeActionsConfiguration *)tableView:(UITableView *)tableView trailingSwipeActionsConfigurationForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
+    UIContextualAction *action = [UIContextualAction contextualActionWithStyle:UIContextualActionStyleDestructive title:@"删除" handler:^(UIContextualAction * _Nonnull action, __kindof UIView * _Nonnull sourceView, void (^ _Nonnull completionHandler)(BOOL)) {
+        
+        if (self.dataSource.count &gt; indexPath.row) {
+            [self.dataSource removeObjectAtIndex:indexPath.row];
+            [UIView performWithoutAnimation:^{
+                [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
+            }];
+        }
+        
+        completionHandler(YES);
+    }];
+    
+    action.backgroundColor = [UIColor blueColor];
+    UISwipeActionsConfiguration *config = [UISwipeActionsConfiguration configurationWithActions:@[action]];
+    config.performsFirstActionWithFullSwipe = NO;
+    return config;
 }</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>390361D3-5A87-4FC8-AE55-3B8003C01CC5</string>
@@ -38,7 +58,7 @@
 	<key>IDECodeSnippetSummary</key>
 	<string>滑动删除cell， OC</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>my_tableViewDelegate_oc_func</string>
+	<string>my_tableViewDelete_oc_func</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
