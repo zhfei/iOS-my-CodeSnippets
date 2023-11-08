@@ -9,12 +9,18 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btn setFrame:CGRectMake(0, 0, 100, 50)];
-    [btn setTitle:text forState:UIControlStateNormal];
-    [btn setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
-    btn.titleLabel.font = [UIFont systemFontOfSize:16];
-    [btn addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];</string>
+	<string>UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
+[btn setFrame:CGRectMake(0, 0, 100, 50)];
+[btn setTitle:text forState:UIControlStateNormal];
+[btn setTitleColor:[UIColor darkGrayColor] forState:UIControlStateNormal];
+btn.titleLabel.font = [UIFont systemFontOfSize:16];
+//新设置button字体font的方法
+NSDictionary *attributes = @{ NSFontAttributeName: [UIFont systemFontOfSize:12], NSForegroundColorAttributeName: [UIColor colorNamed:@"hex_A8ABB3"] };
+NSAttributedString *attributedTitle = [[NSAttributedString alloc] initWithString:@"发送验证码" attributes:attributes];
+[btn setAttributedTitle:attributedTitle forState:UIControlStateNormal];
+[btn setAttributedTitle:attributedTitle forState:UIControlStateHighlighted];
+[btn setAttributedTitle:attributedTitle forState:UIControlStateDisabled];
+[btn addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>5608BECB-4D51-4DB1-91F1-88CF7AD68D3D</string>
 	<key>IDECodeSnippetLanguage</key>
