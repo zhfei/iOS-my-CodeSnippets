@@ -18,11 +18,17 @@
 
 OC下使用宏定义
 #ifdef DEBUG
-    // Debug 模式下的代码
+// Debug 模式下的代码
 #else
-    // Release 模式下的代码
+// Release 模式下的代码
 #endif
-</string>
+
+#if expression  单行表达式,
+#ifdef macro  宏被定义,
+#ifndef macro 宏没有被定义,
+#else,
+#elif,
+#endif</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>748B4DC9-BE6D-4F94-BB6A-916F97F5BFA2</string>
 	<key>IDECodeSnippetLanguage</key>
