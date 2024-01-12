@@ -206,6 +206,7 @@ txt:工程配置变量，VC结构分割
 - my_glouble_environment_swiftUI_block
 - my_lifeCircle_event_swiftUI_block
 - my_binding_data_view_swiftUI_block
+- my_tapEvent_swiftUI_block
 
 68.viewController基本模板
 - my_vc_swift_block

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_tapEvent_swiftUI_block</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>            VStack {
+                Button(action: {
+                    isSignOuting ? goCancleSignOut() : goSignOut()
+                }, label: {
+                    Text(isSignOuting ? "撤回注销" : "我要注销")
+                        .foregroundColor(.white)
+                    //事件范围增加场景1：Button的点击事件范围由Text决定的，将Button的大小直接设置在Text上可以同步增加点事件范围
+                        .frame(maxWidth: .infinity, minHeight:44)
+                        .background(Color("hex_232934", bundle: nil))
+                        .cornerRadius(22)
+                })
+                
+                if isSignOuting {
+                    Text("您在2023年12月25日22:22提交注销账户")
+                        .font(Font.system(size: 13).weight(.regular))
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(.hex7B7E85)
+                        .padding(.top,5)
+                }
+                Spacer()
+            }.frame(maxWidth: .infinity, minHeight:88, maxHeight:88)
+            //事件范围增加场景2：contentShape用于给VStack容器添加点击事件范围
+                .contentShape(Rectangle())
+                .onTapGesture {
+                    print("点击了")
+                }
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>DC7B0A09-C20C-4914-A82E-59E20201285D</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>修改SwiftUI控件点击范围</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_tapEvent_swiftUI_block</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
