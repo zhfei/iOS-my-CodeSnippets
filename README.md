@@ -220,6 +220,7 @@ txt:工程配置变量，VC结构分割
 - my_dispatchGlobalQueue_oc_block
 - my_dispatchgroup_oc_block
 - my_dispatchgroupEnter/leave_oc_block
+- my_dispatch_barrier_oc_func
 
 2.serial(序列化功能)
 - my_serialDataToJson_oc_func

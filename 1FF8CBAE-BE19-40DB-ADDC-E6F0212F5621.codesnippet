@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>my_dispatch_barrier_oc_func</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>//使用栅栏函数实现多读单写
+//@interface ViewController ()
+//{
+//    dispatch_queue_t currentQueue;
+//}
+//@property (nonatomic, strong) NSMutableDictionary *dictM;
+//
+//@end
+- (void)testBarrier {
+    //需要自定义的并发队列
+    currentQueue = dispatch_queue_create("CurrentQueue", DISPATCH_QUEUE_CONCURRENT);
+    self.dictM = @{}.mutableCopy;
+    
+    for (int i = 0; i &lt; 20; i++) {
+        if (i % 5 == 0) {
+            [self setObject:@(i) ForKey:[NSString stringWithFormat:@"%d",i]];
+        } else {
+            [self objectForKey:@"5"];
+        }
+    }
+}
+
+- (void)setObject:(id)value ForKey:(NSString *)keyStr {
+    //单写：将异步栅栏函数放置到currentQueue并发队列中
+    dispatch_barrier_async(currentQueue, ^{
+        sleep(3);
+        self.dictM[keyStr] = value;
+        NSLog(@"写：%@",value);
+    });
+}
+
+- (id)objectForKey:(NSString *)keyStr {
+    __block id oneValue = nil;
+    //多读：将同步任务放到currentQueue并发队列中
+    dispatch_sync(currentQueue, ^{
+        oneValue = self.dictM[keyStr];
+        NSLog(@"读：%@",oneValue);
+    });
+    return oneValue;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>1FF8CBAE-BE19-40DB-ADDC-E6F0212F5621</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Generic</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>栅栏函数实现多读单写</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>my_dispatch_barrier_oc_func</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
