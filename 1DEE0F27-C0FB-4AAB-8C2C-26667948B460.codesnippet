@@ -9,7 +9,31 @@
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>struct MapView: UIViewRepresentable {
+	<string>
+//VC的转换
+struct ContentView: View {
+    var body: some View {
+        HtmlLabelViewControllerRepresentable()
+            .edgesIgnoringSafeArea(.all)
+    }
+}
+
+
+struct HtmlLabelViewControllerRepresentable: UIViewControllerRepresentable {
+      func makeUIViewController(context: Context) -&gt; HtmlLabelViewController {
+          return HtmlLabelViewController() // 创建并返回你的 UIViewController
+      }
+
+      func updateUIViewController(_ uiViewController: HtmlLabelViewController, context: Context) {
+          // 在这里更新 UIViewController（如果需要）
+      }
+  }
+
+
+
+
+//View的转换
+struct MapView: UIViewRepresentable {
     let landmark: Landmark
     func makeUIView(context: Context) -&gt; MKMapView {
         return MKMapView()
